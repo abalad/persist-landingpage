@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Download",
+    "description": "Baixe o Persist para macOS, Windows ou Linux. Os primeiros builds públicos saem em breve; crie uma conta para receber o aviso."
+  },
+  "title": "Baixe o Persist",
+  "body": "Ainda não há build público: estamos terminando a assinatura e a notarização. Escolha o seu sistema e receba um aviso quando sair.",
+  "yours": "Seu sistema",
+  "soon": "Em breve",
+  "notify": "Avise-me",
+  "download": "Baixar",
+  "platforms": {
+    "mac": {
+      "name": "macOS",
+      "detail": "Apple Silicon e Intel",
+      "note": "Onde o Persist é usado todos os dias. Testado em Apple Silicon; Intel deve funcionar."
+    },
+    "windows": {
+      "name": "Windows",
+      "detail": "x64, instalador",
+      "note": "Sai como prévia: o build existe, mas ainda não foi testado em máquinas reais."
+    },
+    "linux": {
+      "name": "Linux",
+      "detail": "x64",
+      "note": "Sai como prévia, nas mesmas condições do Windows."
+    }
+  },
+  "needs": {
+    "title": "O que você precisa",
+    "items": [
+      {
+        "title": "Nada além do app",
+        "body": "O supervisor que mantém as sessões vivas vai dentro do Persist. Não é preciso instalar tmux nem outra dependência."
+      },
+      {
+        "title": "Claude Code, se for usar agentes",
+        "body": "Para sessões de agente com estados, retomada e várias contas. Terminais comuns funcionam sem ele."
+      },
+      {
+        "title": "Git, se quiser os recursos de git",
+        "body": "Alterações, branches, pontos de restauração e pasta própria por sessão usam o git da sua máquina."
+      }
+    ]
+  },
+  "account": {
+    "title": "Quer ser avisado?",
+    "body": "Crie uma conta com seu e-mail. Você recebe um código para entrar, e a gente avisa quando o build do seu sistema sair.",
+    "cta": "Criar conta e me avisar"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Download",
+    "description": "Download Persist for macOS, Windows or Linux. The first public builds ship soon; create an account to hear about it."
+  },
+  "title": "Download Persist",
+  "body": "There is no public build yet: we are finishing signing and notarisation. Pick your system and get a heads-up when it ships.",
+  "yours": "Your system",
+  "soon": "Soon",
+  "notify": "Notify me",
+  "download": "Download",
+  "platforms": {
+    "mac": {
+      "name": "macOS",
+      "detail": "Apple Silicon and Intel",
+      "note": "Where Persist is used every day. Tested on Apple Silicon; Intel should work."
+    },
+    "windows": {
+      "name": "Windows",
+      "detail": "x64, installer",
+      "note": "Ships as a preview: the build exists but has not been tested on real machines yet."
+    },
+    "linux": {
+      "name": "Linux",
+      "detail": "x64",
+      "note": "Ships as a preview, on the same terms as Windows."
+    }
+  },
+  "needs": {
+    "title": "What you need",
+    "items": [
+      {
+        "title": "Nothing but the app",
+        "body": "The supervisor that keeps sessions alive ships inside Persist. No tmux or other dependency to install."
+      },
+      {
+        "title": "Claude Code, if you use agents",
+        "body": "For agent sessions with states, resume and several accounts. Plain terminals work without it."
+      },
+      {
+        "title": "Git, for the git features",
+        "body": "Changes, branches, restore points and a folder per session use the git on your machine."
+      }
+    ]
+  },
+  "account": {
+    "title": "Want a heads-up?",
+    "body": "Create an account with your e-mail. You get a code to sign in, and we let you know when the build for your system ships.",
+    "cta": "Create account and notify me"
+  }
+}

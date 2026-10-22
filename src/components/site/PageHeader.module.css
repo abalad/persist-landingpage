@@ -1,0 +1,29 @@
+.header {
+  padding-top: clamp(56px, 8vw, 96px);
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  max-width: 18em;
+  font-size: clamp(2.125rem, 1.2rem + 3vw, 3.5rem);
+  font-weight: 330;
+  font-variation-settings: "wdth" 106;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.center .title,
+.center .body {
+  margin-inline: auto;
+}
+
+.body {
+  max-width: 58ch;
+  margin-top: 20px;
+  color: var(--site-muted);
+  font-size: var(--lead);
+  line-height: 1.55;
+}
