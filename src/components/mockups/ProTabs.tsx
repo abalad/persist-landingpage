@@ -19,7 +19,7 @@ export function ProTabs() {
   const t = useTranslations("mock.pro");
   const m = useTranslations("mock");
   const [tab, setTab] = useState<Tab>("queue");
-  const lines = (m.raw("hero.lines") as TermLine[]).slice(0, 7);
+  const lines = m.raw("hero.lines") as TermLine[];
 
   return (
     <div className={styles.root}>
@@ -57,7 +57,7 @@ export function ProTabs() {
               )
             }
           />
-          <div className={x.split} style={{ ["--side" as string]: 440, ["--h" as string]: 330 }}>
+          <div className={cx(x.split, x.splitFixed)} style={{ ["--side" as string]: 440, ["--h" as string]: 290 }}>
             <div className={x.splitMain}>
               <Terminal lines={tab === "verify" ? (t.raw("verify.lines") as TermLine[]) : lines} rows={8} />
             </div>

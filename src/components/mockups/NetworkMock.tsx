@@ -1,5 +1,6 @@
 import { Globe } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Fragment } from "react";
 import x from "./extra.module.css";
 
 interface NetRow {
@@ -21,8 +22,14 @@ export function NetworkMock() {
           <div key={i} className={x.boxRow}>
             <Globe style={{ color: "var(--color-fg-subtle)" }} />
             <div className={x.boxMain}>
-              <span className={x.boxTitle} style={{ fontFamily: "var(--font-code)", fontSize: "calc(12.5 * var(--u))" }}>
-                {r.host}
+              <span className={`${x.boxTitle} ${x.host}`}>
+                {r.host.split(".").map((part, j) => (
+                  <Fragment key={j}>
+                    {j > 0 ? "." : null}
+                    {j > 0 ? <wbr /> : null}
+                    {part}
+                  </Fragment>
+                ))}
               </span>
               <span className={x.boxSub}>
                 {r.why} · {r.size}

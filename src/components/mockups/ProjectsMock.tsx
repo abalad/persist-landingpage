@@ -15,8 +15,6 @@ export function ProjectsSidebar({ showAgents = true, keepOnNarrow = false }: { s
     { name: "checkout", kind: "claude", state: t("states.permission"), tone: "warn", ws: "rota-app" },
     { name: "api", kind: "claude", state: t("states.waiting"), tone: "warn", ws: "rota-api" },
     { name: t("sessions.catalog"), kind: "claude", state: t("states.working"), tone: "info", ws: "quintal-web" },
-    { name: t("sessions.search"), kind: "codex", state: t("states.working"), tone: "info", ws: "quintal-api" },
-    { name: t("sessions.review"), kind: "codex", state: t("states.idle"), tone: "neutral", ws: "rota-api" },
   ] as const;
 
   return (
@@ -57,7 +55,7 @@ export function ProjectsSidebar({ showAgents = true, keepOnNarrow = false }: { s
               <AgentGlyph kind={a.kind} />
               <span className={x.agentName}>{a.name}</span>
               <span className={x.agentWs}>{a.ws}</span>
-              <span className={x.agentState} style={{ color: `var(--color-${a.tone === "neutral" ? "fg-subtle" : a.tone})` }}>
+              <span className={x.agentState} style={{ color: `var(--color-${a.tone})` }}>
                 {a.state}
               </span>
             </div>
@@ -139,7 +137,7 @@ export function ProjectsMock() {
 export function StatesMock() {
   const t = useTranslations("mock");
   return (
-    <div className={x.frameTall} style={{ display: "flex" }}>
+    <div className={x.frameFit} style={{ display: "flex" }}>
       <ProjectsSidebar />
       <div style={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0 }}>
         <SessionHeader name="checkout" kind="claude" branch="feat/checkout" status={<Chip tone="warn" icon="permission" label={t("states.permission")} />} />

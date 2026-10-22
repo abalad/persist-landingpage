@@ -47,9 +47,11 @@ export function AccountsMock() {
               <span className={x.boxTitle}>
                 {a.email} <span className={x.planTag}>{a.plan}</span>
               </span>
-              <span className={x.boxSub} style={a.out ? { color: "var(--color-warn)" } : undefined}>
-                {a.out ? `${t("sitsOut")} · ${a.out}` : a.local ? t("thisComputer") : " "}
-              </span>
+              {a.out || a.local ? (
+                <span className={x.boxSub} style={a.out ? { color: "var(--color-warn)" } : undefined}>
+                  {a.out ? `${t("sitsOut")} · ${a.out}` : t("thisComputer")}
+                </span>
+              ) : null}
             </div>
             <div className={x.meters}>
               <span>5 h</span>

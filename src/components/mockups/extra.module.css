@@ -6,6 +6,17 @@
   min-height: calc(var(--h, 380) * var(--u));
 }
 
+.splitFixed {
+  height: calc(var(--h, 380) * var(--u));
+  min-height: 0;
+  overflow: hidden;
+}
+
+.splitFixed > * {
+  min-height: 0;
+  overflow: hidden;
+}
+
 .sideFill {
   display: flex;
   flex-direction: column;
@@ -211,6 +222,11 @@
   white-space: nowrap;
 }
 
+.host {
+  font-family: var(--font-code);
+  font-size: calc(12.5 * var(--u));
+}
+
 .boxSub {
   overflow: hidden;
   color: var(--color-fg-subtle);
@@ -312,6 +328,10 @@
 
 .frameTall {
   min-height: calc(420 * var(--u));
+}
+
+.frameFit {
+  align-items: stretch;
 }
 
 .frameEditor {
@@ -601,6 +621,10 @@
   .boxSub {
     white-space: normal;
     overflow-wrap: anywhere;
+  }
+
+  .host {
+    overflow-wrap: normal;
   }
 
   .meters {
