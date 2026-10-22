@@ -590,10 +590,11 @@
 
 .bar > span {
   position: absolute;
-  inset: 0 auto 0 0;
+  inset: 0;
   border-radius: inherit;
   background: var(--color-accent);
-  transition: width 900ms var(--ease-out);
+  transform-origin: left center;
+  transition: transform 900ms var(--ease-out);
 }
 
 .barWarn > span {

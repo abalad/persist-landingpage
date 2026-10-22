@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { jetbrains, mona } from "@/app/fonts";
 import { Footer } from "@/components/site/Footer";
@@ -8,6 +8,14 @@ import { Nav } from "@/components/site/Nav";
 import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/site";
 import "@/styles/globals.css";
+
+type Messages = Record<string, Record<string, unknown>>;
+
+/** Only what interactive components read goes to the browser. */
+function clientMessages(all: Messages): Messages {
+  const { nav, badge, mock, download, auth, home } = all;
+  return { nav, badge, mock, download, auth, home: { hero: (home as Messages).hero } };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -32,11 +40,12 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
+  const messages = clientMessages(await getMessages());
 
   return (
     <html lang={locale} className={`${mona.variable} ${jetbrains.variable}`}>
       <body>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
           <Nav />
           <main id="main">{children}</main>
           <Footer />

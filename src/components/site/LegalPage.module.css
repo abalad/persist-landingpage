@@ -1,0 +1,18 @@
+.page {
+  padding-top: clamp(56px, 8vw, 96px);
+}
+
+.title {
+  max-width: 18em;
+  font-size: clamp(2.125rem, 1.3rem + 2.6vw, 3.25rem);
+  font-weight: 330;
+  font-variation-settings: "wdth" 106;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.meta {
+  margin: 14px 0 40px;
+  color: var(--site-muted);
+  font-size: var(--small);
+}

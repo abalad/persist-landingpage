@@ -160,4 +160,8 @@
   .tagline {
     min-height: 0;
   }
+
+  .markerSpace {
+    display: none;
+  }
 }

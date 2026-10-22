@@ -1,0 +1,5 @@
+{
+  "updated": "Actualizada el {date}",
+  "contactWith": "Escribe a [{email}](mailto:{email}).",
+  "contactPending": "Todavía no hay una dirección de contacto publicada. Aparecerá aquí antes del lanzamiento público."
+}

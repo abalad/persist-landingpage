@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 import { AgentsStrip } from "@/components/home/AgentsStrip";
@@ -20,6 +21,12 @@ import { ButtonLink } from "@/components/site/Button";
 import type { FaqItem } from "@/components/site/Faq";
 import type { Locale } from "@/i18n/routing";
 import { formatPrice } from "@/lib/pricing";
+import { alternatesFor } from "@/lib/seo";
+
+export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
+  const { locale } = await params;
+  return { alternates: alternatesFor(locale as Locale, "/") };
+}
 
 export default function Home({ params }: PageProps<"/[locale]">) {
   const { locale } = use(params);

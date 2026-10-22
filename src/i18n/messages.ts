@@ -1,7 +1,7 @@
 import type { Locale } from "./routing";
 
 /** Every namespace a locale has; one JSON file each under messages/<locale>/. */
-export const NAMESPACES = ["meta", "nav", "footer", "badge", "mock", "home", "pricing", "download", "auth"] as const;
+export const NAMESPACES = ["meta", "nav", "footer", "badge", "mock", "home", "pricing", "download", "auth", "docs", "changelog", "legal", "notFound"] as const;
 
 export async function loadMessages(locale: Locale): Promise<Record<string, unknown>> {
   const entries = await Promise.all(

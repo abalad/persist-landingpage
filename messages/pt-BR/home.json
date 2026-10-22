@@ -141,6 +141,10 @@
         "a": "Sim. O plano gratuito não precisa de rede. Os planos pagos usam uma licença assinada que vale 14 dias sem conexão."
       },
       {
+        "q": "Em quais idiomas está o app?",
+        "a": "Português e inglês. O site e as Docs também estão em espanhol."
+      },
+      {
         "q": "Quando posso baixar?",
         "a": "Os builds públicos saem assim que a assinatura e a notarização estiverem prontas. Crie uma conta e marque “Avise-me” para receber o aviso."
       }

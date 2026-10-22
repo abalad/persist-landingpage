@@ -324,7 +324,7 @@ export function Meter({ label, value }: { label: string; value: number }) {
     <span className={s.meter}>
       <span className={s.statusLabel}>{label}</span>
       <span className={cx(s.bar, value >= 90 && s.barWarn)}>
-        <span style={{ width: `${Math.min(100, value)}%` }} />
+        <span style={{ transform: `scaleX(${Math.min(100, value) / 100})` }} />
       </span>
       <span className={s.statusValue}>{Math.round(value)}%</span>
     </span>

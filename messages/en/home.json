@@ -141,6 +141,10 @@
         "a": "Yes. The free plan needs no network. Paid plans use a signed licence that stays valid for 14 days without a connection."
       },
       {
+        "q": "Which languages is the app in?",
+        "a": "Portuguese and English. The website and the docs are also in Spanish."
+      },
+      {
         "q": "When can I download it?",
         "a": "Public builds ship as soon as signing and notarisation are ready. Create an account and tick “Notify me” to hear about it."
       }
