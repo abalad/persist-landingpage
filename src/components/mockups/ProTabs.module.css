@@ -40,3 +40,21 @@
   background: var(--color-accent-bg);
   color: var(--site-heading);
 }
+
+@media (max-width: 640px) {
+  .tabs {
+    flex-wrap: nowrap;
+    margin-inline: calc(-1 * var(--gutter));
+    padding-inline: var(--gutter);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab {
+    flex: none;
+  }
+}

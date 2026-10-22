@@ -20,7 +20,7 @@
     "active": "{count, plural, one {# active session} other {# active sessions}}",
     "now": "now",
     "minutes": "{count} min ago",
-    "loose": "Loose"
+    "loose": "Standalone"
   },
   "status": {
     "spend": "Spend",
@@ -119,6 +119,31 @@
       {
         "kind": "choice",
         "text": "3. No, and tell Claude what to do"
+      }
+    ],
+    "checkoutLines": [
+      {
+        "kind": "prompt",
+        "text": "Create the coupons table and its migration"
+      },
+      {
+        "kind": "tool",
+        "text": "Read(prisma/schema.prisma)"
+      },
+      {
+        "kind": "result",
+        "text": "212 lines"
+      },
+      {
+        "kind": "tool",
+        "text": "Edit(prisma/schema.prisma)"
+      },
+      {
+        "kind": "result",
+        "diff": {
+          "add": "+18",
+          "del": "−0"
+        }
       }
     ]
   },

@@ -41,7 +41,26 @@
   font-size: var(--tiny);
 }
 
+.crashLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  color: var(--color-accent);
+  font-size: var(--small);
+}
+
+.crashLink svg {
+  width: 15px;
+  height: 15px;
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.crashLink:hover svg {
+  transform: translateY(2px);
+}
+
 .window {
-  max-width: 1120px;
+  max-width: 1200px;
   margin: clamp(48px, 7vw, 80px) auto 0;
 }

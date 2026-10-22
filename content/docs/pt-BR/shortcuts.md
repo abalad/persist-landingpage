@@ -11,7 +11,7 @@ A lista também está em **Configurações › Atalhos**.
 | --- | --- |
 | Buscar | <kbd>⌘</kbd> <kbd>K</kbd> |
 | Barra de projetos | <kbd>⌘</kbd> <kbd>B</kbd> |
-| Mostrar ou esconder o painel lateral | <kbd>⌘</kbd> <kbd>\</kbd> |
+| Mostrar ou esconder o painel lateral | <kbd>⌘</kbd> <kbd>&#92;</kbd> |
 | Abrir arquivo pelo nome | <kbd>⌘</kbd> <kbd>P</kbd> |
 | Buscar em todos os arquivos | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>F</kbd> |
 | Alterações do git | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>G</kbd> |

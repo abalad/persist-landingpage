@@ -1,4 +1,4 @@
-import { UserRound } from "lucide-react";
+import { ArrowDown, UserRound } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { HeroApp } from "@/components/mockups/HeroApp";
@@ -22,6 +22,10 @@ export function Hero() {
         </ButtonLink>
       </div>
       <p className={styles.note}>{t("note")}</p>
+      <a className={styles.crashLink} href="#recovery">
+        {t("crashLink")}
+        <ArrowDown aria-hidden="true" />
+      </a>
       <div className={styles.window}>
         <HeroApp />
       </div>

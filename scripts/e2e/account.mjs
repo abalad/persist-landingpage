@@ -8,6 +8,7 @@ import { click, openBrowser, sleep, typeInto } from "./lib.mjs";
 const [base, out] = process.argv.slice(2);
 const API = "https://ytmpopebhdtnucdznfsz.supabase.co";
 const SECRET = process.env.SECRET;
+const rest = (path, init = {}) => fetch(`${API}/rest/v1/${path}`, { ...init, headers: { apikey: SECRET, "Content-Type": "application/json", Prefer: "return=representation", ...(init.headers || {}) } });
 const admin = (path, init = {}) => fetch(`${API}/auth/v1/admin/${path}`, { ...init, headers: { apikey: SECRET, "Content-Type": "application/json", ...(init.headers || {}) } });
 
 const email = `site-e2e-${Date.now()}@persist.invalid`;
@@ -24,6 +25,10 @@ try {
   const link = await (await admin("generate_link", { method: "POST", body: JSON.stringify({ type: "magiclink", email }) })).json();
   const code = link.email_otp ?? link.properties?.email_otp;
   check("code generated without sending e-mail", /^\d{6,10}$/.test(code ?? ""));
+
+  const deviceId = crypto.randomUUID();
+  const added = await rest("devices", { method: "POST", body: JSON.stringify({ id: deviceId, user_id: userId, name: "MacBook de teste", platform: "macos", app_version: "0.1.0" }) });
+  check("device created for the account", added.ok, String(added.status));
 
   await b.send("Page.addScriptToEvaluateOnNewDocument", {
     source: `(() => { const real = window.fetch; window.fetch = (input, init) => { const url = typeof input === "string" ? input : input.url; if (url.includes("/auth/v1/otp")) return Promise.resolve(new Response("{}", { status: 200, headers: { "Content-Type": "application/json" } })); return real(input, init); }; })();`,
@@ -62,6 +67,17 @@ try {
 
   const user = await (await admin(`users/${userId}`)).json();
   check("notice stored in user metadata", user.user_metadata?.notify_release === true && JSON.stringify(user.user_metadata?.notify_platforms) === '["mac"]', JSON.stringify(user.user_metadata));
+
+  check("device listed", text.includes("MacBook de teste"));
+  await b.evaluate(`[...document.querySelectorAll("button")].find((x) => x.textContent.trim() === "Remove").click()`);
+  await sleep(400);
+  const confirmText = await b.evaluate("document.body.innerText");
+  check("removal asks with consequences", confirmText.includes("leaves this account"), confirmText.slice(0, 0));
+  await b.evaluate(`[...document.querySelectorAll("button")].find((x) => x.textContent.includes("Remove from account")).click()`);
+  await sleep(2000);
+  const left = await (await rest(`devices?id=eq.${deviceId}&select=id`, { method: "GET" })).json();
+  check("device removed, not just revoked", Array.isArray(left) && left.length === 0, JSON.stringify(left));
+  check("device gone from the page", !(await b.evaluate("document.body.innerText")).includes("MacBook de teste"));
 
   await b.evaluate(`[...document.querySelectorAll("button")].find((x) => x.textContent.includes("Record my interest")).click()`);
   await sleep(2000);

@@ -8,7 +8,6 @@
   "currency": "Precios en dólares estadounidenses.",
   "opening": "Las suscripciones abren pronto.",
   "includes": "Todo lo de {plan}, más:",
-  "mostPicked": "Para quien usa agentes todos los días",
   "plans": {
     "free": {
       "name": "Gratis",

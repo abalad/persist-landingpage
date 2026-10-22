@@ -29,6 +29,12 @@ describe("safeNext", () => {
   it("refuses a protocol-relative address", () => expect(safeNext("//evil.com")).toBe("/account"));
   it("refuses a backslash trick", () => expect(safeNext("/\\evil.com")).toBe("/account"));
   it("falls back to the account without a value", () => expect(safeNext(null)).toBe("/account"));
+  it("drops a language prefix the router adds again", () => {
+    expect(safeNext("/en/account")).toBe("/account");
+    expect(safeNext("/pt-BR/docs/agents")).toBe("/docs/agents");
+    expect(safeNext("/es")).toBe("/");
+  });
+  it("keeps a path that only starts like a language", () => expect(safeNext("/english-notes")).toBe("/english-notes"));
 });
 
 describe("authErrorKey", () => {

@@ -4,7 +4,7 @@
     "description": "Descarga Persist para macOS, Windows o Linux. Los primeros builds públicos salen pronto; crea una cuenta para recibir el aviso."
   },
   "title": "Descarga Persist",
-  "body": "Todavía no hay build público: estamos terminando la firma y la notarización. Elige tu sistema y recibe un aviso cuando salga.",
+  "body": "Todavía no hay build público: falta firmar y notarizar la app. Elige tu sistema y recibe un aviso cuando salga.",
   "yours": "Tu sistema",
   "soon": "Pronto",
   "notify": "Avísame",

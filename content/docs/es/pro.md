@@ -5,7 +5,7 @@ group: work
 order: 2
 ---
 
-Las funciones Pro están en el **panel lateral de la sesión** (<kbd>⌘</kbd> <kbd>\</kbd>) y en su encabezado. Requieren la cuenta de Persist con el plan Pro; lo que ya se guardó se puede seguir usando si el plan termina.
+Las funciones Pro están en el **panel lateral de la sesión** (<kbd>⌘</kbd> <kbd>&#92;</kbd>) y en su encabezado. Requieren la cuenta de Persist con el plan Pro; lo que ya se guardó se puede seguir usando si el plan termina.
 
 ## Cola de pedidos
 

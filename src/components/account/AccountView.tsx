@@ -109,11 +109,12 @@ export function AccountView() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  async function revoke(id: string) {
-    const { error } = await supabase().from("devices").update({ revoked_at: new Date().toISOString() }).eq("id", id);
+  /** Deleting (not revoking) lets the computer come back by signing in again; a revoked id is refused for good. */
+  async function remove(id: string) {
+    const { error } = await supabase().from("devices").delete().eq("id", id);
     setConfirming(null);
     if (error) return setStatus({ ok: false, text: t("saveError") });
-    setDevices((list) => list.map((d) => (d.id === id ? { ...d, revoked_at: new Date().toISOString() } : d)));
+    setDevices((list) => list.filter((d) => d.id !== id));
     setStatus({ ok: true, text: t("saved") });
   }
 
@@ -284,15 +285,15 @@ export function AccountView() {
                   <div>
                     <div className={styles.deviceName}>{d.name}</div>
                     <div className={styles.deviceMeta}>
-                      {PLATFORM_NAME[d.platform]} · {d.app_version} · {d.revoked_at ? t("devices.revoked") : t("devices.lastSeen", { when: relative(locale, d.last_seen_at) })}
+                      {PLATFORM_NAME[d.platform] ?? d.platform} · {d.app_version} · {d.revoked_at ? t("devices.revoked") : t("devices.lastSeen", { when: relative(locale, d.last_seen_at) })}
                     </div>
                   </div>
-                  {d.revoked_at ? null : confirming === d.id ? (
+                  {confirming === d.id ? (
                     <div className={styles.actions}>
                       <button type="button" className={buttonClass("ghost", "md")} onClick={() => setConfirming(null)}>
                         {t("devices.cancel")}
                       </button>
-                      <button type="button" className={buttonClass("secondary", "md")} onClick={() => revoke(d.id)}>
+                      <button type="button" className={buttonClass("secondary", "md")} onClick={() => remove(d.id)}>
                         {t("devices.confirm")}
                       </button>
                     </div>
@@ -301,6 +302,11 @@ export function AccountView() {
                       {t("devices.revoke")}
                     </button>
                   )}
+                  {confirming === d.id ? (
+                    <p className={styles.rowText} style={{ gridColumn: "1 / -1" }}>
+                      {t("devices.confirmHint", { name: d.name })}
+                    </p>
+                  ) : null}
                 </div>
               </div>
             ))}

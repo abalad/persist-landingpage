@@ -23,7 +23,7 @@
 
 .stage {
   position: relative;
-  height: calc(392 * var(--u));
+  height: calc(330 * var(--u));
   overflow: hidden;
   background: var(--color-bg);
 }

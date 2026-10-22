@@ -12,3 +12,4 @@ coverage/
 .impeccable/review/
 .impeccable/build/
 .impeccable/config.local.json
+!.env.example

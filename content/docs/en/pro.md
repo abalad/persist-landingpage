@@ -5,7 +5,7 @@ group: work
 order: 2
 ---
 
-The Pro features live in the **session side panel** (<kbd>⌘</kbd> <kbd>\</kbd>) and in the session header. They require a Persist account on the Pro plan; what has already been saved stays usable if the plan ends.
+The Pro features live in the **session side panel** (<kbd>⌘</kbd> <kbd>&#92;</kbd>) and in the session header. They require a Persist account on the Pro plan; what has already been saved stays usable if the plan ends.
 
 ## Request queue
 

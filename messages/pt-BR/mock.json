@@ -120,6 +120,31 @@
         "kind": "choice",
         "text": "3. Não, e dizer o que fazer"
       }
+    ],
+    "checkoutLines": [
+      {
+        "kind": "prompt",
+        "text": "Crie a tabela de cupons e a migração"
+      },
+      {
+        "kind": "tool",
+        "text": "Read(prisma/schema.prisma)"
+      },
+      {
+        "kind": "result",
+        "text": "212 linhas"
+      },
+      {
+        "kind": "tool",
+        "text": "Edit(prisma/schema.prisma)"
+      },
+      {
+        "kind": "result",
+        "diff": {
+          "add": "+18",
+          "del": "−0"
+        }
+      }
     ]
   },
   "accounts": {

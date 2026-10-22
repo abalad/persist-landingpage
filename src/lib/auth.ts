@@ -1,3 +1,4 @@
+import { routing } from "@/i18n/routing";
 import type { DesktopPlatform } from "./releases";
 
 export const CODE_MIN = 6;
@@ -16,10 +17,15 @@ export function isValidEmail(raw: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(raw.trim());
 }
 
-/** Only paths on this site; anything that could leave it goes to the account. */
+const LOCALE_PREFIX = new RegExp(`^/(${routing.locales.join("|")})(?=/|$)`);
+
+/**
+ * Only paths on this site; anything that could leave it goes to the account.
+ * A language prefix is dropped because the locale-aware router adds it again.
+ */
 export function safeNext(next: string | null | undefined): string {
   if (!next || !next.startsWith("/") || next.startsWith("//") || next.includes("\\")) return "/account";
-  return next;
+  return next.replace(LOCALE_PREFIX, "") || "/";
 }
 
 export type AuthErrorKey = "rateLimited" | "expired" | "invalidEmail" | "network" | "unknown";

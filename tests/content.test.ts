@@ -46,6 +46,15 @@ describe("docs", () => {
     expect(html).toContain('href="//cdn.example/x"');
   });
 
+  it("never leak raw HTML tags as text", async () => {
+    for (const locale of routing.locales) {
+      for (const d of listDocs(locale)) {
+        const doc = await getDoc(locale, d.slug);
+        expect(doc?.html, `${locale}/${d.slug}`).not.toMatch(/&#x3C;\/?kbd|&lt;\/?kbd/);
+      }
+    }
+  });
+
   it("return null for a page that does not exist", async () => {
     expect(await getDoc("en", "nope")).toBeNull();
   });

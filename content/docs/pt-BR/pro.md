@@ -5,7 +5,7 @@ group: work
 order: 2
 ---
 
-Os recursos do Pro ficam no **painel lateral da sessão** (<kbd>⌘</kbd> <kbd>\</kbd>) e no cabeçalho dela. Eles exigem a conta do Persist com o plano Pro; o que já foi gravado continua utilizável se o plano acabar.
+Os recursos do Pro ficam no **painel lateral da sessão** (<kbd>⌘</kbd> <kbd>&#92;</kbd>) e no cabeçalho dela. Eles exigem a conta do Persist com o plano Pro; o que já foi gravado continua utilizável se o plano acabar.
 
 ## Fila de pedidos
 

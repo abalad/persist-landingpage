@@ -20,9 +20,6 @@ export function PlanCards({ withFeatures = false }: { withFeatures?: boolean }) 
         {PLANS.map((plan, i) => (
           <article key={plan.id} className={`${styles.plan} ${plan.id === "pro" ? styles.featured : ""}`} aria-labelledby={`plan-${plan.id}`}>
             <div className={styles.top}>
-              <span className={`${styles.marker} ${plan.id === "pro" ? "" : styles.markerSpace}`} aria-hidden={plan.id !== "pro"}>
-                {t("mostPicked")}
-              </span>
               <h3 id={`plan-${plan.id}`} className={styles.name}>
                 {t(`plans.${plan.id}.name`)}
               </h3>

@@ -72,7 +72,7 @@ export function ProjectsSidebar({ showAgents = true, keepOnNarrow = false }: { s
 export function ProjectsMock() {
   const t = useTranslations("mock");
   return (
-    <div style={{ display: "flex", minHeight: "calc(430 * var(--u))" }}>
+    <div className={x.frameTall} style={{ display: "flex" }}>
       <ProjectsSidebar showAgents={false} keepOnNarrow />
       <div className={x.splitMain} style={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0 }}>
         <div className={s.topbar}>
@@ -139,11 +139,11 @@ export function ProjectsMock() {
 export function StatesMock() {
   const t = useTranslations("mock");
   return (
-    <div style={{ display: "flex", minHeight: "calc(400 * var(--u))" }}>
+    <div className={x.frameTall} style={{ display: "flex" }}>
       <ProjectsSidebar />
       <div style={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0 }}>
         <SessionHeader name="checkout" kind="claude" branch="feat/checkout" status={<Chip tone="warn" icon="permission" label={t("states.permission")} />} />
-        <Terminal lines={t.raw("projects.permissionLines") as TermLine[]} rows={10} />
+        <Terminal lines={[...(t.raw("projects.checkoutLines") as TermLine[]), ...(t.raw("projects.permissionLines") as TermLine[])]} rows={10} />
       </div>
     </div>
   );

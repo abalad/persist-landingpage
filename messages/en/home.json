@@ -9,7 +9,8 @@
       "other": "Download Persist"
     },
     "account": "Create account",
-    "note": "The core is free and works without an account. The first public builds are coming soon."
+    "note": "The core is free and works without an account. The first public builds are coming soon.",
+    "crashLink": "See what Persist does when the computer crashes"
   },
   "agents": {
     "title": "Works with what you already use",

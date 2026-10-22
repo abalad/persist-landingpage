@@ -11,7 +11,7 @@ La lista también está en **Configuración › Atajos** (*Settings › Shortcut
 | --- | --- |
 | Buscar | <kbd>⌘</kbd> <kbd>K</kbd> |
 | Barra de proyectos | <kbd>⌘</kbd> <kbd>B</kbd> |
-| Mostrar u ocultar el panel lateral | <kbd>⌘</kbd> <kbd>\</kbd> |
+| Mostrar u ocultar el panel lateral | <kbd>⌘</kbd> <kbd>&#92;</kbd> |
 | Abrir archivo por nombre | <kbd>⌘</kbd> <kbd>P</kbd> |
 | Buscar en todos los archivos | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>F</kbd> |
 | Cambios de git | <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>G</kbd> |

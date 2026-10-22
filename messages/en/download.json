@@ -4,7 +4,7 @@
     "description": "Download Persist for macOS, Windows or Linux. The first public builds ship soon; create an account to hear about it."
   },
   "title": "Download Persist",
-  "body": "There is no public build yet: we are finishing signing and notarisation. Pick your system and get a heads-up when it ships.",
+  "body": "There is no public build yet: the app still has to be signed and notarised. Pick your system and get a heads-up when it ships.",
   "yours": "Your system",
   "soon": "Soon",
   "notify": "Notify me",

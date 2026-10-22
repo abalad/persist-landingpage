@@ -5,7 +5,7 @@ group: work
 order: 3
 ---
 
-El panel lateral de la sesión (<kbd>⌘</kbd> <kbd>\</kbd>) reúne lo que necesitas para revisar el trabajo del agente sin salir de ahí. Una fila de íconos alterna entre **Cambios** (*Changes*), **Código** (*Code*), **Búsqueda** (*Search*), **Notas** (*Notes*) y **Detalles** (*Details*). El divisor entre la terminal y el panel se puede arrastrar.
+El panel lateral de la sesión (<kbd>⌘</kbd> <kbd>&#92;</kbd>) reúne lo que necesitas para revisar el trabajo del agente sin salir de ahí. Una fila de íconos alterna entre **Cambios** (*Changes*), **Código** (*Code*), **Búsqueda** (*Search*), **Notas** (*Notes*) y **Detalles** (*Details*). El divisor entre la terminal y el panel se puede arrastrar.
 
 ## Código
 

@@ -5,7 +5,7 @@ group: work
 order: 3
 ---
 
-O painel lateral da sessão (<kbd>⌘</kbd> <kbd>\</kbd>) junta o que você precisa para conferir o trabalho do agente sem sair dele. Uma linha de ícones alterna entre **Alterações**, **Código**, **Busca**, **Notas** e **Detalhes**. A divisória entre o terminal e o painel é arrastável.
+O painel lateral da sessão (<kbd>⌘</kbd> <kbd>&#92;</kbd>) junta o que você precisa para conferir o trabalho do agente sem sair dele. Uma linha de ícones alterna entre **Alterações**, **Código**, **Busca**, **Notas** e **Detalhes**. A divisória entre o terminal e o painel é arrastável.
 
 ## Código
 

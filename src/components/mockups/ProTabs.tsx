@@ -57,9 +57,9 @@ export function ProTabs() {
               )
             }
           />
-          <div className={x.split} style={{ ["--side" as string]: 440, ["--h" as string]: 360 }}>
+          <div className={x.split} style={{ ["--side" as string]: 440, ["--h" as string]: 330 }}>
             <div className={x.splitMain}>
-              <Terminal lines={tab === "verify" ? (t.raw("verify.lines") as TermLine[]) : lines} rows={13} />
+              <Terminal lines={tab === "verify" ? (t.raw("verify.lines") as TermLine[]) : lines} rows={8} />
             </div>
             <div className={x.sideFill}>
               <div className={x.panelTabs}>

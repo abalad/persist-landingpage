@@ -20,21 +20,13 @@
 
 .featured {
   background: #11151c;
+  box-shadow: inset 0 2px 0 var(--color-accent);
 }
 
 .top {
   display: grid;
   gap: 6px;
   min-height: 0;
-}
-
-.marker {
-  color: var(--color-accent);
-  font-size: var(--tiny);
-}
-
-.markerSpace {
-  visibility: hidden;
 }
 
 .name {
@@ -159,9 +151,5 @@
 
   .tagline {
     min-height: 0;
-  }
-
-  .markerSpace {
-    display: none;
   }
 }

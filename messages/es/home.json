@@ -9,7 +9,8 @@
       "other": "Descargar Persist"
     },
     "account": "Crear cuenta",
-    "note": "El núcleo es gratis y funciona sin cuenta. Los primeros builds públicos salen pronto."
+    "note": "El núcleo es gratis y funciona sin cuenta. Los primeros builds públicos salen pronto.",
+    "crashLink": "Mira lo que hace Persist cuando la computadora se cuelga"
   },
   "agents": {
     "title": "Funciona con lo que ya usas",

@@ -310,6 +310,14 @@
   }
 }
 
+.frameTall {
+  min-height: calc(420 * var(--u));
+}
+
+.frameEditor {
+  min-height: calc(300 * var(--u));
+}
+
 /* side panel tabs */
 .panelTabs {
   display: flex;
@@ -579,7 +587,25 @@
     border-right: 0;
   }
 
+  .frameTall,
+  .frameEditor {
+    min-height: 0;
+  }
+
+  /* On a phone the numbers that prove the point wrap instead of being cut. */
+  .boxRow {
+    flex-wrap: wrap;
+  }
+
+  .boxTitle,
+  .boxSub {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
   .meters {
-    grid-template-columns: auto calc(60 * var(--u)) calc(32 * var(--u));
+    width: 100%;
+    grid-template-columns: auto minmax(0, 1fr) calc(36 * var(--u));
+    padding-left: calc(24 * var(--u));
   }
 }

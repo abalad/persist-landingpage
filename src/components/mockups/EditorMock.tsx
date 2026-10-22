@@ -36,7 +36,7 @@ export function EditorMock() {
           </span>
         </span>
       </div>
-      <div style={{ display: "flex", minHeight: "calc(300 * var(--u))" }}>
+      <div className={x.frameEditor} style={{ display: "flex" }}>
         <div className={x.tree}>
           <div className={x.treeRow}>
             <ChevronDown /> <Folder /> src

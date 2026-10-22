@@ -5,7 +5,7 @@ group: work
 order: 3
 ---
 
-The session side panel (<kbd>⌘</kbd> <kbd>\</kbd>) brings together what you need to check the agent's work without leaving it. A row of icons switches between **Changes**, **Code**, **Search**, **Notes** and **Details**. You can drag the divider between the terminal and the panel.
+The session side panel (<kbd>⌘</kbd> <kbd>&#92;</kbd>) brings together what you need to check the agent's work without leaving it. A row of icons switches between **Changes**, **Code**, **Search**, **Notes** and **Details**. You can drag the divider between the terminal and the panel.
 
 ## Code
 
