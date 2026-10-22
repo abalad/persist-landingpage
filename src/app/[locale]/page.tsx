@@ -8,6 +8,7 @@ import { Companies } from "@/components/home/Companies";
 import { FaqSection } from "@/components/home/FaqSection";
 import { Feature } from "@/components/home/Feature";
 import { Hero } from "@/components/home/Hero";
+import { Studio } from "@/components/home/Studio";
 import { AccountsMock } from "@/components/mockups/AccountsMock";
 import { CrashDemo } from "@/components/mockups/CrashDemo";
 import { EditorMock } from "@/components/mockups/EditorMock";
@@ -44,6 +45,7 @@ function HomeContent() {
     <>
       <Hero />
       <AgentsStrip />
+      <Studio />
       <div id="product" />
       <Feature id="recovery" title={t("recovery.title")} body={t("recovery.body")} link={{ href: "/docs/sessions-and-recovery", label: t("recovery.link") }}>
         <CrashDemo />

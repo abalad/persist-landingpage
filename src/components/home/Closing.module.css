@@ -3,9 +3,14 @@
   text-align: center;
 }
 
-.icon {
-  margin: 0 auto 28px;
-  border-radius: 14px;
+/* The app's 3D studio, rendered on the site's own ground, melting into it at the edges. */
+.studio {
+  display: block;
+  width: min(880px, 100%);
+  height: auto;
+  margin: 0 auto 8px;
+  -webkit-mask-image: radial-gradient(closest-side, #000 72%, transparent 100%);
+  mask-image: radial-gradient(closest-side, #000 72%, transparent 100%);
 }
 
 .title {

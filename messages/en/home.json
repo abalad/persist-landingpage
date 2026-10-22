@@ -29,6 +29,28 @@
       }
     ]
   },
+  "studio": {
+    "title": "Every agent in its place",
+    "body": "Projects, folders and sessions in one app, with what each agent is doing in plain sight.",
+    "items": [
+      {
+        "title": "One project, the whole product",
+        "body": "Front end, back end, app and landing page of one product stay together, each in its own folder."
+      },
+      {
+        "title": "Every session in view",
+        "body": "Terminals and agents in tabs, each one saying what it is doing right now."
+      },
+      {
+        "title": "Know when they need you",
+        "body": "When an agent asks for permission or finishes, you see it at once and answer right there."
+      },
+      {
+        "title": "Commands in one click",
+        "body": "Persisty reads each folder's commands, like pnpm dev and the tests, and runs them when you ask."
+      }
+    ]
+  },
   "recovery": {
     "title": "Sessions that come back after a crash",
     "body": "Every terminal runs in a supervisor apart from the window. If the app quits or freezes, nothing stops. If the computer restarts, Persisty relaunches the sessions, resumes the Claude Code conversations and shows a report of what came back and what didn't.",

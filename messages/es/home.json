@@ -29,6 +29,28 @@
       }
     ]
   },
+  "studio": {
+    "title": "Cada agente en su lugar",
+    "body": "Proyectos, carpetas y sesiones en una sola app, con lo que hace cada agente a la vista.",
+    "items": [
+      {
+        "title": "Un proyecto, el producto entero",
+        "body": "Front, back, app y landing del mismo producto quedan juntos, cada uno en su carpeta."
+      },
+      {
+        "title": "Cada sesión a la vista",
+        "body": "Terminales y agentes en pestañas, cada uno diciendo lo que está haciendo ahora."
+      },
+      {
+        "title": "Sabe cuándo te necesitan",
+        "body": "Cuando un agente pide permiso o termina, lo ves al instante y respondes ahí mismo."
+      },
+      {
+        "title": "Comandos con un clic",
+        "body": "Persisty lee los comandos de cada carpeta, como pnpm dev y las pruebas, y los ejecuta cuando lo pides."
+      }
+    ]
+  },
   "recovery": {
     "title": "Sesiones que vuelven después de un cuelgue",
     "body": "Cada terminal corre en un supervisor separado de la ventana. Si la app se cierra o se cuelga, nada se detiene. Si la computadora se reinicia, Persisty relanza las sesiones, retoma las conversaciones de Claude Code y muestra en un informe qué volvió y qué no.",
