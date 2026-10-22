@@ -1,0 +1,16 @@
+.section {
+  padding-block: var(--section-y) 0;
+}
+
+.rule {
+  border-top: 1px solid var(--site-hairline);
+}
+
+.visual {
+  margin-top: clamp(40px, 6vw, 64px);
+}
+
+.narrow {
+  max-width: 960px;
+  margin-inline: auto;
+}

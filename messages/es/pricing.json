@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Precios",
+    "description": "Gratis sin cuenta, Pro por US$ 9,90 al mes, Team por US$ 19,90 por persona y Enterprise a consultar."
+  },
+  "title": "Planes y precios",
+  "body": "El núcleo de Persist es gratis y no pide cuenta. Los planes pagos desbloquean lo que deja al agente trabajar sin ti y, para equipos, el control para quien paga.",
+  "currency": "Precios en dólares estadounidenses.",
+  "opening": "Las suscripciones abren pronto.",
+  "includes": "Todo lo de {plan}, más:",
+  "mostPicked": "Para quien usa agentes todos los días",
+  "plans": {
+    "free": {
+      "name": "Gratis",
+      "tagline": "Para organizarte y no perder nada, sin cuenta.",
+      "per": "para siempre",
+      "cta": "Descargar"
+    },
+    "pro": {
+      "name": "Pro",
+      "tagline": "Para dejar al agente trabajando sin ti.",
+      "per": "al mes",
+      "cta": "Suscribirse a Pro"
+    },
+    "team": {
+      "name": "Team",
+      "tagline": "Para equipos que comparten cuentas de IA.",
+      "per": "por persona, al mes",
+      "cta": "Suscribirse a Team"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "tagline": "Para empresas con exigencias de seguridad e infraestructura propia.",
+      "price": "A consultar",
+      "per": "a medida",
+      "cta": "Habla con nosotros"
+    }
+  },
+  "features": {
+    "projects": "Proyectos con varios workspaces",
+    "persistentSessions": "Sesiones persistentes en un supervisor propio",
+    "recovery": "Recuperación después de un cuelgue o reinicio",
+    "agentStates": "Estado de cada agente por hooks",
+    "editorGit": "Editor, cambios de git y notas",
+    "usage": "Gasto por sesión y cuota de 5 h y 7 d en vivo",
+    "networkLog": "Registro de cada llamada de red",
+    "noAccount": "Sin cuenta y sin internet",
+    "accountRotation": "Varias cuentas de Claude Code con rotación",
+    "requestQueue": "Cola de pedidos por cuota o por horario",
+    "restorePoints": "Un punto de restauración por pedido",
+    "verifyOnFinish": "Verificación al terminar",
+    "worktrees": "Carpeta propia por sesión (git worktree)",
+    "offlineLicense": "Licencia válida 14 días sin conexión, en 5 equipos",
+    "growth": "Métricas del negocio (Growth)",
+    "teamBilling": "Cobro por persona, en una sola factura",
+    "teamBoard": "Tablero del equipo",
+    "finops": "Gasto de IA por proyecto, modelo y cuenta",
+    "policies": "Políticas con auditoría",
+    "sso": "SSO y SCIM",
+    "modelGateway": "Gateway de modelos",
+    "selfHost": "Persist Cloud en tu infraestructura",
+    "sourceReview": "Código fuente para auditoría, bajo confidencialidad"
+  },
+  "compare": {
+    "title": "Compara los planes",
+    "feature": "Función",
+    "yes": "Incluido",
+    "no": "No incluido"
+  },
+  "faq": {
+    "title": "Dudas sobre los planes",
+    "items": [
+      {
+        "q": "¿El plan gratuito vence?",
+        "a": "No. Proyectos, sesiones persistentes, recuperación, estados de los agentes, editor, git y uso de IA siguen gratis, sin cuenta."
+      },
+      {
+        "q": "¿Por qué el precio está en dólares?",
+        "a": "Porque la mayor parte de lo que ya paga quien usa agentes está en dólares, y así el precio es el mismo en todas partes."
+      },
+      {
+        "q": "¿Qué pasa si dejo de pagar Pro?",
+        "a": "Persist vuelve al plan gratuito. No se pierde nada: los puntos de restauración guardados se pueden seguir restaurando y los pedidos que ya estaban en la cola se siguen entregando."
+      },
+      {
+        "q": "¿Necesito internet para usar Pro?",
+        "a": "No todo el tiempo. La licencia está firmada y vale 14 días sin conexión; la app la renueva sola cuando hay red."
+      },
+      {
+        "q": "¿En cuántas computadoras puedo usarlo?",
+        "a": "En hasta 5 equipos por cuenta."
+      },
+      {
+        "q": "¿Cómo funciona Enterprise?",
+        "a": "Acordamos con tu empresa lo que necesita: SSO, instalación propia, gateway de modelos y acceso al código fuente bajo confidencialidad. Estas funciones todavía están planificadas."
+      }
+    ]
+  }
+}

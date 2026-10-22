@@ -1,0 +1,32 @@
+.closing {
+  padding-top: var(--section-y);
+  text-align: center;
+}
+
+.icon {
+  margin: 0 auto 28px;
+  border-radius: 14px;
+}
+
+.title {
+  font-size: var(--display-1);
+  font-weight: 330;
+  font-variation-settings: "wdth" 106;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+}
+
+.body {
+  max-width: 44ch;
+  margin: 18px auto 0;
+  color: var(--site-muted);
+  font-size: var(--lead);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}

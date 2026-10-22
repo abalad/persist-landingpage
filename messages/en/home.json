@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "Persist keeps your AI agents running, organised by project.",
+    "body": "Claude Code and Codex sessions that come back after a crash, a place for every project, and several accounts that take turns without you switching logins.",
+    "download": {
+      "mac": "Download for macOS",
+      "windows": "Download for Windows",
+      "linux": "Download for Linux",
+      "other": "Download Persist"
+    },
+    "account": "Create account",
+    "note": "The core is free and works without an account. The first public builds are coming soon."
+  },
+  "agents": {
+    "title": "Works with what you already use",
+    "items": [
+      {
+        "name": "Claude Code",
+        "detail": "States from hooks, resume after a restart, several accounts."
+      },
+      {
+        "name": "Codex",
+        "detail": "Persistent sessions and states. Resume not confirmed yet."
+      },
+      {
+        "name": "Any CLI",
+        "detail": "zsh, bash, pnpm dev: whatever runs in the terminal stays alive."
+      }
+    ]
+  },
+  "recovery": {
+    "title": "Sessions that come back after a crash",
+    "body": "Every terminal runs in a supervisor apart from the window. If the app quits or freezes, nothing stops. If the computer restarts, Persist relaunches the sessions, resumes the Claude Code conversations and shows a report of what came back and what didn't.",
+    "link": "How recovery works"
+  },
+  "projects": {
+    "title": "A place for every project",
+    "body": "Projects on top, workspaces (folders and repositories) inside them, sessions as tabs. The sidebar shows which project has an agent waiting for you, and ⌘1 to ⌘9 switch projects without hunting for windows.",
+    "link": "Projects and workspaces"
+  },
+  "accounts": {
+    "title": "Several Claude Code accounts, no logging in and out",
+    "body": "Connect your personal account and your company's, or as many as you have. Persist follows each one's 5-hour and weekly windows live, and every new session goes to the account with the most room. An account above 90% sits out until it renews.",
+    "link": "AI accounts and rotation"
+  },
+  "states": {
+    "title": "You know which agent needs you",
+    "body": "Working, waiting for you, asking for permission, stopped. The state comes from Claude Code's own hooks, not from guessing at what is on screen. No agent spends an hour waiting for a “yes” you never saw.",
+    "link": "Agents and states"
+  },
+  "pro": {
+    "title": "Ask, walk away, and the work goes on",
+    "body": "The queue delivers your request when the agent is free or the quota renews. Every request saves a restore point, the tests run on their own when the agent finishes, and each session can have its own folder.",
+    "link": "Pro features"
+  },
+  "editor": {
+    "title": "Editor, git and notes in the same window",
+    "body": "Open the file the agent touched, read the diff, commit and jot down what's left without leaving the session. Syntax highlighting, project-wide search and git marks in the gutter.",
+    "link": "Editor and changes"
+  },
+  "privacy": {
+    "title": "Your code stays on your machine",
+    "body": "Persist works without an account and without internet. When it does reach out (Claude quota, licence, account), the call shows up in Settings › Network with destination, reason and size. Code, terminal output and prompts never leave.",
+    "link": "Security and privacy"
+  },
+  "companies": {
+    "title": "For teams and companies",
+    "body": "What we are building for whoever pays the team's AI accounts. Each item says where it stands.",
+    "items": [
+      {
+        "title": "Metadata, never code",
+        "body": "The server receives no code, terminal output or prompts. True today and for everything that comes next.",
+        "status": "available"
+      },
+      {
+        "title": "Per-person billing on one invoice",
+        "body": "Team at US$ 19.90 per person per month, with all of Pro for each of them.",
+        "status": "in-development"
+      },
+      {
+        "title": "Team board",
+        "body": "Who is running what right now, and which agent is stuck waiting for someone.",
+        "status": "planned"
+      },
+      {
+        "title": "AI spend per project",
+        "body": "Usage aggregated by day, project, model and account, with no individual productivity scores.",
+        "status": "planned"
+      },
+      {
+        "title": "Policies with an audit trail",
+        "body": "Rules enforced through the agents' hooks and a log that cannot be erased.",
+        "status": "planned"
+      },
+      {
+        "title": "SSO, SCIM and on-premises",
+        "body": "Company sign-in, provisioned accounts and Persist Cloud running on your own infrastructure.",
+        "status": "planned"
+      }
+    ],
+    "cta": "Talk to us"
+  },
+  "pricing": {
+    "title": "Start for free",
+    "body": "The core is free and asks for no account. Pro unlocks what lets the agent work without you, for {price} a month.",
+    "cta": "See plans and pricing"
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Is Persist free?",
+        "a": "The core is: projects, workspaces, persistent sessions, recovery, agent states, editor, git and AI usage, with no account and no time limit. Pro costs US$ 9.90 a month and adds account rotation, the request queue, restore points, check on finish and a folder of its own per session."
+      },
+      {
+        "q": "Do I need an account?",
+        "a": "Only for Pro and the team plans. The free plan works without an account and without internet."
+      },
+      {
+        "q": "Does my code go through your servers?",
+        "a": "No. Code, terminal output and prompts stay on your machine. The app only reaches out to read Claude Code's quota, renew the licence and sign in, and every call shows up in Settings › Network."
+      },
+      {
+        "q": "Which agents work?",
+        "a": "Claude Code has full support: states from hooks, resume after a restart and several accounts. Codex has sessions and states; its resume is not confirmed yet. Any other terminal program runs in a persistent session."
+      },
+      {
+        "q": "What happens if the computer restarts?",
+        "a": "On launch, Persist relaunches every session that can come back, resumes the Claude Code conversation where it stopped and shows a report of what came back, what failed and why. It never says something came back when it didn't."
+      },
+      {
+        "q": "Can I use several Claude accounts?",
+        "a": "Persist doesn't create accounts or touch limits. It uses the accounts you already have, such as your personal and your company's, through Claude Code's own sign-in, and picks which one opens each new session. Following each account's terms stays with you."
+      },
+      {
+        "q": "Does it run on Windows and Linux?",
+        "a": "Persist was born on macOS, where it is used every day. Windows and Linux builds exist but have not been tested on real machines yet; they will ship as a preview."
+      },
+      {
+        "q": "Does it work offline?",
+        "a": "Yes. The free plan needs no network. Paid plans use a signed licence that stays valid for 14 days without a connection."
+      },
+      {
+        "q": "When can I download it?",
+        "a": "Public builds ship as soon as signing and notarisation are ready. Create an account and tick “Notify me” to hear about it."
+      }
+    ]
+  },
+  "closing": {
+    "title": "Try Persist",
+    "body": "Download it when it ships, or create your account now and hear about the launch first.",
+    "account": "Create account",
+    "download": "Go to download"
+  }
+}

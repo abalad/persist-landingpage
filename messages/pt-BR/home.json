@@ -1,0 +1,155 @@
+{
+  "hero": {
+    "title": "Persist mantém seus agentes de IA rodando, organizados por projeto.",
+    "body": "Sessões do Claude Code e do Codex que voltam depois de um travamento, um lugar para cada projeto e várias contas que se revezam sem você trocar login.",
+    "download": {
+      "mac": "Baixar para macOS",
+      "windows": "Baixar para Windows",
+      "linux": "Baixar para Linux",
+      "other": "Baixar o Persist"
+    },
+    "account": "Criar conta",
+    "note": "O núcleo é grátis e funciona sem conta. Os primeiros builds públicos saem em breve."
+  },
+  "agents": {
+    "title": "Funciona com o que você já usa",
+    "items": [
+      {
+        "name": "Claude Code",
+        "detail": "Estados pelos hooks, retomada depois de reiniciar, várias contas."
+      },
+      {
+        "name": "Codex",
+        "detail": "Sessões persistentes e estados. Retomada ainda não confirmada."
+      },
+      {
+        "name": "Qualquer CLI",
+        "detail": "zsh, bash, pnpm dev: o que rodar no terminal fica vivo."
+      }
+    ]
+  },
+  "recovery": {
+    "title": "Sessões que voltam depois de um travamento",
+    "body": "Cada terminal roda num supervisor separado da janela. Se o app fechar ou travar, nada para. Se o computador reiniciar, o Persist relança as sessões, retoma as conversas do Claude Code e mostra num relatório o que voltou e o que não deu.",
+    "link": "Como a recuperação funciona"
+  },
+  "projects": {
+    "title": "Um lugar para cada projeto",
+    "body": "Projetos em cima, workspaces (pastas e repositórios) dentro deles, sessões em abas. A barra lateral mostra qual projeto tem um agente esperando por você, e ⌘1 a ⌘9 troca de projeto sem caçar janela.",
+    "link": "Projetos e workspaces"
+  },
+  "accounts": {
+    "title": "Várias contas do Claude Code, sem trocar login",
+    "body": "Conecte a conta pessoal e a da empresa, ou quantas tiver. O Persist acompanha ao vivo a janela de 5 horas e a semanal de cada uma, e cada sessão nova vai para a conta com mais folga. Conta acima de 90% fica de fora até renovar.",
+    "link": "Contas de IA e rodízio"
+  },
+  "states": {
+    "title": "Você sabe qual agente precisa de você",
+    "body": "Trabalhando, aguardando você, pedindo permissão, parado. O estado vem dos hooks do próprio Claude Code, não de um palpite sobre o que aparece na tela. Nenhum agente passa uma hora esperando um “sim” que você não viu.",
+    "link": "Agentes e estados"
+  },
+  "pro": {
+    "title": "Peça, saia, e o trabalho continua",
+    "body": "A fila entrega o pedido quando o agente ficar livre ou a quota renovar. Cada pedido grava um ponto de restauração, os testes rodam sozinhos quando o agente termina, e cada sessão pode ter a própria pasta.",
+    "link": "Recursos do Pro"
+  },
+  "editor": {
+    "title": "Editor, git e notas na mesma janela",
+    "body": "Abra o arquivo que o agente mexeu, veja o diff, faça o commit e anote o que falta sem sair da sessão. Destaque por linguagem, busca no projeto e marcas do git na margem.",
+    "link": "Editor e alterações"
+  },
+  "privacy": {
+    "title": "Seu código não sai da sua máquina",
+    "body": "O Persist funciona sem conta e sem internet. Quando fala com fora (quota do Claude, licença, conta), a chamada aparece em Configurações › Rede com destino, motivo e tamanho. Código, saída do terminal e prompts nunca vão.",
+    "link": "Segurança e privacidade"
+  },
+  "companies": {
+    "title": "Para times e empresas",
+    "body": "O que estamos construindo para quem paga as contas de IA do time. Cada item diz em que pé está.",
+    "items": [
+      {
+        "title": "Metadados, nunca código",
+        "body": "O servidor não recebe código, saída de terminal nem prompts. Vale hoje e vale para tudo que vier.",
+        "status": "available"
+      },
+      {
+        "title": "Cobrança por pessoa, numa fatura só",
+        "body": "Team a US$ 19,90 por pessoa por mês, com tudo do Pro para cada uma.",
+        "status": "in-development"
+      },
+      {
+        "title": "Quadro do time",
+        "body": "Quem está rodando o quê agora, e qual agente está parado esperando alguém.",
+        "status": "planned"
+      },
+      {
+        "title": "Gasto de IA por projeto",
+        "body": "Uso agregado por dia, projeto, modelo e conta, sem métrica individual de produtividade.",
+        "status": "planned"
+      },
+      {
+        "title": "Políticas com auditoria",
+        "body": "Regras aplicadas pelos hooks dos agentes e um registro que não se apaga.",
+        "status": "planned"
+      },
+      {
+        "title": "SSO, SCIM e instalação na empresa",
+        "body": "Login da empresa, contas provisionadas e o Persist Cloud rodando na sua infraestrutura.",
+        "status": "planned"
+      }
+    ],
+    "cta": "Fale com a gente"
+  },
+  "pricing": {
+    "title": "Comece grátis",
+    "body": "O núcleo é grátis e não pede conta. O Pro libera o que deixa o agente trabalhar sem você, por {price} por mês.",
+    "cta": "Ver planos e preços"
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "q": "O Persist é de graça?",
+        "a": "O núcleo é: projetos, workspaces, sessões persistentes, recuperação, estados dos agentes, editor, git e uso de IA, sem conta e sem prazo. O Pro custa US$ 9,90 por mês e libera rodízio de contas, fila de pedidos, pontos de restauração, verificação ao terminar e pasta própria por sessão."
+      },
+      {
+        "q": "Preciso criar conta?",
+        "a": "Só para o Pro e para os planos de time. O plano gratuito funciona sem conta e sem internet."
+      },
+      {
+        "q": "Meu código passa pelos servidores de vocês?",
+        "a": "Não. Código, saída do terminal e prompts ficam na sua máquina. O app só fala com fora para ler a quota do Claude Code, renovar a licença e entrar na conta, e cada chamada aparece em Configurações › Rede."
+      },
+      {
+        "q": "Quais agentes funcionam?",
+        "a": "O Claude Code tem suporte completo: estados pelos hooks, retomada depois de reiniciar e várias contas. O Codex tem sessões e estados; a retomada dele ainda não foi confirmada. Qualquer outro programa de terminal roda numa sessão persistente."
+      },
+      {
+        "q": "O que acontece se o computador reiniciar?",
+        "a": "Ao abrir, o Persist relança cada sessão que pode voltar, retoma a conversa do Claude Code de onde parou e mostra um relatório com o que voltou, o que falhou e por quê. Ele nunca diz que algo voltou sem ter voltado."
+      },
+      {
+        "q": "Posso usar várias contas do Claude?",
+        "a": "O Persist não cria contas nem mexe em limites. Ele usa as contas que você já tem, como a pessoal e a da empresa, com o login do próprio Claude Code, e escolhe qual delas abre cada sessão nova. Seguir os termos de cada conta continua com você."
+      },
+      {
+        "q": "Funciona no Windows e no Linux?",
+        "a": "O Persist nasceu no macOS, onde é usado todos os dias. Já existem builds para Windows e Linux, ainda sem testes em máquinas reais, e eles vão sair como prévia."
+      },
+      {
+        "q": "Funciona sem internet?",
+        "a": "Sim. O plano gratuito não precisa de rede. Os planos pagos usam uma licença assinada que vale 14 dias sem conexão."
+      },
+      {
+        "q": "Quando posso baixar?",
+        "a": "Os builds públicos saem assim que a assinatura e a notarização estiverem prontas. Crie uma conta e marque “Avise-me” para receber o aviso."
+      }
+    ]
+  },
+  "closing": {
+    "title": "Experimente o Persist",
+    "body": "Baixe quando sair, ou crie a conta agora e receba o aviso no lançamento.",
+    "account": "Criar conta",
+    "download": "Ir para o download"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Pricing",
+    "description": "Free with no account, Pro for US$ 9.90 a month, Team for US$ 19.90 per person and Enterprise by contact."
+  },
+  "title": "Plans and pricing",
+  "body": "Persist's core is free and asks for no account. Paid plans unlock what lets the agent work without you and, for teams, control for whoever pays.",
+  "currency": "Prices in US dollars.",
+  "opening": "Subscriptions open soon.",
+  "includes": "Everything in {plan}, plus:",
+  "mostPicked": "For people who use agents every day",
+  "plans": {
+    "free": {
+      "name": "Free",
+      "tagline": "To stay organised and lose nothing, with no account.",
+      "per": "forever",
+      "cta": "Download"
+    },
+    "pro": {
+      "name": "Pro",
+      "tagline": "To leave the agent working without you.",
+      "per": "per month",
+      "cta": "Subscribe to Pro"
+    },
+    "team": {
+      "name": "Team",
+      "tagline": "For teams that share AI accounts.",
+      "per": "per person, per month",
+      "cta": "Subscribe to Team"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "tagline": "For companies with security requirements and their own infrastructure.",
+      "price": "By contact",
+      "per": "tailored",
+      "cta": "Talk to us"
+    }
+  },
+  "features": {
+    "projects": "Projects with several workspaces",
+    "persistentSessions": "Persistent sessions in their own supervisor",
+    "recovery": "Recovery after a freeze or a restart",
+    "agentStates": "Each agent's state from hooks",
+    "editorGit": "Editor, git changes and notes",
+    "usage": "Spend per session and live 5 h and 7 d quota",
+    "networkLog": "A log of every network call",
+    "noAccount": "No account and no internet",
+    "accountRotation": "Several Claude Code accounts with rotation",
+    "requestQueue": "Request queue by quota or by time",
+    "restorePoints": "A restore point for every request",
+    "verifyOnFinish": "Check on finish",
+    "worktrees": "A folder of its own per session (git worktree)",
+    "offlineLicense": "Licence valid 14 days offline, on 5 devices",
+    "growth": "Business metrics (Growth)",
+    "teamBilling": "Per-person billing on one invoice",
+    "teamBoard": "Team board",
+    "finops": "AI spend by project, model and account",
+    "policies": "Policies with an audit trail",
+    "sso": "SSO and SCIM",
+    "modelGateway": "Model gateway",
+    "selfHost": "Persist Cloud on your infrastructure",
+    "sourceReview": "Source code for audit, under NDA"
+  },
+  "compare": {
+    "title": "Compare plans",
+    "feature": "Feature",
+    "yes": "Included",
+    "no": "Not included"
+  },
+  "faq": {
+    "title": "Questions about plans",
+    "items": [
+      {
+        "q": "Does the free plan expire?",
+        "a": "No. Projects, persistent sessions, recovery, agent states, editor, git and AI usage stay free, with no account."
+      },
+      {
+        "q": "Why are prices in dollars?",
+        "a": "Most of what people who use agents already pay is in dollars, and this way the price is the same everywhere."
+      },
+      {
+        "q": "What happens if I stop paying for Pro?",
+        "a": "Persist goes back to the free plan. Nothing is lost: saved restore points can still be restored and requests already in the queue are still delivered."
+      },
+      {
+        "q": "Do I need internet to use Pro?",
+        "a": "Not all the time. The licence is signed and valid for 14 days offline; the app renews it on its own when there is a connection."
+      },
+      {
+        "q": "On how many computers can I use it?",
+        "a": "Up to 5 devices per account."
+      },
+      {
+        "q": "How does Enterprise work?",
+        "a": "We agree with your company on what it needs: SSO, your own installation, a model gateway and access to the source code under NDA. These features are still planned."
+      }
+    ]
+  }
+}

@@ -75,7 +75,7 @@ a {
   text-decoration: none;
 }
 
-a:where(:not([class])) {
+.prose a {
   color: var(--color-accent);
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -83,7 +83,7 @@ a:where(:not([class])) {
   text-decoration-color: rgba(92, 200, 176, 0.45);
 }
 
-a:where(:not([class])):hover {
+.prose a:hover {
   text-decoration-color: currentColor;
 }
 

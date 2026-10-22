@@ -1,0 +1,40 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 64px;
+  margin: clamp(40px, 6vw, 56px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 16px;
+  padding: 22px 0;
+  border-top: 1px solid var(--site-hairline);
+}
+
+.item h3 {
+  color: var(--site-heading);
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+.item p {
+  grid-column: 1 / -1;
+  max-width: 52ch;
+  color: var(--site-muted);
+  font-size: var(--small);
+  line-height: 1.6;
+}
+
+.cta {
+  margin-top: 36px;
+}
+
+@media (max-width: 820px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}

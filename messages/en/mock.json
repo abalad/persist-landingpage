@@ -1,0 +1,252 @@
+{
+  "states": {
+    "working": "Working",
+    "waiting": "Waiting for you",
+    "permission": "Permission pending",
+    "idle": "Idle",
+    "running": "Running · pnpm",
+    "ended": "Ended",
+    "recovering": "Recovering"
+  },
+  "sessions": {
+    "review": "review",
+    "catalog": "catalog",
+    "search": "search"
+  },
+  "workspaces": {
+    "title": "Workspaces",
+    "add": "Add workspace",
+    "none": "No sessions",
+    "active": "{count, plural, one {# active session} other {# active sessions}}",
+    "now": "now",
+    "minutes": "{count} min ago",
+    "loose": "Loose"
+  },
+  "status": {
+    "spend": "Spend",
+    "ctx": "Ctx",
+    "restore": "Restore {count}"
+  },
+  "hero": {
+    "label": "The Persist window with the Rota project open: three sessions, one working, one asking for permission and a dev server running.",
+    "lines": [
+      {
+        "kind": "prompt",
+        "text": "Add shipping by postcode to the API"
+      },
+      {
+        "kind": "tool",
+        "text": "Read(src/shipping/table.ts)"
+      },
+      {
+        "kind": "result",
+        "text": "142 lines"
+      },
+      {
+        "kind": "tool",
+        "text": "Edit(src/shipping/quote.ts)"
+      },
+      {
+        "kind": "result",
+        "diff": {
+          "add": "+38",
+          "del": "−4"
+        }
+      },
+      {
+        "kind": "tool",
+        "text": "Bash(pnpm test shipping)"
+      },
+      {
+        "kind": "result",
+        "text": "14 tests passed"
+      },
+      {
+        "kind": "answer",
+        "text": "Shipping by postcode is in, with tests. Wire it into checkout?"
+      }
+    ]
+  },
+  "crash": {
+    "label": "Demo: Persist sessions coming back after the app closes or the computer crashes.",
+    "closeApp": "Quit Persist",
+    "crashComputer": "Crash the computer",
+    "again": "Run it again",
+    "hint": "Pick what happens and watch what Persist does.",
+    "black": "The computer restarted",
+    "opening": "Opening Persist…",
+    "closed": "The app quit. The processes did not.",
+    "report": "Restore report",
+    "summary": "{recovered} recovered · {failed} failed · {skipped} skipped",
+    "reattachedSummary": "{count} reattached",
+    "outcome": {
+      "reattached": "Reattached",
+      "respawned": "Relaunched",
+      "resumed": "Agent resumed",
+      "unverified": "resume not confirmed",
+      "pending": "Pending"
+    },
+    "running": "Before: four sessions working"
+  },
+  "projects": {
+    "label": "Persist with the project and agent lists open: every project shows what needs you.",
+    "projectsTitle": "Projects",
+    "agentsTitle": "Agents",
+    "filter": "All",
+    "rota": "1 waiting for you",
+    "quintal": "2 working",
+    "bussola": "nothing running",
+    "permissionLines": [
+      {
+        "kind": "tool",
+        "text": "Bash(pnpm prisma migrate dev)"
+      },
+      {
+        "kind": "blank"
+      },
+      {
+        "kind": "warn",
+        "text": "Claude wants to run: pnpm prisma migrate dev"
+      },
+      {
+        "kind": "choiceActive",
+        "text": "1. Yes"
+      },
+      {
+        "kind": "choice",
+        "text": "2. Yes, and don't ask again in this folder"
+      },
+      {
+        "kind": "choice",
+        "text": "3. No, and tell Claude what to do"
+      }
+    ]
+  },
+  "accounts": {
+    "label": "Settings › AI accounts: three Claude Code accounts with their 5-hour and 7-day windows, and rotation turned on.",
+    "title": "AI accounts",
+    "group": "Claude Code",
+    "rotation": "Rotate between accounts",
+    "rotationHint": "Each new session goes to the account with the most room in its 5-hour window. Accounts above 90% sit out until they renew.",
+    "thisComputer": "This computer",
+    "sitsOut": "sits out until renewal",
+    "renews": "renews in {time}",
+    "newSession": "New Claude Code session",
+    "goesTo": "goes to",
+    "because": "the one with most room now"
+  },
+  "pro": {
+    "label": "The session side panel with the Pro plan features.",
+    "tabs": {
+      "queue": "Request queue",
+      "restore": "Restore points",
+      "verify": "Check on finish",
+      "worktree": "Own folder"
+    },
+    "queue": {
+      "text": "Request for the agent",
+      "draft": "Review the shipping tests and fix whatever fails",
+      "when": "When to send",
+      "whenValue": "When the 5-hour window renews (14:20)",
+      "add": "Queue it",
+      "waiting": "Queued",
+      "item1": "Raise coupon module coverage to 80%",
+      "item1When": "when the 5-hour window renews (14:20)",
+      "item2": "Update the README with the new shipping endpoint",
+      "item2When": "as soon as the agent is free",
+      "rule": "One at a time, in order, only when the agent is waiting for its next request."
+    },
+    "restore": {
+      "point1": "Add shipping by postcode",
+      "point1Meta": "10:42 · reverts 3 files and removes 1 created later",
+      "point2": "Change the cart layout",
+      "point2Meta": "09:58 · reverts 5 files",
+      "point3": "Fix the total's rounding",
+      "point3Meta": "yesterday · reverts 1 file",
+      "action": "Restore this point",
+      "note": "Every request to the agent saves the folder's state before it starts."
+    },
+    "verify": {
+      "chip": "Check",
+      "passed": "passed",
+      "failed": "failed (1)",
+      "command": "pnpm test",
+      "lines": [
+        {
+          "kind": "muted",
+          "text": "$ pnpm test"
+        },
+        {
+          "kind": "plain",
+          "text": " ✓ shipping/quote.test.ts (9)"
+        },
+        {
+          "kind": "plain",
+          "text": " ✓ shipping/table.test.ts (5)"
+        },
+        {
+          "kind": "plain",
+          "text": " ✓ checkout/total.test.ts (12)"
+        },
+        {
+          "kind": "blank"
+        },
+        {
+          "kind": "answer",
+          "text": " Test Files  3 passed (3)"
+        },
+        {
+          "kind": "answer",
+          "text": "      Tests  26 passed (26)"
+        }
+      ],
+      "note": "Runs on its own when the agent stops after changing files."
+    },
+    "worktree": {
+      "title": "New session in its own folder",
+      "branch": "Branch",
+      "branchValue": "persist/shipping-postcode",
+      "folder": "Folder",
+      "folderValue": "this session's only, outside your checkout",
+      "close": "When the session closes",
+      "keep": "Keep the folder",
+      "leave": "Remove it",
+      "discard": "Remove it and discard 2 uncommitted files",
+      "commits": "The branch keeps 3 commits and is never deleted."
+    }
+  },
+  "editor": {
+    "label": "The editor and the git changes tab beside the terminal.",
+    "changes": "Changes",
+    "staged": "Staged",
+    "unstaged": "Not staged",
+    "commit": "Commit",
+    "message": "Add shipping by postcode"
+  },
+  "network": {
+    "label": "Settings › Network: the list of calls Persist made to the outside, with destination, reason and size.",
+    "title": "Network",
+    "group": "Since the app opened",
+    "rows": [
+      {
+        "host": "api.anthropic.com",
+        "why": "Claude Code quota (5 h and 7 d)",
+        "size": "0.3 KB sent · 1.1 KB received",
+        "time": "14:02"
+      },
+      {
+        "host": "api.anthropic.com",
+        "why": "Claude Code quota (5 h and 7 d)",
+        "size": "0.3 KB sent · 1.1 KB received",
+        "time": "14:01"
+      },
+      {
+        "host": "ytmpopebhdtnucdznfsz.supabase.co",
+        "why": "Renew the licence",
+        "size": "0.9 KB sent · 2.4 KB received",
+        "time": "13:12"
+      }
+    ],
+    "never": "Never: code, terminal output, prompts."
+  }
+}

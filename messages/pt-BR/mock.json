@@ -1,0 +1,252 @@
+{
+  "states": {
+    "working": "Trabalhando",
+    "waiting": "Aguardando você",
+    "permission": "Permissão pendente",
+    "idle": "Ocioso",
+    "running": "Executando · pnpm",
+    "ended": "Encerrada",
+    "recovering": "Recuperando"
+  },
+  "sessions": {
+    "review": "revisão",
+    "catalog": "catálogo",
+    "search": "busca"
+  },
+  "workspaces": {
+    "title": "Workspaces",
+    "add": "Adicionar workspace",
+    "none": "Nenhuma sessão",
+    "active": "{count, plural, one {# sessão ativa} other {# sessões ativas}}",
+    "now": "agora",
+    "minutes": "há {count} min",
+    "loose": "Avulsas"
+  },
+  "status": {
+    "spend": "Gasto",
+    "ctx": "Ctx",
+    "restore": "Restaurar {count}"
+  },
+  "hero": {
+    "label": "A janela do Persist com o projeto Rota aberto: três sessões, uma trabalhando, uma pedindo permissão e um servidor de desenvolvimento rodando.",
+    "lines": [
+      {
+        "kind": "prompt",
+        "text": "Adicione o cálculo de frete por CEP na API"
+      },
+      {
+        "kind": "tool",
+        "text": "Read(src/shipping/table.ts)"
+      },
+      {
+        "kind": "result",
+        "text": "142 linhas"
+      },
+      {
+        "kind": "tool",
+        "text": "Edit(src/shipping/quote.ts)"
+      },
+      {
+        "kind": "result",
+        "diff": {
+          "add": "+38",
+          "del": "−4"
+        }
+      },
+      {
+        "kind": "tool",
+        "text": "Bash(pnpm test shipping)"
+      },
+      {
+        "kind": "result",
+        "text": "14 testes passaram"
+      },
+      {
+        "kind": "answer",
+        "text": "Frete por CEP pronto, com testes. Ligo no checkout?"
+      }
+    ]
+  },
+  "crash": {
+    "label": "Demonstração: as sessões do Persist voltando depois de o app fechar ou de o computador travar.",
+    "closeApp": "Fechar o Persist",
+    "crashComputer": "Travar o computador",
+    "again": "Ver de novo",
+    "hint": "Escolha o que acontece e veja o que o Persist faz.",
+    "black": "O computador reiniciou",
+    "opening": "Abrindo o Persist…",
+    "closed": "O app fechou. Os processos, não.",
+    "report": "Relatório de restauração",
+    "summary": "{recovered} recuperadas · {failed} falhas · {skipped} ignoradas",
+    "reattachedSummary": "{count} reanexadas",
+    "outcome": {
+      "reattached": "Reanexada",
+      "respawned": "Relançada",
+      "resumed": "Agente retomado",
+      "unverified": "retomada não confirmada",
+      "pending": "Pendente"
+    },
+    "running": "Antes: quatro sessões trabalhando"
+  },
+  "projects": {
+    "label": "O Persist com a lista de projetos e de agentes aberta: cada projeto mostra o que precisa de você.",
+    "projectsTitle": "Projetos",
+    "agentsTitle": "Agentes",
+    "filter": "Todos",
+    "rota": "1 aguardando você",
+    "quintal": "2 trabalhando",
+    "bussola": "nada rodando",
+    "permissionLines": [
+      {
+        "kind": "tool",
+        "text": "Bash(pnpm prisma migrate dev)"
+      },
+      {
+        "kind": "blank"
+      },
+      {
+        "kind": "warn",
+        "text": "Claude quer executar: pnpm prisma migrate dev"
+      },
+      {
+        "kind": "choiceActive",
+        "text": "1. Sim"
+      },
+      {
+        "kind": "choice",
+        "text": "2. Sim, e não perguntar de novo nesta pasta"
+      },
+      {
+        "kind": "choice",
+        "text": "3. Não, e dizer o que fazer"
+      }
+    ]
+  },
+  "accounts": {
+    "label": "Configurações › Contas de IA: três contas do Claude Code com as janelas de 5 horas e 7 dias, e o rodízio ligado.",
+    "title": "Contas de IA",
+    "group": "Claude Code",
+    "rotation": "Rodízio entre contas",
+    "rotationHint": "Cada sessão nova vai para a conta com mais quota livre na janela de 5 h. Contas acima de 90% ficam de fora até renovar.",
+    "thisComputer": "Este computador",
+    "sitsOut": "fora até renovar",
+    "renews": "renova em {time}",
+    "newSession": "Nova sessão do Claude Code",
+    "goesTo": "vai para",
+    "because": "a de mais folga agora"
+  },
+  "pro": {
+    "label": "Painel lateral da sessão com os recursos do plano Pro.",
+    "tabs": {
+      "queue": "Fila de pedidos",
+      "restore": "Pontos de restauração",
+      "verify": "Verificar ao terminar",
+      "worktree": "Pasta própria"
+    },
+    "queue": {
+      "text": "Pedido para o agente",
+      "draft": "Revise os testes de frete e corrija o que falhar",
+      "when": "Quando enviar",
+      "whenValue": "Quando a janela de 5 h renovar (14:20)",
+      "add": "Pôr na fila",
+      "waiting": "Na fila",
+      "item1": "Suba a cobertura do módulo de cupons para 80%",
+      "item1When": "quando a janela de 5 h renovar (14:20)",
+      "item2": "Atualize o README com o novo endpoint de frete",
+      "item2When": "assim que o agente ficar livre",
+      "rule": "Um por vez, na ordem, só com o agente esperando o próximo pedido."
+    },
+    "restore": {
+      "point1": "Adicione o cálculo de frete por CEP",
+      "point1Meta": "10:42 · volta 3 arquivos e apaga 1 criado depois",
+      "point2": "Troque o layout do carrinho",
+      "point2Meta": "09:58 · volta 5 arquivos",
+      "point3": "Corrija o arredondamento do total",
+      "point3Meta": "ontem · volta 1 arquivo",
+      "action": "Restaurar este ponto",
+      "note": "Cada pedido ao agente grava o estado da pasta antes de ele começar."
+    },
+    "verify": {
+      "chip": "Verificação",
+      "passed": "passou",
+      "failed": "falhou (1)",
+      "command": "pnpm test",
+      "lines": [
+        {
+          "kind": "muted",
+          "text": "$ pnpm test"
+        },
+        {
+          "kind": "plain",
+          "text": " ✓ shipping/quote.test.ts (9)"
+        },
+        {
+          "kind": "plain",
+          "text": " ✓ shipping/table.test.ts (5)"
+        },
+        {
+          "kind": "plain",
+          "text": " ✓ checkout/total.test.ts (12)"
+        },
+        {
+          "kind": "blank"
+        },
+        {
+          "kind": "answer",
+          "text": " Test Files  3 passed (3)"
+        },
+        {
+          "kind": "answer",
+          "text": "      Tests  26 passed (26)"
+        }
+      ],
+      "note": "Roda sozinho quando o agente para depois de mudar arquivos."
+    },
+    "worktree": {
+      "title": "Nova sessão em pasta própria",
+      "branch": "Branch",
+      "branchValue": "persist/frete-cep",
+      "folder": "Pasta",
+      "folderValue": "só desta sessão, fora da sua cópia",
+      "close": "Ao fechar a sessão",
+      "keep": "A pasta fica",
+      "leave": "Sai",
+      "discard": "Sai e descarta 2 arquivos não commitados",
+      "commits": "O branch guarda 3 commits e nunca é apagado."
+    }
+  },
+  "editor": {
+    "label": "O editor e a aba de alterações do git ao lado do terminal.",
+    "changes": "Alterações",
+    "staged": "Preparadas",
+    "unstaged": "Não preparadas",
+    "commit": "Commit",
+    "message": "Adiciona frete por CEP"
+  },
+  "network": {
+    "label": "Configurações › Rede: a lista de chamadas que o Persist fez para fora, com destino, motivo e tamanho.",
+    "title": "Rede",
+    "group": "Desde que o app abriu",
+    "rows": [
+      {
+        "host": "api.anthropic.com",
+        "why": "Quota do Claude Code (5 h e 7 d)",
+        "size": "0,3 KB enviados · 1,1 KB recebidos",
+        "time": "14:02"
+      },
+      {
+        "host": "api.anthropic.com",
+        "why": "Quota do Claude Code (5 h e 7 d)",
+        "size": "0,3 KB enviados · 1,1 KB recebidos",
+        "time": "14:01"
+      },
+      {
+        "host": "ytmpopebhdtnucdznfsz.supabase.co",
+        "why": "Renovar a licença",
+        "size": "0,9 KB enviados · 2,4 KB recebidos",
+        "time": "13:12"
+      }
+    ],
+    "never": "Nunca: código, saída do terminal, prompts."
+  }
+}

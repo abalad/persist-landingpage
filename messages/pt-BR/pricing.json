@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Preços",
+    "description": "Gratuito sem conta, Pro por US$ 9,90 por mês, Team por US$ 19,90 por pessoa e Enterprise sob consulta."
+  },
+  "title": "Planos e preços",
+  "body": "O núcleo do Persist é grátis e não pede conta. Os planos pagos liberam o que deixa o agente trabalhar sem você e, para times, o controle de quem paga.",
+  "currency": "Preços em dólares americanos.",
+  "opening": "As assinaturas abrem em breve.",
+  "includes": "Tudo do {plan}, mais:",
+  "mostPicked": "Para quem usa agentes todo dia",
+  "plans": {
+    "free": {
+      "name": "Gratuito",
+      "tagline": "Para organizar e não perder nada, sem conta.",
+      "per": "para sempre",
+      "cta": "Baixar"
+    },
+    "pro": {
+      "name": "Pro",
+      "tagline": "Para deixar o agente trabalhando sem você.",
+      "per": "por mês",
+      "cta": "Assinar o Pro"
+    },
+    "team": {
+      "name": "Team",
+      "tagline": "Para times que dividem as contas de IA.",
+      "per": "por pessoa, por mês",
+      "cta": "Assinar o Team"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "tagline": "Para empresas com exigências de segurança e instalação própria.",
+      "price": "Sob consulta",
+      "per": "sob medida",
+      "cta": "Fale com a gente"
+    }
+  },
+  "features": {
+    "projects": "Projetos com vários workspaces",
+    "persistentSessions": "Sessões persistentes num supervisor próprio",
+    "recovery": "Recuperação depois de travar ou reiniciar",
+    "agentStates": "Estado de cada agente pelos hooks",
+    "editorGit": "Editor, alterações do git e notas",
+    "usage": "Gasto por sessão e quota de 5 h e 7 d ao vivo",
+    "networkLog": "Registro de toda chamada de rede",
+    "noAccount": "Sem conta e sem internet",
+    "accountRotation": "Várias contas do Claude Code com rodízio",
+    "requestQueue": "Fila de pedidos pela quota ou por horário",
+    "restorePoints": "Ponto de restauração a cada pedido",
+    "verifyOnFinish": "Verificação ao terminar",
+    "worktrees": "Pasta própria por sessão (git worktree)",
+    "offlineLicense": "Licença que vale 14 dias offline, em 5 aparelhos",
+    "growth": "Métricas do negócio (Growth)",
+    "teamBilling": "Cobrança por pessoa, numa fatura só",
+    "teamBoard": "Quadro do time",
+    "finops": "Gasto de IA por projeto, modelo e conta",
+    "policies": "Políticas com auditoria",
+    "sso": "SSO e SCIM",
+    "modelGateway": "Gateway de modelos",
+    "selfHost": "Persist Cloud na sua infraestrutura",
+    "sourceReview": "Código-fonte para auditoria, sob confidencialidade"
+  },
+  "compare": {
+    "title": "Compare os planos",
+    "feature": "Recurso",
+    "yes": "Incluído",
+    "no": "Não incluído"
+  },
+  "faq": {
+    "title": "Dúvidas sobre os planos",
+    "items": [
+      {
+        "q": "O plano gratuito tem prazo?",
+        "a": "Não. Projetos, sessões persistentes, recuperação, estados dos agentes, editor, git e uso de IA continuam grátis, sem conta."
+      },
+      {
+        "q": "Por que o preço é em dólar?",
+        "a": "Porque a maior parte do que quem usa agentes já paga é em dólar, e assim o preço é o mesmo em todo lugar."
+      },
+      {
+        "q": "O que acontece se eu parar de pagar o Pro?",
+        "a": "O Persist volta ao gratuito. Nada se perde: os pontos de restauração gravados continuam restauráveis e os pedidos que já estavam na fila continuam sendo entregues."
+      },
+      {
+        "q": "Preciso de internet para usar o Pro?",
+        "a": "Não o tempo todo. A licença é assinada e vale 14 dias sem conexão; o app renova sozinho quando há rede."
+      },
+      {
+        "q": "Em quantos computadores posso usar?",
+        "a": "Em até 5 aparelhos por conta."
+      },
+      {
+        "q": "Como funciona o Enterprise?",
+        "a": "Combinamos com a sua empresa o que ela precisa: SSO, instalação própria, gateway de modelos e acesso ao código-fonte sob confidencialidade. Esses recursos ainda estão planejados."
+      }
+    ]
+  }
+}

@@ -13,14 +13,16 @@ interface MobileMenuProps {
 }
 
 export function MobileMenu({ links, openLabel, closeLabel }: MobileMenuProps) {
-  const [open, setOpen] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => setOpen(false), [pathname]);
+  // The menu belongs to the page it was opened on; navigating closes it.
+  const [openOn, setOpenOn] = useState<string | null>(null);
+  const open = openOn === pathname;
+  const setOpen = (next: boolean | ((was: boolean) => boolean)) =>
+    setOpenOn((prev) => ((typeof next === "function" ? next(prev === pathname) : next) ? pathname : null));
 
   useEffect(() => {
     if (!open) return;
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpenOn(null);
     document.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
     return () => {

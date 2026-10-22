@@ -1,0 +1,47 @@
+.hero {
+  padding-top: clamp(48px, 7vw, 80px);
+  text-align: center;
+}
+
+.icon {
+  margin: 0 auto 28px;
+  border-radius: 18px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 18px 40px -14px rgba(0, 0, 0, 0.8);
+}
+
+.title {
+  max-width: 19em;
+  margin: 0 auto;
+  font-size: clamp(2.125rem, 1.05rem + 3.4vw, 3.625rem);
+  font-weight: 330;
+  font-variation-settings: "wdth" 106;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+}
+
+.body {
+  max-width: 54ch;
+  margin: 24px auto 0;
+  color: var(--site-muted);
+  font-size: var(--lead);
+  line-height: 1.55;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.note {
+  margin-top: 18px;
+  color: var(--site-muted);
+  font-size: var(--tiny);
+}
+
+.window {
+  max-width: 1120px;
+  margin: clamp(48px, 7vw, 80px) auto 0;
+}

@@ -1,0 +1,252 @@
+{
+  "states": {
+    "working": "Trabajando",
+    "waiting": "Esperándote",
+    "permission": "Permiso pendiente",
+    "idle": "Inactivo",
+    "running": "Ejecutando · pnpm",
+    "ended": "Terminada",
+    "recovering": "Recuperando"
+  },
+  "sessions": {
+    "review": "revisión",
+    "catalog": "catálogo",
+    "search": "búsqueda"
+  },
+  "workspaces": {
+    "title": "Workspaces",
+    "add": "Agregar workspace",
+    "none": "Ninguna sesión",
+    "active": "{count, plural, one {# sesión activa} other {# sesiones activas}}",
+    "now": "ahora",
+    "minutes": "hace {count} min",
+    "loose": "Sueltas"
+  },
+  "status": {
+    "spend": "Gasto",
+    "ctx": "Ctx",
+    "restore": "Restaurar {count}"
+  },
+  "hero": {
+    "label": "La ventana de Persist con el proyecto Rota abierto: tres sesiones, una trabajando, una pidiendo permiso y un servidor de desarrollo en marcha.",
+    "lines": [
+      {
+        "kind": "prompt",
+        "text": "Agrega el cálculo de envío por código postal en la API"
+      },
+      {
+        "kind": "tool",
+        "text": "Read(src/shipping/table.ts)"
+      },
+      {
+        "kind": "result",
+        "text": "142 líneas"
+      },
+      {
+        "kind": "tool",
+        "text": "Edit(src/shipping/quote.ts)"
+      },
+      {
+        "kind": "result",
+        "diff": {
+          "add": "+38",
+          "del": "−4"
+        }
+      },
+      {
+        "kind": "tool",
+        "text": "Bash(pnpm test shipping)"
+      },
+      {
+        "kind": "result",
+        "text": "14 pruebas pasaron"
+      },
+      {
+        "kind": "answer",
+        "text": "Envío por código postal listo, con pruebas. ¿Lo conecto al checkout?"
+      }
+    ]
+  },
+  "crash": {
+    "label": "Demostración: las sesiones de Persist volviendo después de que la app se cierra o la computadora se cuelga.",
+    "closeApp": "Cerrar Persist",
+    "crashComputer": "Colgar la computadora",
+    "again": "Ver de nuevo",
+    "hint": "Elige qué pasa y mira lo que hace Persist.",
+    "black": "La computadora se reinició",
+    "opening": "Abriendo Persist…",
+    "closed": "La app se cerró. Los procesos, no.",
+    "report": "Informe de restauración",
+    "summary": "{recovered} recuperadas · {failed} fallidas · {skipped} omitidas",
+    "reattachedSummary": "{count} reconectadas",
+    "outcome": {
+      "reattached": "Reconectada",
+      "respawned": "Relanzada",
+      "resumed": "Agente retomado",
+      "unverified": "retomada no confirmada",
+      "pending": "Pendiente"
+    },
+    "running": "Antes: cuatro sesiones trabajando"
+  },
+  "projects": {
+    "label": "Persist con la lista de proyectos y de agentes abierta: cada proyecto muestra lo que te necesita.",
+    "projectsTitle": "Proyectos",
+    "agentsTitle": "Agentes",
+    "filter": "Todos",
+    "rota": "1 esperándote",
+    "quintal": "2 trabajando",
+    "bussola": "nada en marcha",
+    "permissionLines": [
+      {
+        "kind": "tool",
+        "text": "Bash(pnpm prisma migrate dev)"
+      },
+      {
+        "kind": "blank"
+      },
+      {
+        "kind": "warn",
+        "text": "Claude quiere ejecutar: pnpm prisma migrate dev"
+      },
+      {
+        "kind": "choiceActive",
+        "text": "1. Sí"
+      },
+      {
+        "kind": "choice",
+        "text": "2. Sí, y no volver a preguntar en esta carpeta"
+      },
+      {
+        "kind": "choice",
+        "text": "3. No, y decirle qué hacer"
+      }
+    ]
+  },
+  "accounts": {
+    "label": "Configuración › Cuentas de IA: tres cuentas de Claude Code con sus ventanas de 5 horas y 7 días, y la rotación activada.",
+    "title": "Cuentas de IA",
+    "group": "Claude Code",
+    "rotation": "Rotación entre cuentas",
+    "rotationHint": "Cada sesión nueva va a la cuenta con más cuota libre en la ventana de 5 h. Las cuentas por encima del 90% quedan fuera hasta renovarse.",
+    "thisComputer": "Esta computadora",
+    "sitsOut": "fuera hasta renovar",
+    "renews": "renueva en {time}",
+    "newSession": "Nueva sesión de Claude Code",
+    "goesTo": "va a",
+    "because": "la de más margen ahora"
+  },
+  "pro": {
+    "label": "El panel lateral de la sesión con las funciones del plan Pro.",
+    "tabs": {
+      "queue": "Cola de pedidos",
+      "restore": "Puntos de restauración",
+      "verify": "Verificar al terminar",
+      "worktree": "Carpeta propia"
+    },
+    "queue": {
+      "text": "Pedido para el agente",
+      "draft": "Revisa las pruebas de envío y corrige lo que falle",
+      "when": "Cuándo enviar",
+      "whenValue": "Cuando se renueve la ventana de 5 h (14:20)",
+      "add": "Poner en la cola",
+      "waiting": "En la cola",
+      "item1": "Sube la cobertura del módulo de cupones al 80%",
+      "item1When": "cuando se renueve la ventana de 5 h (14:20)",
+      "item2": "Actualiza el README con el nuevo endpoint de envío",
+      "item2When": "en cuanto el agente quede libre",
+      "rule": "Uno a la vez, en orden, solo con el agente esperando el próximo pedido."
+    },
+    "restore": {
+      "point1": "Agrega el cálculo de envío por código postal",
+      "point1Meta": "10:42 · revierte 3 archivos y borra 1 creado después",
+      "point2": "Cambia el diseño del carrito",
+      "point2Meta": "09:58 · revierte 5 archivos",
+      "point3": "Corrige el redondeo del total",
+      "point3Meta": "ayer · revierte 1 archivo",
+      "action": "Restaurar este punto",
+      "note": "Cada pedido al agente guarda el estado de la carpeta antes de que empiece."
+    },
+    "verify": {
+      "chip": "Verificación",
+      "passed": "pasó",
+      "failed": "falló (1)",
+      "command": "pnpm test",
+      "lines": [
+        {
+          "kind": "muted",
+          "text": "$ pnpm test"
+        },
+        {
+          "kind": "plain",
+          "text": " ✓ shipping/quote.test.ts (9)"
+        },
+        {
+          "kind": "plain",
+          "text": " ✓ shipping/table.test.ts (5)"
+        },
+        {
+          "kind": "plain",
+          "text": " ✓ checkout/total.test.ts (12)"
+        },
+        {
+          "kind": "blank"
+        },
+        {
+          "kind": "answer",
+          "text": " Test Files  3 passed (3)"
+        },
+        {
+          "kind": "answer",
+          "text": "      Tests  26 passed (26)"
+        }
+      ],
+      "note": "Corre solo cuando el agente se detiene después de cambiar archivos."
+    },
+    "worktree": {
+      "title": "Nueva sesión en carpeta propia",
+      "branch": "Rama",
+      "branchValue": "persist/envio-cp",
+      "folder": "Carpeta",
+      "folderValue": "solo de esta sesión, fuera de tu copia",
+      "close": "Al cerrar la sesión",
+      "keep": "La carpeta se queda",
+      "leave": "Se elimina",
+      "discard": "Se elimina y descarta 2 archivos sin commit",
+      "commits": "La rama guarda 3 commits y nunca se borra."
+    }
+  },
+  "editor": {
+    "label": "El editor y la pestaña de cambios de git junto a la terminal.",
+    "changes": "Cambios",
+    "staged": "Preparados",
+    "unstaged": "Sin preparar",
+    "commit": "Commit",
+    "message": "Agrega envío por código postal"
+  },
+  "network": {
+    "label": "Configuración › Red: la lista de llamadas que Persist hizo hacia afuera, con destino, motivo y tamaño.",
+    "title": "Red",
+    "group": "Desde que se abrió la app",
+    "rows": [
+      {
+        "host": "api.anthropic.com",
+        "why": "Cuota de Claude Code (5 h y 7 d)",
+        "size": "0,3 KB enviados · 1,1 KB recibidos",
+        "time": "14:02"
+      },
+      {
+        "host": "api.anthropic.com",
+        "why": "Cuota de Claude Code (5 h y 7 d)",
+        "size": "0,3 KB enviados · 1,1 KB recibidos",
+        "time": "14:01"
+      },
+      {
+        "host": "ytmpopebhdtnucdznfsz.supabase.co",
+        "why": "Renovar la licencia",
+        "size": "0,9 KB enviados · 2,4 KB recibidos",
+        "time": "13:12"
+      }
+    ],
+    "never": "Nunca: código, salida de la terminal, prompts."
+  }
+}
