@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import en from "../messages/en.json";
-import es from "../messages/es.json";
-import ptBR from "../messages/pt-BR.json";
+import { readdirSync } from "node:fs";
+import { loadMessages, NAMESPACES } from "../src/i18n/messages";
+import { routing } from "../src/i18n/routing";
 
 type Tree = { [key: string]: string | Tree | Tree[] | string[] };
 
@@ -20,10 +20,17 @@ function leaves(tree: unknown, prefix = ""): Map<string, unknown> {
   return out;
 }
 
-const catalogs = { "pt-BR": ptBR, en, es };
-const reference = leaves(ptBR);
+const catalogs = Object.fromEntries(await Promise.all(routing.locales.map(async (l) => [l, await loadMessages(l)] as const)));
+const reference = leaves(catalogs["pt-BR"]);
 
 describe("message catalogs", () => {
+  it("loads every namespace file that exists on disk", () => {
+    for (const locale of routing.locales) {
+      const files = readdirSync(`messages/${locale}`).map((f) => f.replace(/\.json$/, ""));
+      expect([...files].sort()).toEqual([...NAMESPACES].sort());
+    }
+  });
+
   for (const [locale, catalog] of Object.entries(catalogs)) {
     const own = leaves(catalog);
 

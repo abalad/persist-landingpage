@@ -1,0 +1,47 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.available {
+  background: var(--color-ok-bg);
+  color: var(--color-ok);
+}
+
+.in-development {
+  background: var(--color-warn-bg);
+  color: var(--color-warn);
+}
+
+.planned {
+  background: var(--color-neutral-bg);
+  color: #a9b1c1;
+}
+
+.planned .dot {
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px currentColor;
+}
+
+.pro {
+  background: transparent;
+  color: var(--color-accent);
+  box-shadow: inset 0 0 0 1px rgba(92, 200, 176, 0.45);
+  letter-spacing: 0.02em;
+}

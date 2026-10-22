@@ -1,0 +1,81 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-normal) var(--ease-out),
+    border-color var(--duration-normal) var(--ease-out),
+    color var(--duration-normal) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:disabled,
+.button[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.55;
+  transform: none;
+}
+
+.md {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 0.875rem;
+}
+
+.lg {
+  height: 46px;
+  padding: 0 22px;
+  font-size: 0.96875rem;
+}
+
+.primary {
+  background: var(--pill-primary-bg);
+  color: var(--pill-primary-fg);
+}
+
+.primary:hover {
+  background: var(--pill-primary-bg-hover);
+}
+
+.secondary {
+  background: var(--pill-secondary-bg);
+  border-color: var(--pill-secondary-border);
+  color: var(--site-heading);
+}
+
+.secondary:hover {
+  background: var(--pill-secondary-bg-hover);
+  border-color: #353c4b;
+}
+
+.ghost {
+  background: transparent;
+  color: var(--site-body);
+}
+
+.ghost:hover {
+  color: var(--site-heading);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.icon {
+  display: inline-flex;
+  flex: none;
+}
+
+.icon svg {
+  width: 1.05em;
+  height: 1.05em;
+}
