@@ -1,0 +1,49 @@
+import { describe, expect, it } from "vitest";
+import { readdirSync, readFileSync, statSync } from "node:fs";
+import { join } from "node:path";
+import { loadMessages } from "../src/i18n/messages";
+import { routing } from "../src/i18n/routing";
+
+/**
+ * The site sells what you see with the app open. It never promises that
+ * agents keep working once Persisty is closed, and never names what runs
+ * underneath (tmux, the supervisor).
+ */
+
+function files(dir: string): string[] {
+  return readdirSync(dir).flatMap((name) => {
+    const path = join(dir, name);
+    return statSync(path).isDirectory() ? files(path) : [path];
+  });
+}
+
+const pages = [...files("messages"), ...files("content")].map((path) => ({ path, text: readFileSync(path, "utf8") }));
+
+const hits = (pattern: RegExp) =>
+  pages.flatMap(({ path, text }) => text.split("\n").filter((line) => pattern.test(line)).map((line) => `${path}: ${line.trim()}`));
+
+describe("site copy", () => {
+  it("does not name the mechanism behind the sessions", () => {
+    expect(hits(/tmux|supervis/i)).toEqual([]);
+  });
+
+  it("does not promise work going on with the app closed", () => {
+    const promises = [
+      // pt-BR
+      /fica viv|continua(m)? rodando|nada para\.|não mata nada|os processos, não|saia, e o trabalho|trabalhar sem você/i,
+      // en
+      /stays alive|keeps? running|nothing stops|kills nothing|processes did not|walk away|work without you/i,
+      // es
+      /sigue viv|siguen? corriendo|nada se detiene|no mata nada|los procesos, no|vete, y el trabajo|trabajar sin ti/i,
+    ];
+    expect(promises.flatMap(hits)).toEqual([]);
+  });
+
+  it("has no quit-the-app scenario in the recovery demo", async () => {
+    for (const locale of routing.locales) {
+      const crash = ((await loadMessages(locale)) as { mock: { crash: Record<string, unknown> } }).mock.crash;
+      expect(Object.keys(crash), locale).not.toContain("closeApp");
+      expect(Object.keys(crash), locale).not.toContain("closed");
+    }
+  });
+});

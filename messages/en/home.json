@@ -25,7 +25,7 @@
       },
       {
         "name": "Any CLI",
-        "detail": "zsh, bash, pnpm dev: whatever runs in the terminal stays alive."
+        "detail": "zsh, bash, pnpm dev: any terminal program gets a tab in its project."
       }
     ]
   },
@@ -53,7 +53,7 @@
   },
   "recovery": {
     "title": "Sessions that come back after a crash",
-    "body": "Every terminal runs in a supervisor apart from the window. If the app quits or freezes, nothing stops. If the computer restarts, Persisty relaunches the sessions, resumes the Claude Code conversations and shows a report of what came back and what didn't.",
+    "body": "If the computer freezes or restarts, Persisty relaunches each project's sessions, resumes the Claude Code conversations and shows a report of what came back and what didn't.",
     "link": "How recovery works"
   },
   "projects": {
@@ -72,7 +72,7 @@
     "link": "Agents and states"
   },
   "pro": {
-    "title": "Ask, walk away, and the work goes on",
+    "title": "Line up the next request",
     "body": "The queue delivers your request when the agent is free or the quota renews. Every request saves a restore point, the tests run on their own when the agent finishes, and each session can have its own folder.",
     "link": "Pro features"
   },
@@ -125,7 +125,7 @@
   },
   "pricing": {
     "title": "Start for free",
-    "body": "The core is free and asks for no account. Pro unlocks what lets the agent work without you, for {price} a month.",
+    "body": "The core is free and asks for no account. Pro unlocks the request queue, account rotation and restore points, for {price} a month.",
     "cta": "See plans and pricing"
   },
   "faq": {

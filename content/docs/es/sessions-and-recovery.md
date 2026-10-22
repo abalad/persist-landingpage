@@ -1,17 +1,15 @@
 ---
 title: Sesiones y recuperación
-description: Qué sobrevive a cerrar Persisty, a un cuelgue de la app y a un reinicio de la computadora, y cómo Persisty dice qué no volvió.
+description: Cómo Persisty trae las sesiones de vuelta después de un cuelgue o de un reinicio, y cómo dice qué no volvió.
 group: start
 order: 3
 ---
 
-La ventana de Persisty nunca es dueña de tus procesos. Cada terminal corre en un supervisor separado (un tmux integrado en macOS y en Linux, un supervisor propio en Windows), y la ventana solo se conecta a él. Eso es lo que permite cerrar o perder la ventana sin perder trabajo.
+Persisty guarda lo que necesita para traer cada sesión de vuelta: carpeta, comando, agente y el id de la conversación. Al abrirse, revisa ese registro sesión por sesión y decide qué hacer con cada una.
 
-## Cierre o cuelgue de la app
+## Al abrir Persisty
 
-Si cierras Persisty, o si se cuelga, las sesiones siguen corriendo en el supervisor. Al abrirlo de nuevo, la app concilia lo que tiene guardado con lo que está vivo y **reconecta** cada terminal, con las últimas líneas del historial.
-
-En este caso no hay que relanzar nada: el agente no nota que la ventana desapareció.
+Si la sesión todavía está corriendo, Persisty **reconecta** la terminal, con las últimas líneas del historial. En este caso no se relanza nada.
 
 ## Reinicio o cuelgue de la computadora
 
@@ -41,4 +39,4 @@ Persisty nunca dice que una sesión volvió si no volvió. "Agente retomado" sin
 
 ## Historial de la terminal
 
-Al reconectar, las últimas 5 000 líneas por encima de la pantalla aparecen en la terminal antes del contenido en vivo. El supervisor guarda hasta 20 000 líneas por sesión.
+Al reconectar, las últimas 5 000 líneas por encima de la pantalla aparecen en la terminal antes del contenido en vivo. Cada sesión guarda hasta 20 000 líneas.

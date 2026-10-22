@@ -1,6 +1,6 @@
 ---
 title: Funciones Pro
-description: Cola de pedidos, puntos de restauración, verificación al terminar y carpeta propia por sesión, las funciones que dejan al agente trabajar sin ti.
+description: Cola de pedidos, puntos de restauración, verificación al terminar y carpeta propia por sesión.
 group: work
 order: 2
 ---

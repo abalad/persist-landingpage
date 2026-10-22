@@ -4,7 +4,7 @@
     "description": "Free with no account, Pro for US$ 9.90 a month, Team for US$ 19.90 per person and Enterprise by contact."
   },
   "title": "Plans and pricing",
-  "body": "Persisty's core is free and asks for no account. Paid plans unlock what lets the agent work without you and, for teams, control for whoever pays.",
+  "body": "Persisty's core is free and asks for no account. Paid plans unlock the request queue, account rotation and restore points; for teams, also control for whoever pays.",
   "currency": "Prices in US dollars.",
   "opening": "Subscriptions open soon.",
   "includes": "Everything in {plan}, plus:",
@@ -37,7 +37,7 @@
   },
   "features": {
     "projects": "Projects with several workspaces",
-    "persistentSessions": "Persistent sessions in their own supervisor",
+    "persistentSessions": "Persistent sessions",
     "recovery": "Recovery after a freeze or a restart",
     "agentStates": "Each agent's state from hooks",
     "editorGit": "Editor, git changes and notes",

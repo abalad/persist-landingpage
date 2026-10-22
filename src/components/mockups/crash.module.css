@@ -15,12 +15,6 @@
   font-size: var(--small);
 }
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .stage {
   position: relative;
   height: calc(290 * var(--u));
@@ -56,17 +50,6 @@
   }
 }
 
-.quit {
-  animation: quit 380ms var(--ease-out) forwards;
-}
-
-@keyframes quit {
-  to {
-    transform: scale(0.94);
-    opacity: 0;
-  }
-}
-
 .back {
   animation: back 520ms var(--ease-out) both;
 }
@@ -93,53 +76,11 @@
   animation: back 400ms var(--ease-out) both;
 }
 
-.desk {
-  background: radial-gradient(120% 90% at 50% 120%, #161a22 0%, #0b0d11 60%);
-  color: var(--color-fg-muted);
-}
-
 .bootIcon {
   width: calc(56 * var(--u));
   height: calc(56 * var(--u));
   border-radius: calc(13 * var(--u));
   animation: back 600ms var(--ease-out) both;
-}
-
-.alive {
-  display: flex;
-  gap: calc(16 * var(--u));
-  color: var(--color-fg-subtle);
-  font-size: calc(12 * var(--u));
-}
-
-.alive span {
-  display: inline-flex;
-  align-items: center;
-  gap: calc(6 * var(--u));
-}
-
-.alive i {
-  width: calc(7 * var(--u));
-  height: calc(7 * var(--u));
-  border-radius: 50%;
-  background: var(--color-ok);
-  animation: pulse 1.6s ease-in-out infinite;
-}
-
-.alive span:nth-child(2) i {
-  animation-delay: 0.2s;
-}
-.alive span:nth-child(3) i {
-  animation-delay: 0.4s;
-}
-.alive span:nth-child(4) i {
-  animation-delay: 0.6s;
-}
-
-@keyframes pulse {
-  50% {
-    opacity: 0.35;
-  }
 }
 
 .report {
@@ -216,10 +157,5 @@
 
   .table td:first-child {
     width: 48%;
-  }
-
-  .alive {
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }

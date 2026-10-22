@@ -5,14 +5,14 @@ group: start
 order: 1
 ---
 
-O Persisty é um app de desktop para quem mantém vários produtos de software e trabalha com agentes de IA no terminal, como o Claude Code e o Codex. Ele guarda cada terminal num supervisor separado da janela, organiza tudo por projeto e acompanha o estado e a quota de cada agente.
+O Persisty é um app de desktop para quem mantém vários produtos de software e trabalha com agentes de IA no terminal, como o Claude Code e o Codex. Ele organiza os terminais por projeto, acompanha o estado e a quota de cada agente e traz as sessões de volta depois de um travamento.
 
 Nada do que você faz no Persisty depende de conta ou de internet. A conta só existe para os planos pagos.
 
 ## Instalar
 
 1. Baixe o build do seu sistema na [página de download](/download). Enquanto não houver build público, marque "Avise-me" para receber o aviso.
-2. Abra o Persisty. O supervisor que mantém as sessões vivas já vem dentro do app; não é preciso instalar tmux nem outra dependência.
+2. Abra o Persisty. Tudo de que ele precisa já vem dentro do app; não é preciso instalar nenhuma outra dependência.
 3. Para usar agentes, tenha o [Claude Code](https://docs.claude.com/en/docs/claude-code) instalado e com login feito. Terminais comuns funcionam sem ele.
 
 ## Criar o primeiro projeto
@@ -30,10 +30,10 @@ Com o workspace selecionado, aperte <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>N</kbd> e
 - **Claude Code** ou **Codex**, para uma sessão de agente;
 - **Terminal**, para um shell comum (servidor de desenvolvimento, testes, o que quiser).
 
-A sessão aparece como aba no topo e como linha no cartão do workspace, embaixo. Feche a janela do Persisty quando quiser: a sessão continua rodando, e reabrir o app reanexa o terminal com o histórico.
+A sessão aparece como aba no topo e como linha no cartão do workspace, embaixo. O estado do agente aparece na aba: trabalhando, aguardando você, pedindo permissão ou parado.
 
 ## Próximos passos
 
 - [Projetos e workspaces](/docs/projects-and-workspaces): como o Persisty organiza o trabalho.
-- [Sessões e recuperação](/docs/sessions-and-recovery): o que sobrevive a fechar o app, a um travamento e a um reinício.
+- [Sessões e recuperação](/docs/sessions-and-recovery): o que acontece depois de um travamento ou de um reinício.
 - [Agentes e estados](/docs/agents): como saber qual agente precisa de você.

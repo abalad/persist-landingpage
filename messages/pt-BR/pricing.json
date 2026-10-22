@@ -4,7 +4,7 @@
     "description": "Gratuito sem conta, Pro por US$ 9,90 por mês, Team por US$ 19,90 por pessoa e Enterprise sob consulta."
   },
   "title": "Planos e preços",
-  "body": "O núcleo do Persisty é grátis e não pede conta. Os planos pagos liberam o que deixa o agente trabalhar sem você e, para times, o controle de quem paga.",
+  "body": "O núcleo do Persisty é grátis e não pede conta. Os planos pagos liberam a fila de pedidos, o rodízio de contas e os pontos de restauração; para times, também o controle de quem paga.",
   "currency": "Preços em dólares americanos.",
   "opening": "As assinaturas abrem em breve.",
   "includes": "Tudo do {plan}, mais:",
@@ -37,7 +37,7 @@
   },
   "features": {
     "projects": "Projetos com vários workspaces",
-    "persistentSessions": "Sessões persistentes num supervisor próprio",
+    "persistentSessions": "Sessões persistentes",
     "recovery": "Recuperação depois de travar ou reiniciar",
     "agentStates": "Estado de cada agente pelos hooks",
     "editorGit": "Editor, alterações do git e notas",

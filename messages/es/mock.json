@@ -68,19 +68,15 @@
     ]
   },
   "crash": {
-    "label": "Demostración: las sesiones de Persisty volviendo después de que la app se cierra o la computadora se cuelga.",
-    "closeApp": "Cerrar Persisty",
+    "label": "Demostración: las sesiones de Persisty volviendo después de que la computadora se cuelga.",
     "crashComputer": "Colgar la computadora",
     "again": "Ver de nuevo",
-    "hint": "Elige qué pasa y mira lo que hace Persisty.",
+    "hint": "Simula un cuelgue y mira lo que hace Persisty.",
     "black": "La computadora se reinició",
     "opening": "Abriendo Persisty…",
-    "closed": "La app se cerró. Los procesos, no.",
     "report": "Informe de restauración",
     "summary": "{recovered} recuperadas · {failed} fallidas · {skipped} omitidas",
-    "reattachedSummary": "{count} reconectadas",
     "outcome": {
-      "reattached": "Reconectada",
       "respawned": "Relanzada",
       "resumed": "Agente retomado",
       "unverified": "retomada no confirmada",

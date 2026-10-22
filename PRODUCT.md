@@ -26,18 +26,20 @@ The three pains that made the founder build it, in his words (2026-10-21):
 
 ## Positioning
 
-The UI never owns the processes. A private supervisor (an embedded tmux on macOS/Linux, its own daemon on Windows) keeps every terminal and agent alive; closing or crashing the app kills nothing, and after an OS restart Persisty relaunches what it can and says plainly what it could not. On top of that it is organised by business project, not by folder, and it knows each Claude account's live 5-hour and 7-day windows, so new sessions go to the account with the most room. Competitors such as Verne (open-source, free) also keep sessions alive; the account-aware, project-first, "work while you're away" combination is what Persisty can claim.
+After a computer freeze or restart, Persisty relaunches each session it can, resumes the Claude Code conversation and says plainly what it could not bring back. On top of that it is organised by business project, not by folder, shows what every agent is doing and which one needs you, and knows each Claude account's live 5-hour and 7-day windows, so new sessions go to the account with the most room. The account-aware, project-first combination is what Persisty can claim.
+
+Copy rule (the founder, 2026-10-22, for the app and this site): never promise that agents or sessions keep working while Persisty is closed, and never name the mechanism underneath (tmux, the supervisor, a background server). Sell what is visible with the app open. `tests/copy.test.ts` guards the wording in all three languages.
 
 ## Operating Context
 
-Developers run Claude Code and Codex in terminals for hours, leave agents working, step away, and come back to agents blocked on a permission prompt or a session lost to a crash. They juggle `/login` between accounts when the 5-hour window fills up. Companies evaluate tools by privacy (where does the code go), cost control and auditability.
+Developers run Claude Code and Codex in terminals for hours, switch between windows, and find agents blocked on a permission prompt or a session lost to a crash. They juggle `/login` between accounts when the 5-hour window fills up. Companies evaluate tools by privacy (where does the code go), cost control and auditability.
 
 ## Capabilities and Constraints
 
 Available today (in the app, Milestone 1, not yet publicly downloadable):
 
 - Business projects with several workspaces (folders, with or without git); sessions as tabs; workspaces as cards.
-- Persistent sessions in a private supervisor; reconciliation on open; "Restore all" (idempotent, journaled); clear report of what could not be recovered after a reboot.
+- Persistent sessions; reconciliation on open; "Restore all" (idempotent, journaled); clear report of what could not be recovered after a reboot.
 - Agent detection and states for Claude Code (hooks: working, waiting for you, permission pending, idle) and Codex (resume not verified). Any CLI runs in a persistent terminal.
 - Built-in editor (CodeMirror 6), git changes and commit, branch picker, project notes, search, command drawer.
 - Usage: spend per session, context, model per session, live 5h/7d windows from the same endpoint `/usage` uses.

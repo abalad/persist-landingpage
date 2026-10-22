@@ -1,6 +1,6 @@
 ---
 title: Recursos do Pro
-description: Fila de pedidos, pontos de restauração, verificação ao terminar e pasta própria por sessão, os recursos que deixam o agente trabalhar sem você.
+description: Fila de pedidos, pontos de restauração, verificação ao terminar e pasta própria por sessão.
 group: work
 order: 2
 ---

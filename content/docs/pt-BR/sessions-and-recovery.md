@@ -1,17 +1,15 @@
 ---
 title: Sessões e recuperação
-description: O que sobrevive a fechar o Persisty, a um travamento do app e a um reinício do computador, e como o Persisty diz o que não voltou.
+description: Como o Persisty traz as sessões de volta depois de um travamento ou de um reinício, e como ele diz o que não voltou.
 group: start
 order: 3
 ---
 
-A janela do Persisty nunca é dona dos seus processos. Cada terminal roda num supervisor separado (um tmux embutido no macOS e no Linux, um supervisor próprio no Windows), e a janela só se conecta a ele. É isso que permite fechar ou perder a janela sem perder trabalho.
+O Persisty guarda o que precisa para trazer cada sessão de volta: pasta, comando, agente e o id da conversa. Ao abrir, ele confere esse registro sessão por sessão e decide o que fazer com cada uma.
 
-## Fechar ou travar o app
+## Ao abrir o Persisty
 
-Se você fecha o Persisty, ou se ele trava, as sessões continuam rodando no supervisor. Ao abrir de novo, o app reconcilia o que está guardado com o que está vivo e **reanexa** cada terminal, com as últimas linhas do histórico.
-
-Nada precisa ser relançado nesse caso: o agente não percebe que a janela sumiu.
+Se a sessão ainda estiver rodando, o Persisty **reanexa** o terminal, com as últimas linhas do histórico. Nada é relançado nesse caso.
 
 ## Reiniciar ou travar o computador
 
@@ -41,4 +39,4 @@ O Persisty nunca diz que uma sessão voltou sem ter voltado. "Agente retomado" s
 
 ## Histórico do terminal
 
-Ao reanexar, as últimas 5 000 linhas acima da tela aparecem no terminal antes do conteúdo ao vivo. O supervisor guarda até 20 000 linhas por sessão.
+Ao reanexar, as últimas 5 000 linhas acima da tela aparecem no terminal antes do conteúdo ao vivo. Cada sessão guarda até 20 000 linhas.

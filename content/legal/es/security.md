@@ -8,7 +8,7 @@ Persisty ejecuta comandos con tus permisos y abre agentes que usan herramientas 
 
 ## En tu máquina
 
-- **Supervisor privado.** El servidor que mantiene las sesiones vive en un directorio solo tuyo, con el socket accesible solo para tu usuario. No hay ningún puerto de red abierto.
+- **Sesiones solo tuyas.** Las terminales viven en un directorio solo tuyo, accesible solo para tu usuario. No hay ningún puerto de red abierto.
 - **Nada de comandos de shell armados con texto.** Los comandos y las rutas se pasan como argumentos, nunca como una línea de shell, y la carpeta se verifica antes de lanzar.
 - **Tu configuración intacta.** Los hooks de Claude Code entran por un archivo propio de Persisty, que se pasa con `--settings`. Tu `~/.claude/settings.json` nunca se lee ni se modifica, y Persisty no edita los hooks de Codex.
 - **Permisos de los agentes respetados.** Persisty nunca pasa opciones que se salten los pedidos de permiso de los agentes.

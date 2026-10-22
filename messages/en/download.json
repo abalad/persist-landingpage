@@ -31,7 +31,7 @@
     "items": [
       {
         "title": "Nothing but the app",
-        "body": "The supervisor that keeps sessions alive ships inside Persisty. No tmux or other dependency to install."
+        "body": "Everything Persisty needs ships inside the app. No other dependency to install."
       },
       {
         "title": "Claude Code, if you use agents",

@@ -68,19 +68,15 @@
     ]
   },
   "crash": {
-    "label": "Demo: Persisty sessions coming back after the app closes or the computer crashes.",
-    "closeApp": "Quit Persisty",
+    "label": "Demo: Persisty sessions coming back after the computer crashes.",
     "crashComputer": "Crash the computer",
     "again": "Run it again",
-    "hint": "Pick what happens and watch what Persisty does.",
+    "hint": "Simulate a crash and watch what Persisty does.",
     "black": "The computer restarted",
     "opening": "Opening Persisty…",
-    "closed": "The app quit. The processes did not.",
     "report": "Restore report",
     "summary": "{recovered} recovered · {failed} failed · {skipped} skipped",
-    "reattachedSummary": "{count} reattached",
     "outcome": {
-      "reattached": "Reattached",
       "respawned": "Relaunched",
       "resumed": "Agent resumed",
       "unverified": "resume not confirmed",

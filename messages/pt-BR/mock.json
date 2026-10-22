@@ -68,19 +68,15 @@
     ]
   },
   "crash": {
-    "label": "Demonstração: as sessões do Persisty voltando depois de o app fechar ou de o computador travar.",
-    "closeApp": "Fechar o Persisty",
+    "label": "Demonstração: as sessões do Persisty voltando depois de o computador travar.",
     "crashComputer": "Travar o computador",
     "again": "Ver de novo",
-    "hint": "Escolha o que acontece e veja o que o Persisty faz.",
+    "hint": "Simule um travamento e veja o que o Persisty faz.",
     "black": "O computador reiniciou",
     "opening": "Abrindo o Persisty…",
-    "closed": "O app fechou. Os processos, não.",
     "report": "Relatório de restauração",
     "summary": "{recovered} recuperadas · {failed} falhas · {skipped} ignoradas",
-    "reattachedSummary": "{count} reanexadas",
     "outcome": {
-      "reattached": "Reanexada",
       "respawned": "Relançada",
       "resumed": "Agente retomado",
       "unverified": "retomada não confirmada",

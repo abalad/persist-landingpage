@@ -31,7 +31,7 @@
     "items": [
       {
         "title": "Nada além do app",
-        "body": "O supervisor que mantém as sessões vivas vai dentro do Persisty. Não é preciso instalar tmux nem outra dependência."
+        "body": "Tudo de que o Persisty precisa vem dentro do app. Não é preciso instalar nenhuma outra dependência."
       },
       {
         "title": "Claude Code, se for usar agentes",

@@ -1,17 +1,15 @@
 ---
 title: Sessions and recovery
-description: What survives quitting Persisty, an app crash and a computer restart, and how Persisty tells you what did not come back.
+description: How Persisty brings sessions back after a crash or a restart, and how it tells you what did not come back.
 group: start
 order: 3
 ---
 
-The Persisty window never owns your processes. Each terminal runs in a separate supervisor (an embedded tmux on macOS and Linux, Persisty's own supervisor on Windows), and the window only connects to it. That is what lets you close or lose the window without losing work.
+Persisty saves what it needs to bring each session back: folder, command, agent and conversation id. When it opens, it checks that record session by session and decides what to do with each one.
 
-## Quitting or crashing the app
+## When Persisty opens
 
-If you quit Persisty, or it crashes, the sessions keep running in the supervisor. When you open it again, the app reconciles what it saved with what is alive and **reattaches** each terminal, with the last lines of its history.
-
-Nothing needs to be relaunched in this case: the agent does not notice that the window went away.
+If the session is still running, Persisty **reattaches** the terminal, with the last lines of its history. Nothing is relaunched in this case.
 
 ## Restarting or crashing the computer
 
@@ -41,4 +39,4 @@ Persisty never says a session came back when it did not. "Agent resumed" without
 
 ## Terminal history
 
-When a terminal is reattached, the last 5,000 lines above the screen show in it before the live content. The supervisor keeps up to 20,000 lines per session.
+When a terminal is reattached, the last 5,000 lines above the screen show in it before the live content. Each session keeps up to 20,000 lines.

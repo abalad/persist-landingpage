@@ -25,7 +25,7 @@
       },
       {
         "name": "Cualquier CLI",
-        "detail": "zsh, bash, pnpm dev: lo que corra en la terminal sigue vivo."
+        "detail": "zsh, bash, pnpm dev: cualquier programa de terminal tiene su pestaña en el proyecto."
       }
     ]
   },
@@ -53,7 +53,7 @@
   },
   "recovery": {
     "title": "Sesiones que vuelven después de un cuelgue",
-    "body": "Cada terminal corre en un supervisor separado de la ventana. Si la app se cierra o se cuelga, nada se detiene. Si la computadora se reinicia, Persisty relanza las sesiones, retoma las conversaciones de Claude Code y muestra en un informe qué volvió y qué no.",
+    "body": "Si la computadora se cuelga o se reinicia, Persisty relanza las sesiones de cada proyecto, retoma las conversaciones de Claude Code y muestra en un informe qué volvió y qué no.",
     "link": "Cómo funciona la recuperación"
   },
   "projects": {
@@ -72,7 +72,7 @@
     "link": "Agentes y estados"
   },
   "pro": {
-    "title": "Pide, vete, y el trabajo sigue",
+    "title": "Deja el próximo pedido en la cola",
     "body": "La cola entrega tu pedido cuando el agente queda libre o la cuota se renueva. Cada pedido guarda un punto de restauración, las pruebas corren solas cuando el agente termina y cada sesión puede tener su propia carpeta.",
     "link": "Funciones Pro"
   },
@@ -125,7 +125,7 @@
   },
   "pricing": {
     "title": "Empieza gratis",
-    "body": "El núcleo es gratis y no pide cuenta. Pro desbloquea lo que deja al agente trabajar sin ti, por {price} al mes.",
+    "body": "El núcleo es gratis y no pide cuenta. Pro desbloquea la cola de pedidos, la rotación de cuentas y los puntos de restauración, por {price} al mes.",
     "cta": "Ver planes y precios"
   },
   "faq": {

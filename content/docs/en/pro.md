@@ -1,6 +1,6 @@
 ---
 title: Pro features
-description: Request queue, restore points, check on finish and own folder per session, the features that let the agent work without you.
+description: Request queue, restore points, check on finish and own folder per session.
 group: work
 order: 2
 ---
