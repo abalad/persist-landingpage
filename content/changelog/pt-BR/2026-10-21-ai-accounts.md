@@ -1,0 +1,9 @@
+---
+title: Várias contas do Claude Code, com rodízio
+date: 2026-10-21
+---
+
+- **Configurações › Contas de IA** lista a conta deste computador e as conectadas pelo app, cada uma com organização, plano e as janelas de 5 h e 7 d ao vivo.
+- **Conectar conta** abre o login do próprio Claude Code no navegador; a conta aparece sozinha ao concluir. **Desconectar** faz o logout.
+- **Rodízio (Pro)**: cada sessão nova do Claude Code vai para a conta com mais folga na janela de 5 h; contas acima de 90% ficam de fora. O formulário de nova sessão ganhou a opção "Automática".
+- Ajustes e instruções são compartilhados entre as contas; login e histórico, nunca.

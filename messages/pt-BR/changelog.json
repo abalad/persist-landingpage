@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "Changelog",
+    "description": "O que mudou no Persist, do mais novo para o mais antigo."
+  },
+  "title": "Changelog",
+  "body": "O que mudou no Persist, do mais novo para o mais antigo. Estas mudanças ainda não saíram num build público.",
+  "rss": "Feed RSS",
+  "feedTitle": "Persist: Changelog"
+}

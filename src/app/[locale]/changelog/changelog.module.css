@@ -1,0 +1,57 @@
+.feed {
+  margin-top: 20px;
+}
+
+.rss {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-accent);
+  font-size: var(--small);
+}
+
+.rss svg {
+  width: 15px;
+  height: 15px;
+}
+
+.list {
+  margin-top: clamp(40px, 6vw, 64px);
+  padding-left: var(--gutter);
+  list-style: none;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 16px 48px;
+  padding: 40px 0;
+  border-top: 1px solid var(--site-hairline);
+  scroll-margin-top: calc(var(--nav-height) + 16px);
+}
+
+.date {
+  padding-top: 4px;
+  color: var(--site-muted);
+  font-size: var(--small);
+  font-variant-numeric: tabular-nums;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-variation-settings: "wdth" 104;
+  line-height: 1.25;
+}
+
+.title a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 760px) {
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Docs",
+    "description": "Como usar o Persist: projetos, sessões persistentes, agentes, contas de IA, recursos do Pro e privacidade."
+  },
+  "title": "Documentação",
+  "body": "Como usar o Persist, do primeiro projeto aos recursos do Pro. Tudo aqui descreve o app como ele é hoje, inclusive o que ele ainda não faz.",
+  "groups": {
+    "start": "Começar",
+    "work": "Trabalhar com agentes",
+    "account": "Conta e privacidade",
+    "reference": "Referência"
+  },
+  "onThisPage": "Nesta página",
+  "previous": "Anterior",
+  "next": "Próxima",
+  "nav": "Documentação",
+  "all": "Toda a documentação"
+}

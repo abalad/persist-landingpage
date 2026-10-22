@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "Changelog",
+    "description": "What changed in Persist, newest first."
+  },
+  "title": "Changelog",
+  "body": "What changed in Persist, newest first. None of this has shipped in a public build yet.",
+  "rss": "RSS feed",
+  "feedTitle": "Persist: Changelog"
+}

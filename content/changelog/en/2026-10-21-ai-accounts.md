@@ -1,0 +1,9 @@
+---
+title: Several Claude Code accounts, with rotation
+date: 2026-10-21
+---
+
+- **Settings › AI accounts** lists this computer's account and the ones connected through the app, each with its organisation, plan and live 5 h and 7 d windows.
+- **Connect account** opens Claude Code's own sign-in in the browser; the account shows up on its own when you finish. **Disconnect** logs it out.
+- **Rotation (Pro)**: each new Claude Code session goes to the account with the most room in the 5 h window; accounts above 90% sit out. The new session form has a new "Automatic" option.
+- Settings and instructions are shared between the accounts; sign-in and history never are.

@@ -1,0 +1,11 @@
+---
+title: Fila de pedidos, pontos de restauração, verificação e pasta própria
+date: 2026-10-21
+---
+
+Quatro recursos do plano Pro para deixar o agente trabalhando sem você:
+
+- **Fila de pedidos**: o pedido vai quando o agente ficar livre, quando a janela de 5 h renovar ou a partir de um horário. Um por vez, nunca durante um trabalho nem sobre um pedido de permissão.
+- **Pontos de restauração**: cada pedido grava o estado da pasta antes de o agente começar. Restaurar mostra antes o que volta e o que é apagado, e guarda o estado atual como um ponto novo.
+- **Verificação ao terminar**: um comando do workspace roda sozinho quando o agente para depois de mudar arquivos, e o cabeçalho diz se passou ou falhou.
+- **Pasta própria por sessão**: em pastas git, a sessão pode ganhar um branch `persist/<nome>` numa pasta só dela. O branch nunca é apagado.

@@ -1,0 +1,11 @@
+---
+title: Request queue, restore points, check on finish and own folder
+date: 2026-10-21
+---
+
+Four Pro plan features to leave the agent working without you:
+
+- **Request queue**: the request goes when the agent is free, when the 5 h window renews or from a chosen time. One at a time, never during work or over a permission request.
+- **Restore points**: each request saves the folder's state before the agent starts. Restoring first shows what comes back and what is deleted, and saves the current state as a new point.
+- **Check on finish**: a workspace command runs on its own when the agent stops after changing files, and the header says whether it passed or failed.
+- **Own folder per session**: in git folders, the session can get a `persist/<name>` branch in a folder of its own. The branch is never deleted.

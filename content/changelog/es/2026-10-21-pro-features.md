@@ -1,0 +1,11 @@
+---
+title: Cola de pedidos, puntos de restauración, verificación y carpeta propia
+date: 2026-10-21
+---
+
+Cuatro funciones del plan Pro para dejar al agente trabajando sin ti:
+
+- **Cola de pedidos**: el pedido va cuando el agente queda libre, cuando se renueva la ventana de 5 h o a partir de una hora. Uno a la vez, nunca durante un trabajo ni encima de un pedido de permiso.
+- **Puntos de restauración**: cada pedido guarda el estado de la carpeta antes de que el agente empiece. Restaurar muestra antes qué vuelve y qué se borra, y guarda el estado actual como un punto nuevo.
+- **Verificación al terminar**: un comando del workspace corre solo cuando el agente se detiene después de cambiar archivos, y el encabezado dice si pasó o falló.
+- **Carpeta propia por sesión**: en carpetas git, la sesión puede recibir una rama `persist/<nombre>` en una carpeta solo suya. La rama nunca se borra.

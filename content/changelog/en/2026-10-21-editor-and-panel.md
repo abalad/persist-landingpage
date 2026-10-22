@@ -1,0 +1,10 @@
+---
+title: Editor, git changes and side panel
+date: 2026-10-21
+---
+
+- **Session side panel** (⌘\\): Changes, Code, Search, Notes and Details beside the terminal, with a draggable divider.
+- **Editor**: a tree of the session's folder, tabs, ⌘S, a warning when the file changes on disk, syntax highlighting per language, ⌘P, ⌘⇧F and git marks in the gutter.
+- **Changes**: stage and unstage file by file, commit with ⌘↵, "Commit and push", a diff per file and a history of what has not been pushed.
+- **Branch in the session header**, with search, local and remote branches and "Create branch".
+- **Command drawer**: each workspace command becomes a tab with its state written out. Stopping sends Ctrl-C and keeps the output.

@@ -1,0 +1,10 @@
+---
+title: Editor, cambios de git y panel lateral
+date: 2026-10-21
+---
+
+- **Panel lateral de la sesión** (⌘\\): Cambios (*Changes*), Código (*Code*), Búsqueda (*Search*), Notas (*Notes*) y Detalles (*Details*) junto a la terminal, con un divisor que se puede arrastrar.
+- **Editor**: árbol de la carpeta de la sesión, pestañas, ⌘S, aviso cuando el archivo cambia en el disco, resaltado por lenguaje, ⌘P, ⌘⇧F y marcas de git en el margen.
+- **Cambios**: preparar y quitar por archivo, commit con ⌘↵, "Commit y enviar" (*Commit and push*), diff por archivo e historial de lo que no se envió.
+- **Rama en el encabezado de la sesión**, con búsqueda, ramas locales y remotas y "Crear rama" (*Create branch*).
+- **Cajón de comandos**: cada comando del workspace se vuelve una pestaña con el estado escrito. Detener envía Ctrl-C y conserva la salida.

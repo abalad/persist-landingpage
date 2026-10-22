@@ -1,0 +1,8 @@
+---
+title: Persist Cloud account and network log
+date: 2026-10-21
+---
+
+- **Settings › Account**: sign in with a code sent by e-mail, with the account created the first time. Plan and features come from a signed licence that works for 14 days without internet.
+- **Settings › Network**: every call the app makes to the outside, with destination, reason, size, result and time. Never headers, body or parameters.
+- The 5 h and 7 d windows in the footer now come live, from the same place as Claude Code's `/usage`.

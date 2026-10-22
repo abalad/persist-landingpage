@@ -1,0 +1,9 @@
+---
+title: Varias cuentas de Claude Code, con rotación
+date: 2026-10-21
+---
+
+- **Configuración › Cuentas de IA** (*Settings › AI accounts*) lista la cuenta de esta computadora y las conectadas desde la app, cada una con organización, plan y las ventanas de 5 h y 7 d en vivo.
+- **Conectar cuenta** (*Connect account*) abre el login del propio Claude Code en el navegador; la cuenta aparece sola al terminar. **Desconectar** (*Disconnect*) hace el logout.
+- **Rotación (Pro)**: cada sesión nueva de Claude Code va a la cuenta con más margen en la ventana de 5 h; las cuentas por encima del 90% quedan fuera. El formulario de nueva sesión ahora tiene la opción "Automática" (*Automatic*).
+- Los ajustes y las instrucciones se comparten entre las cuentas; el login y el historial, nunca.

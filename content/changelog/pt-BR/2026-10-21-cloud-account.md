@@ -1,0 +1,8 @@
+---
+title: Conta do Persist Cloud e registro de rede
+date: 2026-10-21
+---
+
+- **Configurações › Conta**: entrada por código enviado por e-mail, com a conta criada no primeiro acesso. Plano e recursos vêm de uma licença assinada que funciona 14 dias sem internet.
+- **Configurações › Rede**: cada chamada que o app faz para fora, com destino, motivo, tamanho, resultado e hora. Nunca cabeçalhos, corpo ou parâmetros.
+- As janelas de 5 h e 7 d do rodapé passaram a vir ao vivo, do mesmo lugar que o `/usage` do Claude Code.

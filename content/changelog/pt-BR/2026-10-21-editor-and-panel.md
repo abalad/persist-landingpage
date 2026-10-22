@@ -1,0 +1,10 @@
+---
+title: Editor, alterações do git e painel lateral
+date: 2026-10-21
+---
+
+- **Painel lateral da sessão** (⌘\\): Alterações, Código, Busca, Notas e Detalhes ao lado do terminal, com divisória arrastável.
+- **Editor**: árvore da pasta da sessão, abas, ⌘S, aviso quando o arquivo muda no disco, destaque por linguagem, ⌘P, ⌘⇧F e marcas do git na margem.
+- **Alterações**: preparar e remover por arquivo, commit com ⌘↵, "Commit e enviar", diff por arquivo e histórico do que não foi enviado.
+- **Branch no cabeçalho da sessão**, com busca, branches locais e remotos e "Criar branch".
+- **Gaveta de comandos**: cada comando do workspace vira uma aba com o estado escrito. Parar manda Ctrl-C e mantém a saída.
