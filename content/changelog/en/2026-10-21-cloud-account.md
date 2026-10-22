@@ -1,5 +1,5 @@
 ---
-title: Persist Cloud account and network log
+title: Persisty Cloud account and network log
 date: 2026-10-21
 ---
 

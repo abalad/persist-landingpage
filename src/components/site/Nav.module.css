@@ -22,16 +22,15 @@
   border-radius: 8px;
 }
 
-.logo img {
-  border-radius: 7px;
-}
+
 
 .wordmark {
   color: var(--site-heading);
-  font-size: 1.0625rem;
-  font-weight: 560;
-  font-variation-settings: "wdth" 108;
-  letter-spacing: -0.01em;
+  font-size: 1.1875rem;
+  font-weight: 640;
+  font-variation-settings: "wdth" 110;
+  letter-spacing: -0.025em;
+  line-height: 1;
 }
 
 .links {

@@ -1,6 +1,6 @@
 ---
 title: Atajos de teclado
-description: Todos los atajos de Persist en macOS.
+description: Todos los atajos de Persisty en macOS.
 group: reference
 order: 1
 ---

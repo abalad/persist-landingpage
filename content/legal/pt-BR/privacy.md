@@ -1,16 +1,16 @@
 ---
 title: Política de privacidade
-description: Que dados o site, o app e o Persist Cloud guardam, onde ficam, para quê e como pedir que sejam apagados.
+description: Que dados o site, o app e o Persisty Cloud guardam, onde ficam, para quê e como pedir que sejam apagados.
 updated: 2026-10-22
 ---
 
-O Persist foi feito para guardar o mínimo. O app funciona sem conta e sem internet, e o que você faz nele fica na sua máquina.
+O Persisty foi feito para guardar o mínimo. O app funciona sem conta e sem internet, e o que você faz nele fica na sua máquina.
 
 ## No app
 
-Projetos, sessões, histórico de terminal, notas e uso de IA ficam num banco local no seu computador. O Persist não envia código, saída de terminal nem prompts para lugar nenhum e não tem telemetria.
+Projetos, sessões, histórico de terminal, notas e uso de IA ficam num banco local no seu computador. O Persisty não envia código, saída de terminal nem prompts para lugar nenhum e não tem telemetria.
 
-O app só fala com fora para ler a quota do Claude Code (com a credencial que o Claude Code já guarda), entrar na conta do Persist Cloud e renovar a licença. Cada chamada aparece em **Configurações › Rede**.
+O app só fala com fora para ler a quota do Claude Code (com a credencial que o Claude Code já guarda), entrar na conta do Persisty Cloud e renovar a licença. Cada chamada aparece em **Configurações › Rede**.
 
 ## No site
 
@@ -21,7 +21,7 @@ O site não usa analytics nem cookies de rastreamento. Ele guarda dois tipos de 
 
 O site é hospedado pela Vercel, que recebe os dados normais de qualquer acesso a um site (endereço IP, navegador, página pedida).
 
-## Na conta do Persist Cloud
+## Na conta do Persisty Cloud
 
 Quando você cria uma conta, guardamos:
 
@@ -33,7 +33,7 @@ Quando você cria uma conta, guardamos:
 
 Esses dados ficam no Supabase, na região de São Paulo. Usamos para manter a conta, emitir a licença e mandar os avisos que você pediu. Não vendemos dados e não usamos para publicidade.
 
-Quando o pagamento existir, ele será processado pela Stripe; o Persist não vê nem guarda dados de cartão.
+Quando o pagamento existir, ele será processado pela Stripe; o Persisty não vê nem guarda dados de cartão.
 
 ## Seus direitos
 

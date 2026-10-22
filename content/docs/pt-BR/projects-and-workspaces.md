@@ -1,11 +1,11 @@
 ---
 title: Projetos e workspaces
-description: Como o Persist organiza produtos, pastas, sessões e agentes numa só janela.
+description: Como o Persisty organiza produtos, pastas, sessões e agentes numa só janela.
 group: start
 order: 2
 ---
 
-O Persist organiza o trabalho em três níveis, do maior para o menor.
+O Persisty organiza o trabalho em três níveis, do maior para o menor.
 
 | Nível | O que é | Onde aparece |
 | --- | --- | --- |

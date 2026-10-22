@@ -17,9 +17,9 @@ export default function RootNotFound() {
           <p style={{ marginTop: 16, color: "var(--site-muted)" }} lang="en">
             Page not found · Página no encontrada
           </p>
-          <nav style={{ display: "flex", flexWrap: "wrap", gap: 20, marginTop: 32 }} aria-label="Persist">
+          <nav style={{ display: "flex", flexWrap: "wrap", gap: 20, marginTop: 32 }} aria-label="Persisty">
             <Link href="/" style={{ color: "var(--color-accent)" }}>
-              Persist
+              Persisty
             </Link>
             <Link href="/en" style={{ color: "var(--color-accent)" }} lang="en">
               English

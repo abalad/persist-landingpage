@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Next.js (App Router) on Vercel, chosen by the user over Astro (2026-10-21) because a logged-in web area will grow here later (account, subscriptions with Stripe). Static rendering for marketing, docs and changelog; the account area runs in the browser against Persist Cloud (Supabase). Three locales: pt-BR (default, no prefix), en, es.
+Next.js (App Router) on Vercel, chosen by the user over Astro (2026-10-21) because a logged-in web area will grow here later (account, subscriptions with Stripe). Static rendering for marketing, docs and changelog; the account area runs in the browser against Persisty Cloud (Supabase). Three locales: pt-BR (default, no prefix), en, es.
 
 ## Users
 
@@ -16,7 +16,7 @@ From solo developers to companies. The core user keeps several software products
 
 ## Product Purpose
 
-Persist is a local-first desktop workspace (macOS first; Windows and Linux builds exist but are not verified on real machines) that keeps AI coding sessions alive and organised. The site must explain what it does, sell the paid plans, collect accounts, offer the download, and keep visitors coming back through Docs and Changelog.
+Persisty is a local-first desktop workspace (macOS first; Windows and Linux builds exist but are not verified on real machines) that keeps AI coding sessions alive and organised. The site must explain what it does, sell the paid plans, collect accounts, offer the download, and keep visitors coming back through Docs and Changelog.
 
 The three pains that made the founder build it, in his words (2026-10-21):
 
@@ -26,7 +26,7 @@ The three pains that made the founder build it, in his words (2026-10-21):
 
 ## Positioning
 
-The UI never owns the processes. A private supervisor (an embedded tmux on macOS/Linux, its own daemon on Windows) keeps every terminal and agent alive; closing or crashing the app kills nothing, and after an OS restart Persist relaunches what it can and says plainly what it could not. On top of that it is organised by business project, not by folder, and it knows each Claude account's live 5-hour and 7-day windows, so new sessions go to the account with the most room. Competitors such as Verne (open-source, free) also keep sessions alive; the account-aware, project-first, "work while you're away" combination is what Persist can claim.
+The UI never owns the processes. A private supervisor (an embedded tmux on macOS/Linux, its own daemon on Windows) keeps every terminal and agent alive; closing or crashing the app kills nothing, and after an OS restart Persisty relaunches what it can and says plainly what it could not. On top of that it is organised by business project, not by folder, and it knows each Claude account's live 5-hour and 7-day windows, so new sessions go to the account with the most room. Competitors such as Verne (open-source, free) also keep sessions alive; the account-aware, project-first, "work while you're away" combination is what Persisty can claim.
 
 ## Operating Context
 
@@ -41,18 +41,18 @@ Available today (in the app, Milestone 1, not yet publicly downloadable):
 - Agent detection and states for Claude Code (hooks: working, waiting for you, permission pending, idle) and Codex (resume not verified). Any CLI runs in a persistent terminal.
 - Built-in editor (CodeMirror 6), git changes and commit, branch picker, project notes, search, command drawer.
 - Usage: spend per session, context, model per session, live 5h/7d windows from the same endpoint `/usage` uses.
-- Persist Cloud account by e-mail code; license signed with Ed25519, works 14 days offline, 5 devices; network log listing every outbound call.
+- Persisty Cloud account by e-mail code; license signed with Ed25519, works 14 days offline, 5 devices; network log listing every outbound call.
 - Pro (gated by license): own folder per session (git worktree), restore points per request, check on finish, request queue (waits for the agent, the 5-hour window renewal, or a time), several Claude Code accounts side by side with rotation for new sessions (accounts at 90% or more sit out).
 
 Not true today, must not be claimed: moving a running session to another account when it hits the limit; public download; signed/notarized builds; Team features (team board, FinOps, policies, audit log); Enterprise features (SSO, SCIM, model gateway, self-host); Growth integrations; mobile app; remote runner.
 
 Prices decided by the user (2026-10-21): Free; Pro US$ 9.90 per month; Team US$ 19.90 per user per month; Enterprise by contact. No annual price decided. Stripe is not wired: "Subscribe" buttons exist and do nothing yet (user's instruction). No contact e-mail exists yet: it lives in an environment variable; while empty, "Talk to us" leads to account creation with Enterprise interest recorded in the user's metadata.
 
-Persist Cloud: Supabase project `ytmpopebhdtnucdznfsz` (São Paulo). Sign-in by e-mail code (`signInWithOtp` with user creation, `verifyOtp` type `email`). The default SMTP only delivers to team members, 2 per hour, so public sign-up needs custom SMTP before launch.
+Persisty Cloud: Supabase project `ytmpopebhdtnucdznfsz` (São Paulo). Sign-in by e-mail code (`signInWithOtp` with user creation, `verifyOtp` type `email`). The default SMTP only delivers to team members, 2 per hour, so public sign-up needs custom SMTP before launch.
 
 ## Brand Commitments
 
-- Name "Persist" is provisional until domain and trademark checks; the site must not make trademark claims.
+- Name "Persisty" (decided 2026-10-22; "Persist" had no domain). Domain `persisty.app`, registered by the user. A formal trademark search (INPI, USPTO) is still pending; the site makes no trademark claims.
 - Visual system shared with the desktop app: `packages/design-tokens/tokens.css` in the app repo (graphite neutrals, sea-green accent `#5cc8b0`, status colours always paired with icon and text). Icons: Lucide.
 - Reference the user pinned: verne.build (dark, large light headline, product mockups built in HTML, two-column section heads), with every trace of an AI-made site removed.
 - Voice: plain, specific, honest. The app's own copy says "Parado", never "Falhou", for a stopped command; it says what it could not do.

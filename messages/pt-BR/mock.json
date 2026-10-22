@@ -28,7 +28,7 @@
     "restore": "Restaurar {count}"
   },
   "hero": {
-    "label": "A janela do Persist com o projeto Rota aberto: três sessões, uma trabalhando, uma pedindo permissão e um servidor de desenvolvimento rodando.",
+    "label": "A janela do Persisty com o projeto Rota aberto: três sessões, uma trabalhando, uma pedindo permissão e um servidor de desenvolvimento rodando.",
     "lines": [
       {
         "kind": "prompt",
@@ -68,13 +68,13 @@
     ]
   },
   "crash": {
-    "label": "Demonstração: as sessões do Persist voltando depois de o app fechar ou de o computador travar.",
-    "closeApp": "Fechar o Persist",
+    "label": "Demonstração: as sessões do Persisty voltando depois de o app fechar ou de o computador travar.",
+    "closeApp": "Fechar o Persisty",
     "crashComputer": "Travar o computador",
     "again": "Ver de novo",
-    "hint": "Escolha o que acontece e veja o que o Persist faz.",
+    "hint": "Escolha o que acontece e veja o que o Persisty faz.",
     "black": "O computador reiniciou",
-    "opening": "Abrindo o Persist…",
+    "opening": "Abrindo o Persisty…",
     "closed": "O app fechou. Os processos, não.",
     "report": "Relatório de restauração",
     "summary": "{recovered} recuperadas · {failed} falhas · {skipped} ignoradas",
@@ -89,7 +89,7 @@
     "running": "Antes: quatro sessões trabalhando"
   },
   "projects": {
-    "label": "O Persist com a lista de projetos e de agentes aberta: cada projeto mostra o que precisa de você.",
+    "label": "O Persisty com a lista de projetos e de agentes aberta: cada projeto mostra o que precisa de você.",
     "projectsTitle": "Projetos",
     "agentsTitle": "Agentes",
     "filter": "Todos",
@@ -249,7 +249,7 @@
     "message": "Adiciona frete por CEP"
   },
   "network": {
-    "label": "Configurações › Rede: a lista de chamadas que o Persist fez para fora, com destino, motivo e tamanho.",
+    "label": "Configurações › Rede: a lista de chamadas que o Persisty fez para fora, com destino, motivo e tamanho.",
     "title": "Rede",
     "group": "Desde que o app abriu",
     "rows": [

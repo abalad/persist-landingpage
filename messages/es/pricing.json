@@ -4,7 +4,7 @@
     "description": "Gratis sin cuenta, Pro por US$ 9,90 al mes, Team por US$ 19,90 por persona y Enterprise a consultar."
   },
   "title": "Planes y precios",
-  "body": "El núcleo de Persist es gratis y no pide cuenta. Los planes pagos desbloquean lo que deja al agente trabajar sin ti y, para equipos, el control para quien paga.",
+  "body": "El núcleo de Persisty es gratis y no pide cuenta. Los planes pagos desbloquean lo que deja al agente trabajar sin ti y, para equipos, el control para quien paga.",
   "currency": "Precios en dólares estadounidenses.",
   "opening": "Las suscripciones abren pronto.",
   "includes": "Todo lo de {plan}, más:",
@@ -57,7 +57,7 @@
     "policies": "Políticas con auditoría",
     "sso": "SSO y SCIM",
     "modelGateway": "Gateway de modelos",
-    "selfHost": "Persist Cloud en tu infraestructura",
+    "selfHost": "Persisty Cloud en tu infraestructura",
     "sourceReview": "Código fuente para auditoría, bajo confidencialidad"
   },
   "compare": {
@@ -79,7 +79,7 @@
       },
       {
         "q": "¿Qué pasa si dejo de pagar Pro?",
-        "a": "Persist vuelve al plan gratuito. No se pierde nada: los puntos de restauración guardados se pueden seguir restaurando y los pedidos que ya estaban en la cola se siguen entregando."
+        "a": "Persisty vuelve al plan gratuito. No se pierde nada: los puntos de restauración guardados se pueden seguir restaurando y los pedidos que ya estaban en la cola se siguen entregando."
       },
       {
         "q": "¿Necesito internet para usar Pro?",

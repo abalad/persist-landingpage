@@ -13,7 +13,7 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://persist-lan
 export function contactHref(topic: "enterprise" | "contact", email = process.env.NEXT_PUBLIC_CONTACT_EMAIL): string | null {
   const address = email?.trim();
   if (address) {
-    const subject = topic === "enterprise" ? "Persist Enterprise" : "Persist";
+    const subject = topic === "enterprise" ? "Persisty Enterprise" : "Persisty";
     return `mailto:${address}?subject=${encodeURIComponent(subject)}`;
   }
   return topic === "enterprise" ? `/sign-in?next=${encodeURIComponent("/account")}&interest=enterprise` : null;

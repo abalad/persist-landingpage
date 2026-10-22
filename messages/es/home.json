@@ -1,16 +1,16 @@
 {
   "hero": {
-    "title": "Persist mantiene tus agentes de IA en marcha, organizados por proyecto.",
+    "title": "Persisty mantiene tus agentes de IA en marcha, organizados por proyecto.",
     "body": "Sesiones de Claude Code y Codex que vuelven después de un cuelgue, un lugar para cada proyecto y varias cuentas que se turnan sin que cambies de login.",
     "download": {
       "mac": "Descargar para macOS",
       "windows": "Descargar para Windows",
       "linux": "Descargar para Linux",
-      "other": "Descargar Persist"
+      "other": "Descargar Persisty"
     },
     "account": "Crear cuenta",
     "note": "El núcleo es gratis y funciona sin cuenta. Los primeros builds públicos salen pronto.",
-    "crashLink": "Mira lo que hace Persist cuando la computadora se cuelga"
+    "crashLink": "Mira lo que hace Persisty cuando la computadora se cuelga"
   },
   "agents": {
     "title": "Funciona con lo que ya usas",
@@ -31,7 +31,7 @@
   },
   "recovery": {
     "title": "Sesiones que vuelven después de un cuelgue",
-    "body": "Cada terminal corre en un supervisor separado de la ventana. Si la app se cierra o se cuelga, nada se detiene. Si la computadora se reinicia, Persist relanza las sesiones, retoma las conversaciones de Claude Code y muestra en un informe qué volvió y qué no.",
+    "body": "Cada terminal corre en un supervisor separado de la ventana. Si la app se cierra o se cuelga, nada se detiene. Si la computadora se reinicia, Persisty relanza las sesiones, retoma las conversaciones de Claude Code y muestra en un informe qué volvió y qué no.",
     "link": "Cómo funciona la recuperación"
   },
   "projects": {
@@ -41,7 +41,7 @@
   },
   "accounts": {
     "title": "Varias cuentas de Claude Code, sin cambiar de login",
-    "body": "Conecta tu cuenta personal y la de la empresa, o todas las que tengas. Persist sigue en vivo la ventana de 5 horas y la semanal de cada una, y cada sesión nueva va a la cuenta con más margen. Una cuenta por encima del 90% queda fuera hasta renovarse.",
+    "body": "Conecta tu cuenta personal y la de la empresa, o todas las que tengas. Persisty sigue en vivo la ventana de 5 horas y la semanal de cada una, y cada sesión nueva va a la cuenta con más margen. Una cuenta por encima del 90% queda fuera hasta renovarse.",
     "link": "Cuentas de IA y rotación"
   },
   "states": {
@@ -61,7 +61,7 @@
   },
   "privacy": {
     "title": "Tu código no sale de tu máquina",
-    "body": "Persist funciona sin cuenta y sin internet. Cuando habla con afuera (cuota de Claude, licencia, cuenta), la llamada aparece en Configuración › Red con destino, motivo y tamaño. El código, la salida de la terminal y los prompts nunca salen.",
+    "body": "Persisty funciona sin cuenta y sin internet. Cuando habla con afuera (cuota de Claude, licencia, cuenta), la llamada aparece en Configuración › Red con destino, motivo y tamaño. El código, la salida de la terminal y los prompts nunca salen.",
     "link": "Seguridad y privacidad"
   },
   "companies": {
@@ -95,7 +95,7 @@
       },
       {
         "title": "SSO, SCIM e instalación en la empresa",
-        "body": "Login de la empresa, cuentas aprovisionadas y Persist Cloud corriendo en tu infraestructura.",
+        "body": "Login de la empresa, cuentas aprovisionadas y Persisty Cloud corriendo en tu infraestructura.",
         "status": "planned"
       }
     ],
@@ -110,7 +110,7 @@
     "title": "Preguntas frecuentes",
     "items": [
       {
-        "q": "¿Persist es gratis?",
+        "q": "¿Persisty es gratis?",
         "a": "El núcleo sí: proyectos, workspaces, sesiones persistentes, recuperación, estados de los agentes, editor, git y uso de IA, sin cuenta y sin plazo. Pro cuesta US$ 9,90 al mes y agrega rotación de cuentas, cola de pedidos, puntos de restauración, verificación al terminar y carpeta propia por sesión."
       },
       {
@@ -127,15 +127,15 @@
       },
       {
         "q": "¿Qué pasa si la computadora se reinicia?",
-        "a": "Al abrir, Persist relanza cada sesión que puede volver, retoma la conversación de Claude Code donde quedó y muestra un informe con lo que volvió, lo que falló y por qué. Nunca dice que algo volvió si no volvió."
+        "a": "Al abrir, Persisty relanza cada sesión que puede volver, retoma la conversación de Claude Code donde quedó y muestra un informe con lo que volvió, lo que falló y por qué. Nunca dice que algo volvió si no volvió."
       },
       {
         "q": "¿Puedo usar varias cuentas de Claude?",
-        "a": "Persist no crea cuentas ni toca límites. Usa las cuentas que ya tienes, como la personal y la de la empresa, con el login del propio Claude Code, y elige cuál abre cada sesión nueva. Cumplir los términos de cada cuenta sigue siendo cosa tuya."
+        "a": "Persisty no crea cuentas ni toca límites. Usa las cuentas que ya tienes, como la personal y la de la empresa, con el login del propio Claude Code, y elige cuál abre cada sesión nueva. Cumplir los términos de cada cuenta sigue siendo cosa tuya."
       },
       {
         "q": "¿Funciona en Windows y Linux?",
-        "a": "Persist nació en macOS, donde se usa todos los días. Ya existen builds para Windows y Linux, todavía sin pruebas en máquinas reales, y saldrán como versión preliminar."
+        "a": "Persisty nació en macOS, donde se usa todos los días. Ya existen builds para Windows y Linux, todavía sin pruebas en máquinas reales, y saldrán como versión preliminar."
       },
       {
         "q": "¿Funciona sin internet?",
@@ -152,7 +152,7 @@
     ]
   },
   "closing": {
-    "title": "Prueba Persist",
+    "title": "Prueba Persisty",
     "body": "Descárgalo cuando salga, o crea tu cuenta ahora y recibe el aviso del lanzamiento.",
     "account": "Crear cuenta",
     "download": "Ir a la descarga"

@@ -1,11 +1,11 @@
 ---
 title: Cuenta, planes y licencia
-description: Para qué sirve la cuenta de Persist, cómo funciona la licencia sin conexión y cuántas computadoras cubre.
+description: Para qué sirve la cuenta de Persisty, cómo funciona la licencia sin conexión y cuántas computadoras cubre.
 group: account
 order: 1
 ---
 
-El plan gratuito no pide cuenta. La cuenta de Persist Cloud existe para los planes pagos y para los avisos que pidas.
+El plan gratuito no pide cuenta. La cuenta de Persisty Cloud existe para los planes pagos y para los avisos que pidas.
 
 ## Entrar
 
@@ -19,7 +19,7 @@ Las funciones pagas se desbloquean con una licencia firmada que la app verifica 
 
 - Vale **14 días sin internet**. Con la app abierta y conexión, se renueva cada 6 horas.
 - Cubre hasta **5 computadoras** por cuenta. En [Mi cuenta](/account) ves los equipos y puedes revocar uno.
-- Si el plan termina, Persist vuelve al gratuito. Los puntos de restauración ya guardados se pueden seguir restaurando y los pedidos que ya estaban en la cola se siguen entregando.
+- Si el plan termina, Persisty vuelve al gratuito. Los puntos de restauración ya guardados se pueden seguir restaurando y los pedidos que ya estaban en la cola se siguen entregando.
 
 ## Planes
 

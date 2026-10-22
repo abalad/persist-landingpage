@@ -5,7 +5,7 @@ group: work
 order: 2
 ---
 
-Las funciones Pro están en el **panel lateral de la sesión** (<kbd>⌘</kbd> <kbd>&#92;</kbd>) y en su encabezado. Requieren la cuenta de Persist con el plan Pro; lo que ya se guardó se puede seguir usando si el plan termina.
+Las funciones Pro están en el **panel lateral de la sesión** (<kbd>⌘</kbd> <kbd>&#92;</kbd>) y en su encabezado. Requieren la cuenta de Persisty con el plan Pro; lo que ya se guardó se puede seguir usando si el plan termina.
 
 ## Cola de pedidos
 
@@ -17,7 +17,7 @@ Escribe el próximo pedido ahora y elige cuándo va al agente:
 
 Los pedidos van uno a la vez, en el orden de la cola, y solo cuando el agente está esperando el próximo pedido; nunca en medio de un trabajo ni encima de un pedido de permiso. Cada pedido se pega de una sola vez, así que los saltos de línea no lo envían en pedazos.
 
-La cola se revisa cada 10 segundos con Persist abierto. Con la app cerrada, no se envía nada.
+La cola se revisa cada 10 segundos con Persisty abierto. Con la app cerrada, no se envía nada.
 
 ## Puntos de restauración
 
@@ -39,5 +39,5 @@ Vale para sesiones de agente dentro de un workspace. El resultado no se envía a
 En carpetas git, la sesión nueva puede recibir una rama `persist/<nombre>` en una carpeta solo suya (un git worktree), para que dos agentes nunca editen los mismos archivos.
 
 - La carpeta queda en `~/.persist/worktrees` y no trae lo que git ignora (`node_modules`, `.env`, builds).
-- Al cerrar la sesión, Persist pregunta si la carpeta se queda, se elimina o se elimina descartando los archivos sin commit, y dice cuántos commits guarda la rama.
+- Al cerrar la sesión, Persisty pregunta si la carpeta se queda, se elimina o se elimina descartando los archivos sin commit, y dice cuántos commits guarda la rama.
 - La rama nunca se borra.

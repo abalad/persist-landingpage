@@ -3,11 +3,11 @@ import { contactHref, subscribe } from "../src/lib/site";
 
 describe("contactHref", () => {
   it("opens an e-mail about Enterprise when an address is configured", () => {
-    expect(contactHref("enterprise", "vendas@persist.example")).toBe("mailto:vendas@persist.example?subject=Persist%20Enterprise");
+    expect(contactHref("enterprise", "vendas@persist.example")).toBe("mailto:vendas@persist.example?subject=Persisty%20Enterprise");
   });
 
   it("opens a general e-mail when an address is configured", () => {
-    expect(contactHref("contact", "vendas@persist.example")).toBe("mailto:vendas@persist.example?subject=Persist");
+    expect(contactHref("contact", "vendas@persist.example")).toBe("mailto:vendas@persist.example?subject=Persisty");
   });
 
   it("without an address, sends Enterprise interest through the account", () => {

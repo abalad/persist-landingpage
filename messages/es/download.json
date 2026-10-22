@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Descargar",
-    "description": "Descarga Persist para macOS, Windows o Linux. Los primeros builds públicos salen pronto; crea una cuenta para recibir el aviso."
+    "description": "Descarga Persisty para macOS, Windows o Linux. Los primeros builds públicos salen pronto; crea una cuenta para recibir el aviso."
   },
-  "title": "Descarga Persist",
+  "title": "Descarga Persisty",
   "body": "Todavía no hay build público: falta firmar y notarizar la app. Elige tu sistema y recibe un aviso cuando salga.",
   "yours": "Tu sistema",
   "soon": "Pronto",
@@ -13,7 +13,7 @@
     "mac": {
       "name": "macOS",
       "detail": "Apple Silicon e Intel",
-      "note": "Donde Persist se usa todos los días. Probado en Apple Silicon; Intel debería funcionar."
+      "note": "Donde Persisty se usa todos los días. Probado en Apple Silicon; Intel debería funcionar."
     },
     "windows": {
       "name": "Windows",
@@ -31,7 +31,7 @@
     "items": [
       {
         "title": "Nada más que la app",
-        "body": "El supervisor que mantiene vivas las sesiones va dentro de Persist. No hay que instalar tmux ni otra dependencia."
+        "body": "El supervisor que mantiene vivas las sesiones va dentro de Persisty. No hay que instalar tmux ni otra dependencia."
       },
       {
         "title": "Claude Code, si usas agentes",

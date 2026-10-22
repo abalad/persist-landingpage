@@ -1,14 +1,14 @@
 ---
 title: Terms of use
-description: The rules for using the Persist app, website and account.
+description: The rules for using the Persisty app, website and account.
 updated: 2026-10-22
 ---
 
-By using Persist, the website or the Persist Cloud account, you agree to these terms.
+By using Persisty, the website or the Persisty Cloud account, you agree to these terms.
 
 ## The service
 
-Persist is a desktop app for organising projects and keeping terminal and AI agent sessions running. The core is free. Paid plans enable additional features, described on the [Pricing](/pricing) page.
+Persisty is a desktop app for organising projects and keeping terminal and AI agent sessions running. The core is free. Paid plans enable additional features, described on the [Pricing](/pricing) page.
 
 ## Your account
 
@@ -16,11 +16,11 @@ You sign in with a code sent to your e-mail. Use an e-mail address that is yours
 
 ## What the app does on your machine
 
-Persist runs with your permissions and opens the agents you choose. The agents run tools and change files according to your requests and the permissions you grant in them. You are responsible for what you ask the agents to do and for keeping a copy of what matters. Features such as restore points help, but they do not replace a backup.
+Persisty runs with your permissions and opens the agents you choose. The agents run tools and change files according to your requests and the permissions you grant in them. You are responsible for what you ask the agents to do and for keeping a copy of what matters. Features such as restore points help, but they do not replace a backup.
 
 ## Third-party accounts
 
-Persist works with third-party tools, such as Claude Code and Codex, using the accounts and sign-ins you already have. Your use of those accounts follows each provider's terms. Claude and Claude Code are trademarks of Anthropic; Codex is a trademark of OpenAI. Persist is not affiliated with either of them.
+Persisty works with third-party tools, such as Claude Code and Codex, using the accounts and sign-ins you already have. Your use of those accounts follows each provider's terms. Claude and Claude Code are trademarks of Anthropic; Codex is a trademark of OpenAI. Persisty is not affiliated with either of them.
 
 ## Paid plans
 
@@ -28,11 +28,11 @@ Prices are on the [Pricing](/pricing) page. Subscriptions open soon; billing and
 
 ## Software licence
 
-Persist is proprietary software. You get the right to install and use the app on your computers. You may not resell or redistribute the app, or try to extract its source code.
+Persisty is proprietary software. You get the right to install and use the app on your computers. You may not resell or redistribute the app, or try to extract its source code.
 
 ## No warranties
 
-Persist is provided as is. We work to make it stable and to have it say clearly what it could not do, but we do not guarantee that it works without failures in every situation. To the extent the law allows, we are not liable for indirect losses arising from use of the app.
+Persisty is provided as is. We work to make it stable and to have it say clearly what it could not do, but we do not guarantee that it works without failures in every situation. To the extent the law allows, we are not liable for indirect losses arising from use of the app.
 
 ## Changes
 

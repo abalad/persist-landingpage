@@ -28,7 +28,7 @@
     "restore": "Restore {count}"
   },
   "hero": {
-    "label": "The Persist window with the Rota project open: three sessions, one working, one asking for permission and a dev server running.",
+    "label": "The Persisty window with the Rota project open: three sessions, one working, one asking for permission and a dev server running.",
     "lines": [
       {
         "kind": "prompt",
@@ -68,13 +68,13 @@
     ]
   },
   "crash": {
-    "label": "Demo: Persist sessions coming back after the app closes or the computer crashes.",
-    "closeApp": "Quit Persist",
+    "label": "Demo: Persisty sessions coming back after the app closes or the computer crashes.",
+    "closeApp": "Quit Persisty",
     "crashComputer": "Crash the computer",
     "again": "Run it again",
-    "hint": "Pick what happens and watch what Persist does.",
+    "hint": "Pick what happens and watch what Persisty does.",
     "black": "The computer restarted",
-    "opening": "Opening Persist…",
+    "opening": "Opening Persisty…",
     "closed": "The app quit. The processes did not.",
     "report": "Restore report",
     "summary": "{recovered} recovered · {failed} failed · {skipped} skipped",
@@ -89,7 +89,7 @@
     "running": "Before: four sessions working"
   },
   "projects": {
-    "label": "Persist with the project and agent lists open: every project shows what needs you.",
+    "label": "Persisty with the project and agent lists open: every project shows what needs you.",
     "projectsTitle": "Projects",
     "agentsTitle": "Agents",
     "filter": "All",
@@ -249,7 +249,7 @@
     "message": "Add shipping by postcode"
   },
   "network": {
-    "label": "Settings › Network: the list of calls Persist made to the outside, with destination, reason and size.",
+    "label": "Settings › Network: the list of calls Persisty made to the outside, with destination, reason and size.",
     "title": "Network",
     "group": "Since the app opened",
     "rows": [

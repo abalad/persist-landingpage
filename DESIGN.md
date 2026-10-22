@@ -1,11 +1,11 @@
 ---
-name: Persist
-description: The website for Persist, a local-first desktop workspace that keeps AI coding sessions alive; dark only, built from the desktop app's own tokens.
+name: Persisty
+description: The website for Persisty, a local-first desktop workspace that keeps AI coding sessions alive; dark only, built from the desktop app's own tokens.
 colors:
-  sea-green: "#5cc8b0"
-  sea-green-strong: "#7fe0c9"
-  sea-green-wash: "rgba(92, 200, 176, 0.12)"
-  focus-mint: "#8fe3cf"
+  lime: "#c6f24e"
+  lime-strong: "#ddf98f"
+  lime-wash: "rgba(198, 242, 78, 0.12)"
+  focus-mint: "#ddf98f"
   page-ground: "#0a0c10"
   page-ground-raised: "#0d1015"
   selected-raised: "#11151c"
@@ -13,7 +13,7 @@ colors:
   heading-white: "#f2f4f8"
   body-grey: "#b8bfcc"
   muted-grey: "#8b94a7"
-  pill-paper: "#eef1f5"
+  pill-paper: "#c6f24e"
   pill-paper-hover: "#ffffff"
   pill-graphite: "#171a22"
   pill-graphite-hover: "#1e222c"
@@ -29,7 +29,7 @@ colors:
   app-fg-subtle: "#7c859a"
   status-warn: "#e3b24a"
   status-warn-wash: "rgba(227, 178, 74, 0.14)"
-  status-ok-wash: "rgba(92, 200, 176, 0.14)"
+  status-ok-wash: "rgba(198, 242, 78, 0.14)"
   status-info: "#7aa7e8"
   status-danger: "#ef7d7d"
   status-danger-wash: "rgba(239, 125, 125, 0.14)"
@@ -164,7 +164,7 @@ components:
     padding: "0 12px"
   badge-available:
     backgroundColor: "{colors.status-ok-wash}"
-    textColor: "{colors.sea-green}"
+    textColor: "{colors.lime}"
     rounded: "{rounded.pill}"
     height: "22px"
     padding: "0 8px"
@@ -181,7 +181,7 @@ components:
     height: "22px"
     padding: "0 8px"
   badge-pro:
-    textColor: "{colors.sea-green}"
+    textColor: "{colors.lime}"
     rounded: "{rounded.pill}"
     height: "22px"
     padding: "0 8px"
@@ -191,7 +191,7 @@ components:
     height: "36px"
     padding: "0 14px"
   tab-pill-selected:
-    backgroundColor: "{colors.sea-green-wash}"
+    backgroundColor: "{colors.lime-wash}"
     textColor: "{colors.heading-white}"
   input:
     backgroundColor: "{colors.page-ground-raised}"
@@ -216,34 +216,34 @@ components:
     padding: "6px"
 ---
 
-# Design System: Persist
+# Design System: Persisty
 
 ## Overview
 
 **Creative North Star: "The App on the Desk"**
 
-The site is the desktop app's own graphite world with the lights lowered one step. Every claim is carried by a faithful HTML rendition of the Persist window, and the page exists to set that window down as an object: a darker ground, a soft shadow under it, nothing competing with it. The page around the windows is quiet typographic structure: a centred statement, light display type, two-column section heads, hairline-divided lists.
+The site is the desktop app's own graphite world with the lights lowered one step. Every claim is carried by a faithful HTML rendition of the Persisty window, and the page exists to set that window down as an object: a darker ground, a soft shadow under it, nothing competing with it. The page around the windows is quiet typographic structure: a centred statement, light display type, two-column section heads, hairline-divided lists.
 
-Density lives inside the mockups, where the app's real vocabulary runs at app scale (13px text, 26px tabs, status chips). Outside them the site is spacious and calm: long section rhythm, muted body copy, one sea-green reserved for what is alive or actionable. The world refuses the category default of gradient hero, icon-card feature grid and logo wall; the build answers each with the product itself, hairline lists and honest availability badges.
+Density lives inside the mockups, where the app's real vocabulary runs at app scale (13px text, 26px tabs, status chips). Outside them the site is spacious and calm: long section rhythm, muted body copy, one lime reserved for what is alive or actionable. The world refuses the category default of gradient hero, icon-card feature grid and logo wall; the build answers each with the product itself, hairline lists and honest availability badges.
 
 The site is dark only. There is no light theme, and the root declares `color-scheme: dark`.
 
 **Key Characteristics:**
 - App tokens copied from the desktop app (dark theme); site-only tokens layered on top.
 - Page ground one step darker than the app window, so windows read as objects.
-- One accent, sea-green, for alive and action; primary CTA is an off-white pill, not green.
+- One accent, lime, for alive and action; primary CTA is a lime pill with dark text.
 - Mona Sans light at display sizes, widened through its `wdth` axis; JetBrains Mono only where machines speak.
 - Structure by 1px hairlines; shadow only on things that float.
 - Mockups sized in app pixels (`--u`) so they scale like screenshots while staying real, translatable text.
 
 ## Colors
 
-Cool graphite neutrals in two tiers (page and app window), one sea-green accent, and the app's four status hues, each always paired with an icon and a word.
+Cool graphite neutrals in two tiers (page and app window), one lime accent, and the app's four status hues, each always paired with an icon and a word.
 
 ### Primary
-- **Sea Green** (sea-green): the only accent. Text links and arrow links under section heads, the first-viewport crash link, checkmarks in plan features and the comparison table, the Pro badge outline, the selected tab-pill border, the featured plan's top marker, input focus border, caret, and the app's "alive" states inside mockups.
-- **Bright Sea Green** (sea-green-strong): the app's emphasised accent, used inside mockups.
-- **Sea Green Wash** (sea-green-wash): the fill behind selected tab pills and accent notices; selection uses the same hue at 28%.
+- **Lime** (lime): the only accent. Text links and arrow links under section heads, the first-viewport crash link, checkmarks in plan features and the comparison table, the Pro badge outline, the selected tab-pill border, the featured plan's top marker, input focus border, caret, and the app's "alive" states inside mockups.
+- **Bright Lime** (lime-strong): the app's emphasised accent, used inside mockups.
+- **Lime Wash** (lime-wash): the fill behind selected tab pills and accent notices; selection uses the same hue at 28%.
 - **Focus Mint** (focus-mint): the 2px focus outline on every focusable element, offset 3px.
 
 ### Neutral
@@ -261,7 +261,7 @@ Cool graphite neutrals in two tiers (page and app window), one sea-green accent,
 ### Status
 - **Amber** (status-warn): waiting for you, permission pending, "In development", usage bars at 90% or more.
 - **Blue** (status-info): working.
-- **Sea Green** (sea-green, same token as the accent): idle, OK, "Available".
+- **Lime** (lime, same token as the accent): idle, OK, "Available".
 - **Coral** (status-danger): errors and invalid fields.
 - **Slate** (status-neutral): "Planned" and neutral app states.
 - Each has a 14% wash for chip and badge fills.
@@ -269,7 +269,7 @@ Cool graphite neutrals in two tiers (page and app window), one sea-green accent,
 ### Named Rules
 **The Window-as-Object Rule.** The page ground stays one step darker than the app window ground. Never render a mockup on a ground equal to or darker than its own; the step is what makes it read as an object on a desk.
 
-**The One Green Rule.** Sea green marks what is alive or actionable and nothing else. It never fills a primary button, a section background or a decorative shape.
+**The One Lime Rule.** Lime marks what is alive or actionable and nothing else: the orbit dot, the primary button, links and alive states. It never fills a section background or a decorative shape, and text on lime is always dark.
 
 **The Word-and-Icon Status Rule.** A status hue never appears alone: every state carries its Lucide icon and its word (badges carry a dot and a label; "Planned" uses a hollow dot).
 
@@ -320,8 +320,8 @@ Flat by default, structured by hairlines and the two-step ground (page, raised p
 - **Window** (`box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 24px 60px -12px rgba(0,0,0,0.7), 0 8px 20px -8px rgba(0,0,0,0.5)`): every app window mockup.
 - **Popover** (`box-shadow: 0 8px 24px rgba(0,0,0,0.45), 0 1px 0 rgba(255,255,255,0.04) inset`): menus such as the locale switcher.
 - **App icon** (`box-shadow: 0 1px 0 rgba(255,255,255,0.06) inset, 0 18px 40px -14px rgba(0,0,0,0.8)`): the 72px hero icon.
-- **Focus halo** (`box-shadow: 0 0 0 3px rgba(92,200,176,0.18)`): text inputs on focus, with a sea-green border.
-- **Featured marker** (`box-shadow: inset 0 2px 0` sea-green): the top edge of the featured plan column.
+- **Focus halo** (`box-shadow: 0 0 0 3px rgba(198,242,78,0.18)`): text inputs on focus, with a lime border.
+- **Featured marker** (`box-shadow: inset 0 2px 0` lime): the top edge of the featured plan column.
 
 ### Named Rules
 **The Hairline-Not-Shadow Rule.** On the page, separation is a 1px hairline or a one-step ground change. A shadow means the thing floats; panels, cards and lists never get one.
@@ -333,19 +333,19 @@ Pills for everything you press on the page (buttons, nav links, tab pills, badge
 ## Components
 
 ### Buttons
-Soft, quiet pills; the off-white one is the only bright object on a dark page.
+Soft, quiet pills; the lime one is the only bright object on a dark page.
 - **Shape:** full pill (999px).
 - **Primary:** paper fill, night text, weight 500; 46px tall with 22px sides (large) or 36px with 16px (medium). Lucide icon at 1.05em with a 0.5em gap.
 - **Hover / Active:** fill brightens to white over 180ms; press nudges down 1px. Disabled at 55% opacity.
 - **Secondary:** graphite fill with a graphite border and heading-white text; hover lifts fill and border one step.
 - **Ghost:** transparent, body-grey text; hover adds a 4% white wash and heading-white text (nav sign-in).
-- **Arrow link:** sea-green text, weight 500, trailing arrow that slides 3px on hover.
+- **Arrow link:** lime text, weight 500, trailing arrow that slides 3px on hover.
 
 ### Badges
-- **Style:** 22px pill, 0.75rem weight 500, a 6px dot plus a word. Available (sea green on its wash), In development (amber on its wash), Planned (slate wash, hollow dot), Pro (transparent with a 1px sea-green inset ring at 45%).
+- **Style:** 22px pill, 0.75rem weight 500, a 6px dot plus a word. Available (lime on its wash), In development (amber on its wash), Planned (slate wash, hollow dot), Pro (transparent with a 1px lime inset ring at 45%).
 
 ### Tab pills
-- **Style:** 36px pill with a hairline border, muted text and a 15px icon; hover brightens text and border. Selected: sea-green wash with a 50% sea-green border and white text. Scrolls horizontally, edge to edge, on narrow screens.
+- **Style:** 36px pill with a hairline border, muted text and a 15px icon; hover brightens text and border. Selected: lime wash with a 50% lime border and white text. Scrolls horizontally, edge to edge, on narrow screens.
 
 ### Seamed panels
 Grouped items share one container split by hairlines instead of separate cards.
@@ -357,7 +357,7 @@ Grouped items share one container split by hairlines instead of separate cards.
 
 ### Inputs / Fields
 - **Style:** 46px tall, 10px radius, raised-night fill, graphite-pill border, 1rem heading-white text.
-- **Focus:** sea-green border plus a 3px sea-green halo at 18%; no outline.
+- **Focus:** lime border plus a 3px lime halo at 18%; no outline.
 - **Error:** coral border; error notices are a coral wash panel with a Lucide icon.
 - **Code field:** JetBrains Mono, 1.375rem, tracked 0.3em, centred.
 
@@ -375,7 +375,7 @@ The desktop app redrawn in HTML at full fidelity: macOS traffic lights, top bar 
 ### Do:
 - **Do** set every app mockup on the page ground (#0a0c10 family), one step darker than the window it shows.
 - **Do** carry product claims with the app window itself, using the app's real vocabulary and Lucide icons.
-- **Do** keep the primary action an off-white pill and the secondary a graphite pill, side by side, 12px apart.
+- **Do** keep the primary action a lime pill with dark text and the secondary a graphite pill, side by side, 12px apart.
 - **Do** pair every status colour with its icon and word, and label every capability Available, In development or Planned.
 - **Do** size anything inside a mockup in app pixels (`calc(n * var(--u))`) and give it a narrow layout under 640px of container width.
 - **Do** use 120ms for small state changes and 180ms with the `cubic-bezier(0.16, 1, 0.3, 1)` ease-out for colour and border transitions, and respect reduced motion everywhere.
@@ -383,7 +383,7 @@ The desktop app redrawn in HTML at full fidelity: macOS traffic lights, top bar 
 
 ### Don't:
 - **Don't** add a light theme or light sections; the site is dark only.
-- **Don't** fill buttons, backgrounds or decorative shapes with sea green.
+- **Don't** fill backgrounds or decorative shapes with lime, or put light text on it.
 - **Don't** use a gradient hero, an icon-card feature grid or a logo wall.
 - **Don't** put shadows on page panels, cards or lists; shadow is only for the window, popovers and the app icon.
 - **Don't** set JetBrains Mono outside terminals, code and data, or set headings heavier than 420.

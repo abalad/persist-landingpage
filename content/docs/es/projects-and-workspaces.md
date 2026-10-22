@@ -1,11 +1,11 @@
 ---
 title: Proyectos y workspaces
-description: Cómo organiza Persist productos, carpetas, sesiones y agentes en una sola ventana.
+description: Cómo organiza Persisty productos, carpetas, sesiones y agentes en una sola ventana.
 group: start
 order: 2
 ---
 
-Persist organiza el trabajo en tres niveles, del mayor al menor.
+Persisty organiza el trabajo en tres niveles, del mayor al menor.
 
 | Nivel | Qué es | Dónde aparece |
 | --- | --- | --- |

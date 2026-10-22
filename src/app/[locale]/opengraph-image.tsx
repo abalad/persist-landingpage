@@ -6,7 +6,7 @@ import { routing } from "@/i18n/routing";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Persist";
+export const alt = "Persisty";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -22,10 +22,10 @@ export default async function OpenGraphImage({ params }: { params: Promise<{ loc
       <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 80, background: "#0a0c10", color: "#f2f4f8" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
           <img src={icon} width={72} height={72} alt="" style={{ borderRadius: 16 }} />
-          <span style={{ fontSize: 40, fontWeight: 600 }}>Persist</span>
+          <span style={{ fontSize: 44, fontWeight: 700, letterSpacing: -1 }}>persisty</span>
         </div>
         <div style={{ display: "flex", fontSize: 60, lineHeight: 1.1, letterSpacing: -1.5, maxWidth: 980 }}>{t("title")}</div>
-        <div style={{ display: "flex", width: 160, height: 6, borderRadius: 3, background: "#5cc8b0" }} />
+        <div style={{ display: "flex", width: 160, height: 6, borderRadius: 3, background: "#C6F24E" }} />
       </div>
     ),
     size,

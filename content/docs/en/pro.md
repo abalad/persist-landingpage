@@ -5,7 +5,7 @@ group: work
 order: 2
 ---
 
-The Pro features live in the **session side panel** (<kbd>⌘</kbd> <kbd>&#92;</kbd>) and in the session header. They require a Persist account on the Pro plan; what has already been saved stays usable if the plan ends.
+The Pro features live in the **session side panel** (<kbd>⌘</kbd> <kbd>&#92;</kbd>) and in the session header. They require a Persisty account on the Pro plan; what has already been saved stays usable if the plan ends.
 
 ## Request queue
 
@@ -17,7 +17,7 @@ Write the next request now and choose when it goes to the agent:
 
 Requests go one at a time, in queue order, and only when the agent is waiting for its next request; never in the middle of work or over a permission request. Each request goes as a single paste, so line breaks do not send it in pieces.
 
-The queue is checked every 10 seconds while Persist is open. With the app closed, nothing is sent.
+The queue is checked every 10 seconds while Persisty is open. With the app closed, nothing is sent.
 
 ## Restore points
 
@@ -39,5 +39,5 @@ This applies to agent sessions inside a workspace. The result is not sent to the
 In git folders, a new session can get a `persist/<name>` branch in a folder of its own (a git worktree), so two agents never edit the same files.
 
 - The folder lives in `~/.persist/worktrees` and does not bring along what git ignores (`node_modules`, `.env`, builds).
-- When you close the session, Persist asks whether to keep the folder, remove it, or remove it and discard the uncommitted files, and says how many commits the branch holds.
+- When you close the session, Persisty asks whether to keep the folder, remove it, or remove it and discard the uncommitted files, and says how many commits the branch holds.
 - The branch is never deleted.

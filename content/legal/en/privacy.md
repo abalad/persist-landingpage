@@ -1,16 +1,16 @@
 ---
 title: Privacy policy
-description: What data the website, the app and Persist Cloud keep, where it is stored, what it is for and how to ask for it to be deleted.
+description: What data the website, the app and Persisty Cloud keep, where it is stored, what it is for and how to ask for it to be deleted.
 updated: 2026-10-22
 ---
 
-Persist is built to keep as little as possible. The app works without an account and without internet, and what you do in it stays on your machine.
+Persisty is built to keep as little as possible. The app works without an account and without internet, and what you do in it stays on your machine.
 
 ## In the app
 
-Projects, sessions, terminal history, notes and AI usage stay in a local database on your computer. Persist does not send code, terminal output or prompts anywhere, and it has no telemetry.
+Projects, sessions, terminal history, notes and AI usage stay in a local database on your computer. Persisty does not send code, terminal output or prompts anywhere, and it has no telemetry.
 
-The app only reaches out to read Claude Code's quota (with the credential Claude Code already stores), sign in to the Persist Cloud account and renew the licence. Every call shows up in **Settings › Network**.
+The app only reaches out to read Claude Code's quota (with the credential Claude Code already stores), sign in to the Persisty Cloud account and renew the licence. Every call shows up in **Settings › Network**.
 
 ## On the website
 
@@ -21,7 +21,7 @@ The website uses no analytics and no tracking cookies. It stores two kinds of co
 
 The website is hosted by Vercel, which receives the usual data from any visit to a website (IP address, browser, page requested).
 
-## In your Persist Cloud account
+## In your Persisty Cloud account
 
 When you create an account, we keep:
 
@@ -33,7 +33,7 @@ When you create an account, we keep:
 
 This data is stored in Supabase, in the São Paulo region. We use it to run the account, issue the licence and send the notices you asked for. We do not sell data and do not use it for advertising.
 
-When payment is available, it will be processed by Stripe; Persist does not see or store card details.
+When payment is available, it will be processed by Stripe; Persisty does not see or store card details.
 
 ## Your rights
 

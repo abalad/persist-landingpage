@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
     metadataBase: new URL(SITE_URL),
-    title: { default: t("title"), template: "%s · Persist" },
+    title: { default: t("title"), template: "%s · Persisty" },
     description: t("description"),
   };
 }

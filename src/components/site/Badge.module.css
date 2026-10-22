@@ -42,6 +42,6 @@
 .pro {
   background: transparent;
   color: var(--color-accent);
-  box-shadow: inset 0 0 0 1px rgba(92, 200, 176, 0.45);
+  box-shadow: inset 0 0 0 1px rgba(198, 242, 78, 0.45);
   letter-spacing: 0.02em;
 }

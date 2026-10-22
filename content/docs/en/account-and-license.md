@@ -1,11 +1,11 @@
 ---
 title: Account, plans and licence
-description: What the Persist account is for, how the offline licence works and how many computers it covers.
+description: What the Persisty account is for, how the offline licence works and how many computers it covers.
 group: account
 order: 1
 ---
 
-The free plan needs no account. The Persist Cloud account exists for the paid plans and for the notices you ask for.
+The free plan needs no account. The Persisty Cloud account exists for the paid plans and for the notices you ask for.
 
 ## Sign in
 
@@ -19,7 +19,7 @@ Paid features are enabled by a signed licence that the app checks on its own.
 
 - It is valid for **14 days without internet**. With the app open and a connection, it renews every 6 hours.
 - It covers up to **5 computers** per account. In [My account](/account) you can see the devices and revoke one of them.
-- If the plan ends, Persist goes back to the free plan. Restore points already saved can still be restored, and requests already in the queue are still delivered.
+- If the plan ends, Persisty goes back to the free plan. Restore points already saved can still be restored, and requests already in the queue are still delivered.
 
 ## Plans
 

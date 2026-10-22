@@ -1,16 +1,16 @@
 ---
 title: Política de privacidad
-description: Qué datos guardan el sitio, la app y Persist Cloud, dónde quedan, para qué y cómo pedir que se borren.
+description: Qué datos guardan el sitio, la app y Persisty Cloud, dónde quedan, para qué y cómo pedir que se borren.
 updated: 2026-10-22
 ---
 
-Persist se hizo para guardar lo mínimo. La app funciona sin cuenta y sin internet, y lo que haces en ella se queda en tu máquina.
+Persisty se hizo para guardar lo mínimo. La app funciona sin cuenta y sin internet, y lo que haces en ella se queda en tu máquina.
 
 ## En la app
 
-Los proyectos, las sesiones, el historial de la terminal, las notas y el uso de IA quedan en una base de datos local en tu computadora. Persist no envía código, salida de la terminal ni prompts a ninguna parte y no tiene telemetría.
+Los proyectos, las sesiones, el historial de la terminal, las notas y el uso de IA quedan en una base de datos local en tu computadora. Persisty no envía código, salida de la terminal ni prompts a ninguna parte y no tiene telemetría.
 
-La app solo habla con afuera para leer la cuota de Claude Code (con la credencial que Claude Code ya guarda), entrar a la cuenta de Persist Cloud y renovar la licencia. Cada llamada aparece en **Configuración › Red** (*Settings › Network*).
+La app solo habla con afuera para leer la cuota de Claude Code (con la credencial que Claude Code ya guarda), entrar a la cuenta de Persisty Cloud y renovar la licencia. Cada llamada aparece en **Configuración › Red** (*Settings › Network*).
 
 ## En el sitio
 
@@ -21,7 +21,7 @@ El sitio no usa analítica ni cookies de rastreo. Guarda dos tipos de cookie, lo
 
 El sitio está alojado en Vercel, que recibe los datos normales de cualquier visita a un sitio (dirección IP, navegador, página pedida).
 
-## En la cuenta de Persist Cloud
+## En la cuenta de Persisty Cloud
 
 Cuando creas una cuenta, guardamos:
 
@@ -33,7 +33,7 @@ Cuando creas una cuenta, guardamos:
 
 Estos datos quedan en Supabase, en la región de São Paulo. Los usamos para mantener la cuenta, emitir la licencia y enviar los avisos que pediste. No vendemos datos ni los usamos para publicidad.
 
-Cuando haya pagos, los procesará Stripe; Persist no ve ni guarda datos de tarjeta.
+Cuando haya pagos, los procesará Stripe; Persisty no ve ni guarda datos de tarjeta.
 
 ## Tus derechos
 

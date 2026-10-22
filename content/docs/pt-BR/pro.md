@@ -5,7 +5,7 @@ group: work
 order: 2
 ---
 
-Os recursos do Pro ficam no **painel lateral da sessão** (<kbd>⌘</kbd> <kbd>&#92;</kbd>) e no cabeçalho dela. Eles exigem a conta do Persist com o plano Pro; o que já foi gravado continua utilizável se o plano acabar.
+Os recursos do Pro ficam no **painel lateral da sessão** (<kbd>⌘</kbd> <kbd>&#92;</kbd>) e no cabeçalho dela. Eles exigem a conta do Persisty com o plano Pro; o que já foi gravado continua utilizável se o plano acabar.
 
 ## Fila de pedidos
 
@@ -17,7 +17,7 @@ Escreva o próximo pedido agora e escolha quando ele vai para o agente:
 
 Os pedidos vão um por vez, na ordem da fila, e só quando o agente está esperando o próximo pedido; nunca no meio de um trabalho nem por cima de um pedido de permissão. Cada pedido vai como uma colagem só, então quebras de linha não mandam pedaços.
 
-A fila é conferida a cada 10 segundos com o Persist aberto. Com o app fechado, nada é enviado.
+A fila é conferida a cada 10 segundos com o Persisty aberto. Com o app fechado, nada é enviado.
 
 ## Pontos de restauração
 
@@ -39,5 +39,5 @@ Vale para sessões de agente dentro de um workspace. O resultado não é enviado
 Em pastas git, a sessão nova pode ganhar um branch `persist/<nome>` numa pasta só dela (um git worktree), para dois agentes nunca editarem os mesmos arquivos.
 
 - A pasta fica em `~/.persist/worktrees` e não traz o que o git ignora (`node_modules`, `.env`, builds).
-- Ao fechar a sessão, o Persist pergunta se a pasta fica, sai, ou sai descartando os arquivos não commitados, e diz quantos commits o branch guarda.
+- Ao fechar a sessão, o Persisty pergunta se a pasta fica, sai, ou sai descartando os arquivos não commitados, e diz quantos commits o branch guarda.
 - O branch nunca é apagado.

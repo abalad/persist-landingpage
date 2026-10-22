@@ -1,8 +1,8 @@
-# Site do Persist
+# Site do Persisty
 
-Site público do [Persist](https://github.com/abalad/persist): Home, Preços, Download, Docs, Changelog, conta do Persist Cloud e páginas de privacidade, segurança e termos, em português (padrão), inglês e espanhol.
+Site público do [Persisty](https://github.com/abalad/persist): Home, Preços, Download, Docs, Changelog, conta do Persisty Cloud e páginas de privacidade, segurança e termos, em português (padrão), inglês e espanhol.
 
-Next.js 16 (App Router) com `next-intl`, publicado na Vercel. As páginas são estáticas; a conta roda no navegador contra o Supabase do Persist Cloud.
+Next.js 16 (App Router) com `next-intl`, publicado na Vercel. As páginas são estáticas; a conta roda no navegador contra o Supabase do Persisty Cloud.
 
 ## Desenvolvimento
 
@@ -33,11 +33,11 @@ Os testes garantem que os três idiomas têm as mesmas chaves, as mesmas Docs e 
 
 ## Variáveis de ambiente
 
-Veja `.env.example`. Sem nenhuma variável o site funciona com os valores públicos do Persist Cloud.
+Veja `.env.example`. Sem nenhuma variável o site funciona com os valores públicos do Persisty Cloud.
 
 ## Teste de ponta a ponta da conta
 
-`scripts/e2e/account.mjs` entra pelo formulário real do site com uma conta descartável do Persist Cloud e apaga a conta no fim. O envio do e-mail é o único passo simulado (o código vem da API admin). Precisa da chave secreta do projeto só no ambiente:
+`scripts/e2e/account.mjs` entra pelo formulário real do site com uma conta descartável do Persisty Cloud e apaga a conta no fim. O envio do e-mail é o único passo simulado (o código vem da API admin). Precisa da chave secreta do projeto só no ambiente:
 
 ```bash
 SECRET=$(supabase projects api-keys --project-ref ytmpopebhdtnucdznfsz --reveal -o json | …) \

@@ -1,5 +1,5 @@
 ---
-title: Conta do Persist Cloud e registro de rede
+title: Conta do Persisty Cloud e registro de rede
 date: 2026-10-21
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Problemas e limitações
-description: Situações conhecidas, o que fazer em cada uma e o que o Persist ainda não faz.
+description: Situações conhecidas, o que fazer em cada uma e o que o Persisty ainda não faz.
 group: reference
 order: 2
 ---
@@ -11,17 +11,17 @@ O Claude Code mostra o aviso de confiança da pasta antes de qualquer hook. Resp
 
 ## Digitei `claude` num terminal e a sessão não virou agente
 
-Terminais abertos antes de uma atualização do Persist não têm o atalho que adota o Claude Code. Abra um terminal novo.
+Terminais abertos antes de uma atualização do Persisty não têm o atalho que adota o Claude Code. Abra um terminal novo.
 
 ## A quota aparece como indisponível
 
-O Persist lê a quota com a credencial que o Claude Code guarda. Se ela venceu, as barras usam os números da própria sessão até o Claude Code renová-la. Contas conectadas pelo Persist precisam do item que o Claude Code cria no Keychain ao concluir o login.
+O Persisty lê a quota com a credencial que o Claude Code guarda. Se ela venceu, as barras usam os números da própria sessão até o Claude Code renová-la. Contas conectadas pelo Persisty precisam do item que o Claude Code cria no Keychain ao concluir o login.
 
 ## A fila não enviou o pedido
 
-A fila só envia com o Persist aberto e com o agente esperando o próximo pedido. Pedidos nunca vão durante um trabalho nem por cima de um pedido de permissão.
+A fila só envia com o Persisty aberto e com o agente esperando o próximo pedido. Pedidos nunca vão durante um trabalho nem por cima de um pedido de permissão.
 
-## O que o Persist ainda não faz
+## O que o Persisty ainda não faz
 
 - Trocar a conta de uma sessão que já está rodando quando a quota acaba.
 - Integrações com GitHub, GitLab e ferramentas de analytics.

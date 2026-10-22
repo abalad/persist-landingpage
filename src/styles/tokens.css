@@ -1,6 +1,6 @@
 /*
  * App tokens copied from persist-application/packages/design-tokens/tokens.css
- * (dark theme). The site and the desktop app share them; keep both in sync by hand.
+ * (dark theme; Persisty lime accent since 2026-10-22). The site and the desktop app share them; keep both in sync by hand.
  */
 :root {
   color-scheme: dark;
@@ -16,13 +16,13 @@
   --color-fg-subtle: #7c859a;
   --color-fg-inverse: #0f1115;
 
-  --color-accent: #5cc8b0;
-  --color-accent-strong: #7fe0c9;
-  --color-accent-bg: rgba(92, 200, 176, 0.12);
+  --color-accent: #c6f24e;
+  --color-accent-strong: #ddf98f;
+  --color-accent-bg: rgba(198, 242, 78, 0.12);
   --color-accent-fg: #0f1115;
 
-  --color-ok: #5cc8b0;
-  --color-ok-bg: rgba(92, 200, 176, 0.14);
+  --color-ok: #c6f24e;
+  --color-ok-bg: rgba(198, 242, 78, 0.14);
   --color-warn: #e3b24a;
   --color-warn-bg: rgba(227, 178, 74, 0.14);
   --color-danger: #ef7d7d;
@@ -32,8 +32,8 @@
   --color-neutral: #8d96a8;
   --color-neutral-bg: rgba(141, 150, 168, 0.14);
 
-  --color-focus: #8fe3cf;
-  --color-selection: rgba(92, 200, 176, 0.28);
+  --color-focus: #ddf98f;
+  --color-selection: rgba(198, 242, 78, 0.24);
 
   --radius-sm: 4px;
   --radius-md: 6px;
@@ -51,8 +51,8 @@
   --site-body: #b8bfcc;
   --site-muted: #8b94a7;
 
-  --pill-primary-bg: #eef1f5;
-  --pill-primary-bg-hover: #ffffff;
+  --pill-primary-bg: #c6f24e;
+  --pill-primary-bg-hover: #d6f77d;
   --pill-primary-fg: #0a0c10;
   --pill-secondary-bg: #171a22;
   --pill-secondary-bg-hover: #1e222c;

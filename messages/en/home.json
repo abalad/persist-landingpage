@@ -1,16 +1,16 @@
 {
   "hero": {
-    "title": "Persist keeps your AI agents running, organised by project.",
+    "title": "Persisty keeps your AI agents running, organised by project.",
     "body": "Claude Code and Codex sessions that come back after a crash, a place for every project, and several accounts that take turns without you switching logins.",
     "download": {
       "mac": "Download for macOS",
       "windows": "Download for Windows",
       "linux": "Download for Linux",
-      "other": "Download Persist"
+      "other": "Download Persisty"
     },
     "account": "Create account",
     "note": "The core is free and works without an account. The first public builds are coming soon.",
-    "crashLink": "See what Persist does when the computer crashes"
+    "crashLink": "See what Persisty does when the computer crashes"
   },
   "agents": {
     "title": "Works with what you already use",
@@ -31,7 +31,7 @@
   },
   "recovery": {
     "title": "Sessions that come back after a crash",
-    "body": "Every terminal runs in a supervisor apart from the window. If the app quits or freezes, nothing stops. If the computer restarts, Persist relaunches the sessions, resumes the Claude Code conversations and shows a report of what came back and what didn't.",
+    "body": "Every terminal runs in a supervisor apart from the window. If the app quits or freezes, nothing stops. If the computer restarts, Persisty relaunches the sessions, resumes the Claude Code conversations and shows a report of what came back and what didn't.",
     "link": "How recovery works"
   },
   "projects": {
@@ -41,7 +41,7 @@
   },
   "accounts": {
     "title": "Several Claude Code accounts, no logging in and out",
-    "body": "Connect your personal account and your company's, or as many as you have. Persist follows each one's 5-hour and weekly windows live, and every new session goes to the account with the most room. An account above 90% sits out until it renews.",
+    "body": "Connect your personal account and your company's, or as many as you have. Persisty follows each one's 5-hour and weekly windows live, and every new session goes to the account with the most room. An account above 90% sits out until it renews.",
     "link": "AI accounts and rotation"
   },
   "states": {
@@ -61,7 +61,7 @@
   },
   "privacy": {
     "title": "Your code stays on your machine",
-    "body": "Persist works without an account and without internet. When it does reach out (Claude quota, licence, account), the call shows up in Settings › Network with destination, reason and size. Code, terminal output and prompts never leave.",
+    "body": "Persisty works without an account and without internet. When it does reach out (Claude quota, licence, account), the call shows up in Settings › Network with destination, reason and size. Code, terminal output and prompts never leave.",
     "link": "Security and privacy"
   },
   "companies": {
@@ -95,7 +95,7 @@
       },
       {
         "title": "SSO, SCIM and on-premises",
-        "body": "Company sign-in, provisioned accounts and Persist Cloud running on your own infrastructure.",
+        "body": "Company sign-in, provisioned accounts and Persisty Cloud running on your own infrastructure.",
         "status": "planned"
       }
     ],
@@ -110,7 +110,7 @@
     "title": "Questions",
     "items": [
       {
-        "q": "Is Persist free?",
+        "q": "Is Persisty free?",
         "a": "The core is: projects, workspaces, persistent sessions, recovery, agent states, editor, git and AI usage, with no account and no time limit. Pro costs US$ 9.90 a month and adds account rotation, the request queue, restore points, check on finish and a folder of its own per session."
       },
       {
@@ -127,15 +127,15 @@
       },
       {
         "q": "What happens if the computer restarts?",
-        "a": "On launch, Persist relaunches every session that can come back, resumes the Claude Code conversation where it stopped and shows a report of what came back, what failed and why. It never says something came back when it didn't."
+        "a": "On launch, Persisty relaunches every session that can come back, resumes the Claude Code conversation where it stopped and shows a report of what came back, what failed and why. It never says something came back when it didn't."
       },
       {
         "q": "Can I use several Claude accounts?",
-        "a": "Persist doesn't create accounts or touch limits. It uses the accounts you already have, such as your personal and your company's, through Claude Code's own sign-in, and picks which one opens each new session. Following each account's terms stays with you."
+        "a": "Persisty doesn't create accounts or touch limits. It uses the accounts you already have, such as your personal and your company's, through Claude Code's own sign-in, and picks which one opens each new session. Following each account's terms stays with you."
       },
       {
         "q": "Does it run on Windows and Linux?",
-        "a": "Persist was born on macOS, where it is used every day. Windows and Linux builds exist but have not been tested on real machines yet; they will ship as a preview."
+        "a": "Persisty was born on macOS, where it is used every day. Windows and Linux builds exist but have not been tested on real machines yet; they will ship as a preview."
       },
       {
         "q": "Does it work offline?",
@@ -152,7 +152,7 @@
     ]
   },
   "closing": {
-    "title": "Try Persist",
+    "title": "Try Persisty",
     "body": "Download it when it ships, or create your account now and hear about the launch first.",
     "account": "Create account",
     "download": "Go to download"

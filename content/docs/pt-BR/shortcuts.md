@@ -1,6 +1,6 @@
 ---
 title: Atalhos de teclado
-description: Todos os atalhos do Persist no macOS.
+description: Todos os atalhos do Persisty no macOS.
 group: reference
 order: 1
 ---

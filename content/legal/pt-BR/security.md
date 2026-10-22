@@ -1,23 +1,23 @@
 ---
 title: Segurança
-description: Como o Persist protege seus terminais, suas credenciais e sua conta, e o que ainda está por vir.
+description: Como o Persisty protege seus terminais, suas credenciais e sua conta, e o que ainda está por vir.
 updated: 2026-10-22
 ---
 
-O Persist roda comandos com as suas permissões e abre agentes que usam ferramentas na sua máquina. Por isso cada decisão de segurança é tomada para não criar um caminho novo até o seu código.
+O Persisty roda comandos com as suas permissões e abre agentes que usam ferramentas na sua máquina. Por isso cada decisão de segurança é tomada para não criar um caminho novo até o seu código.
 
 ## Na sua máquina
 
 - **Supervisor privado.** O servidor que mantém as sessões vive num diretório só seu, com o socket acessível apenas pelo seu usuário. Não há porta de rede aberta.
 - **Nada de shell montado com texto.** Comandos e caminhos são passados como argumentos, nunca como uma linha de shell, e a pasta é conferida antes de lançar.
-- **Suas configurações intactas.** Os hooks do Claude Code entram por um arquivo próprio do Persist, passado com `--settings`. O seu `~/.claude/settings.json` nunca é lido nem alterado, e o Persist não edita os hooks do Codex.
-- **Permissões dos agentes respeitadas.** O Persist nunca passa opções que pulem os pedidos de permissão dos agentes.
+- **Suas configurações intactas.** Os hooks do Claude Code entram por um arquivo próprio do Persisty, passado com `--settings`. O seu `~/.claude/settings.json` nunca é lido nem alterado, e o Persisty não edita os hooks do Codex.
+- **Permissões dos agentes respeitadas.** O Persisty nunca passa opções que pulem os pedidos de permissão dos agentes.
 - **Credenciais onde já estavam.** O login das contas de IA é feito pelo próprio Claude Code; a credencial fica com ele. O token usado para ler a quota não é gravado nem aparece em log, e só vai para `api.anthropic.com`.
 - **Eventos não executam nada.** O que os agentes escrevem nos eventos só muda o estado mostrado na tela.
 
 ## Na nuvem
 
-- **Metadados, nunca código.** O Persist Cloud não recebe código, saída de terminal nem prompts.
+- **Metadados, nunca código.** O Persisty Cloud não recebe código, saída de terminal nem prompts.
 - **Acesso por linha.** Todas as tabelas têm regras de acesso por usuário (RLS), com testes que provam o que um membro, um administrador e um estranho conseguem ler e escrever.
 - **Licença assinada.** A licença é assinada com Ed25519 e conferida pelo app sem rede. A chave privada nunca sai do servidor.
 - **Registro de rede.** Cada chamada que o app faz aparece em **Configurações › Rede**, sem cabeçalhos nem conteúdo.

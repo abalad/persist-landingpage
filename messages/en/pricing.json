@@ -4,7 +4,7 @@
     "description": "Free with no account, Pro for US$ 9.90 a month, Team for US$ 19.90 per person and Enterprise by contact."
   },
   "title": "Plans and pricing",
-  "body": "Persist's core is free and asks for no account. Paid plans unlock what lets the agent work without you and, for teams, control for whoever pays.",
+  "body": "Persisty's core is free and asks for no account. Paid plans unlock what lets the agent work without you and, for teams, control for whoever pays.",
   "currency": "Prices in US dollars.",
   "opening": "Subscriptions open soon.",
   "includes": "Everything in {plan}, plus:",
@@ -57,7 +57,7 @@
     "policies": "Policies with an audit trail",
     "sso": "SSO and SCIM",
     "modelGateway": "Model gateway",
-    "selfHost": "Persist Cloud on your infrastructure",
+    "selfHost": "Persisty Cloud on your infrastructure",
     "sourceReview": "Source code for audit, under NDA"
   },
   "compare": {
@@ -79,7 +79,7 @@
       },
       {
         "q": "What happens if I stop paying for Pro?",
-        "a": "Persist goes back to the free plan. Nothing is lost: saved restore points can still be restored and requests already in the queue are still delivered."
+        "a": "Persisty goes back to the free plan. Nothing is lost: saved restore points can still be restored and requests already in the queue are still delivered."
       },
       {
         "q": "Do I need internet to use Pro?",

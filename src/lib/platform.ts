@@ -2,7 +2,7 @@ export type Platform = "mac" | "windows" | "linux" | "other";
 
 /**
  * The desktop system a visitor is on, from what the browser says. Phones,
- * tablets and Chromebooks are "other": Persist has nothing to install there.
+ * tablets and Chromebooks are "other": Persisty has nothing to install there.
  * iPadOS reports itself as a Mac; touch points give it away.
  */
 export function detectPlatform(userAgent: string, platform = "", maxTouchPoints = 0): Platform {

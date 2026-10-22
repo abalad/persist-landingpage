@@ -1,0 +1,23 @@
+.symbol {
+  display: block;
+  flex: none;
+  color: var(--site-heading);
+}
+
+.spin {
+  transform-box: view-box;
+  transform-origin: 33.5px 31px;
+  animation: orbit 14s linear infinite;
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spin {
+    animation: none;
+  }
+}

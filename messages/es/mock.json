@@ -28,7 +28,7 @@
     "restore": "Restaurar {count}"
   },
   "hero": {
-    "label": "La ventana de Persist con el proyecto Rota abierto: tres sesiones, una trabajando, una pidiendo permiso y un servidor de desarrollo en marcha.",
+    "label": "La ventana de Persisty con el proyecto Rota abierto: tres sesiones, una trabajando, una pidiendo permiso y un servidor de desarrollo en marcha.",
     "lines": [
       {
         "kind": "prompt",
@@ -68,13 +68,13 @@
     ]
   },
   "crash": {
-    "label": "Demostración: las sesiones de Persist volviendo después de que la app se cierra o la computadora se cuelga.",
-    "closeApp": "Cerrar Persist",
+    "label": "Demostración: las sesiones de Persisty volviendo después de que la app se cierra o la computadora se cuelga.",
+    "closeApp": "Cerrar Persisty",
     "crashComputer": "Colgar la computadora",
     "again": "Ver de nuevo",
-    "hint": "Elige qué pasa y mira lo que hace Persist.",
+    "hint": "Elige qué pasa y mira lo que hace Persisty.",
     "black": "La computadora se reinició",
-    "opening": "Abriendo Persist…",
+    "opening": "Abriendo Persisty…",
     "closed": "La app se cerró. Los procesos, no.",
     "report": "Informe de restauración",
     "summary": "{recovered} recuperadas · {failed} fallidas · {skipped} omitidas",
@@ -89,7 +89,7 @@
     "running": "Antes: cuatro sesiones trabajando"
   },
   "projects": {
-    "label": "Persist con la lista de proyectos y de agentes abierta: cada proyecto muestra lo que te necesita.",
+    "label": "Persisty con la lista de proyectos y de agentes abierta: cada proyecto muestra lo que te necesita.",
     "projectsTitle": "Proyectos",
     "agentsTitle": "Agentes",
     "filter": "Todos",
@@ -249,7 +249,7 @@
     "message": "Agrega envío por código postal"
   },
   "network": {
-    "label": "Configuración › Red: la lista de llamadas que Persist hizo hacia afuera, con destino, motivo y tamaño.",
+    "label": "Configuración › Red: la lista de llamadas que Persisty hizo hacia afuera, con destino, motivo y tamaño.",
     "title": "Red",
     "group": "Desde que se abrió la app",
     "rows": [

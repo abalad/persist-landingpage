@@ -14,7 +14,7 @@ El editor abre la carpeta de la sesión, en árbol. Los archivos que git ignora 
 - <kbd>⌘</kbd> <kbd>P</kbd> abre un archivo por su nombre; <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>F</kbd> busca en todos los archivos; <kbd>⌘</kbd> <kbd>F</kbd> busca y reemplaza en el archivo abierto; <kbd>⌘</kbd> <kbd>S</kbd> guarda.
 - Resaltado por lenguaje, cargado bajo demanda, con el mismo tema de la terminal.
 - Marcas de git en el margen y diff contra el HEAD.
-- Si el archivo cambia en el disco (el agente lo editó), Persist avisa: recargar (*Reload*) o mantener tu versión (*Keep mine*). Las pestañas sin cambios se recargan solas.
+- Si el archivo cambia en el disco (el agente lo editó), Persisty avisa: recargar (*Reload*) o mantener tu versión (*Keep mine*). Las pestañas sin cambios se recargan solas.
 
 No hay autocompletado inteligente ni "ir a la definición". Los archivos binarios y los de más de 5 MB no se abren.
 
@@ -22,8 +22,8 @@ No hay autocompletado inteligente ni "ir a la definición". Los archivos binario
 
 La pestaña **Cambios** (<kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>G</kbd>) muestra los archivos modificados con las letras de estado de git. Prepara o quita archivos uno por uno o todos a la vez, escribe el mensaje y haz el commit con <kbd>⌘</kbd> <kbd>↵</kbd>, o usa **Commit y enviar** (*Commit and push*). El historial muestra lo que todavía no se envió y los archivos de cada commit.
 
-Descartar cambios y resolver conflictos se hace en la terminal de al lado. Si git pide contraseña para enviar, Persist muestra el rechazo tal como lo escribió git.
+Descartar cambios y resolver conflictos se hace en la terminal de al lado. Si git pide contraseña para enviar, Persisty muestra el rechazo tal como lo escribió git.
 
 ## Notas
 
-Cada proyecto tiene notas en markdown, que se guardan solas en la base de datos local de Persist.
+Cada proyecto tiene notas en markdown, que se guardan solas en la base de datos local de Persisty.

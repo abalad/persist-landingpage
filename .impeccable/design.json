@@ -4,9 +4,9 @@
   "title": "Design System: Persist",
   "extensions": {
     "colorMeta": {
-      "sea-green": {
+      "lime": {
         "role": "primary",
-        "displayName": "Sea Green",
+        "displayName": "Lime",
         "canonical": "oklch(76.3% 0.106 176.6)",
         "tonalRamp": [
           "#00160a",
@@ -19,9 +19,9 @@
           "#9cffed"
         ]
       },
-      "sea-green-strong": {
+      "lime-strong": {
         "role": "primary",
-        "displayName": "Bright Sea Green",
+        "displayName": "Bright Lime",
         "canonical": "oklch(84.0% 0.098 176.7)",
         "tonalRamp": [
           "#00150a",
@@ -34,10 +34,10 @@
           "#a3ffed"
         ]
       },
-      "sea-green-wash": {
+      "lime-wash": {
         "role": "primary",
-        "displayName": "Sea Green Wash",
-        "canonical": "rgba(92, 200, 176, 0.12)",
+        "displayName": "Lime Wash",
+        "canonical": "rgba(198, 242, 78, 0.12)",
         "tonalRamp": [
           "#00160a",
           "#003424",
@@ -411,8 +411,8 @@
       },
       "status-ok-wash": {
         "role": "status",
-        "displayName": "Sea Green Status Wash",
-        "canonical": "rgba(92, 200, 176, 0.14)",
+        "displayName": "Lime Status Wash",
+        "canonical": "rgba(198, 242, 78, 0.14)",
         "tonalRamp": [
           "#00160a",
           "#003424",
@@ -572,17 +572,17 @@
       },
       {
         "name": "focus-halo",
-        "value": "0 0 0 3px rgba(92, 200, 176, 0.18)",
-        "purpose": "Text inputs on focus, with a sea-green border."
+        "value": "0 0 0 3px rgba(198, 242, 78, 0.18)",
+        "purpose": "Text inputs on focus, with a lime border."
       },
       {
         "name": "featured-marker",
-        "value": "inset 0 2px 0 #5cc8b0",
+        "value": "inset 0 2px 0 #c6f24e",
         "purpose": "Top edge of the featured plan column."
       },
       {
         "name": "focus-outline",
-        "value": "outline: 2px solid #8fe3cf; outline-offset: 3px",
+        "value": "outline: 2px solid #ddf98f; outline-offset: 3px",
         "purpose": "Every focusable element."
       }
     ],
@@ -658,7 +658,7 @@
       "refersTo": "button-primary",
       "description": "The main action on every surface: off-white pill, never green.",
       "html": "<button class=\"ds-btn-primary\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 15V3\"/><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5\"/></svg>Download for macOS</button>",
-      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:.5em;height:46px;padding:0 22px;border:1px solid transparent;border-radius:999px;background:var(--pill-primary-bg,#eef1f5);color:var(--pill-primary-fg,#0a0c10);font-family: var(--font-sans);font-size:.96875rem;font-weight:500;line-height:1;cursor:pointer;transition:background-color 180ms cubic-bezier(.16,1,.3,1),transform 120ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{background:var(--pill-primary-bg-hover,#fff)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2px solid #8fe3cf;outline-offset:3px}"
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:.5em;height:46px;padding:0 22px;border:1px solid transparent;border-radius:999px;background:var(--pill-primary-bg,#eef1f5);color:var(--pill-primary-fg,#0a0c10);font-family: var(--font-sans);font-size:.96875rem;font-weight:500;line-height:1;cursor:pointer;transition:background-color 180ms cubic-bezier(.16,1,.3,1),transform 120ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{background:var(--pill-primary-bg-hover,#fff)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2px solid #ddf98f;outline-offset:3px}"
     },
     {
       "name": "Secondary Pill",
@@ -666,15 +666,15 @@
       "refersTo": "button-secondary",
       "description": "The companion action beside the primary pill.",
       "html": "<button class=\"ds-btn-secondary\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>Create account</button>",
-      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;gap:.5em;height:46px;padding:0 22px;border:1px solid #2a303d;border-radius:999px;background:#171a22;color:#f2f4f8;font-family: var(--font-sans);font-size:.96875rem;font-weight:500;line-height:1;cursor:pointer;transition:background-color 180ms cubic-bezier(.16,1,.3,1),border-color 180ms cubic-bezier(.16,1,.3,1)}.ds-btn-secondary:hover{background:#1e222c;border-color:#353c4b}.ds-btn-secondary:active{transform:translateY(1px)}.ds-btn-secondary:focus-visible{outline:2px solid #8fe3cf;outline-offset:3px}"
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;gap:.5em;height:46px;padding:0 22px;border:1px solid #2a303d;border-radius:999px;background:#171a22;color:#f2f4f8;font-family: var(--font-sans);font-size:.96875rem;font-weight:500;line-height:1;cursor:pointer;transition:background-color 180ms cubic-bezier(.16,1,.3,1),border-color 180ms cubic-bezier(.16,1,.3,1)}.ds-btn-secondary:hover{background:#1e222c;border-color:#353c4b}.ds-btn-secondary:active{transform:translateY(1px)}.ds-btn-secondary:focus-visible{outline:2px solid #ddf98f;outline-offset:3px}"
     },
     {
       "name": "Arrow Link",
       "kind": "custom",
-      "refersTo": "sea-green",
-      "description": "Sea-green link under a section head; the arrow slides on hover.",
+      "refersTo": "lime",
+      "description": "Lime link under a section head; the arrow slides on hover.",
       "html": "<a class=\"ds-arrow-link\" href=\"#\">How recovery works<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>",
-      "css": ".ds-arrow-link{display:inline-flex;align-items:center;gap:6px;color:#5cc8b0;font-family: var(--font-sans);font-weight:500;text-decoration:none}.ds-arrow-link svg{transition:transform 180ms cubic-bezier(.16,1,.3,1)}.ds-arrow-link:hover svg{transform:translateX(3px)}.ds-arrow-link:focus-visible{outline:2px solid #8fe3cf;outline-offset:3px;border-radius:4px}"
+      "css": ".ds-arrow-link{display:inline-flex;align-items:center;gap:6px;color:#c6f24e;font-family: var(--font-sans);font-weight:500;text-decoration:none}.ds-arrow-link svg{transition:transform 180ms cubic-bezier(.16,1,.3,1)}.ds-arrow-link:hover svg{transform:translateX(3px)}.ds-arrow-link:focus-visible{outline:2px solid #ddf98f;outline-offset:3px;border-radius:4px}"
     },
     {
       "name": "Availability Badges",
@@ -682,23 +682,23 @@
       "refersTo": "badge-available",
       "description": "Dot plus word for every capability: Available, In development, Planned, Pro.",
       "html": "<span class=\"ds-badge ds-ok\"><i></i>Available</span> <span class=\"ds-badge ds-warn\"><i></i>In development</span> <span class=\"ds-badge ds-planned\"><i></i>Planned</span> <span class=\"ds-badge ds-pro\">Pro</span>",
-      "css": ".ds-badge{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:999px;font-family: var(--font-sans);font-size:.75rem;font-weight:500;line-height:1;white-space:nowrap}.ds-badge i{width:6px;height:6px;border-radius:50%;background:currentColor}.ds-ok{background:rgba(92,200,176,.14);color:#5cc8b0}.ds-warn{background:rgba(227,178,74,.14);color:#e3b24a}.ds-planned{background:rgba(141,150,168,.14);color:#a9b1c1}.ds-planned i{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}.ds-pro{color:#5cc8b0;box-shadow:inset 0 0 0 1px rgba(92,200,176,.45);letter-spacing:.02em}"
+      "css": ".ds-badge{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:999px;font-family: var(--font-sans);font-size:.75rem;font-weight:500;line-height:1;white-space:nowrap}.ds-badge i{width:6px;height:6px;border-radius:50%;background:currentColor}.ds-ok{background:rgba(198,242,78,.14);color:#c6f24e}.ds-warn{background:rgba(227,178,74,.14);color:#e3b24a}.ds-planned{background:rgba(141,150,168,.14);color:#a9b1c1}.ds-planned i{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}.ds-pro{color:#c6f24e;box-shadow:inset 0 0 0 1px rgba(198,242,78,.45);letter-spacing:.02em}"
     },
     {
       "name": "Tab Pills",
       "kind": "chip",
       "refersTo": "tab-pill",
-      "description": "Switches between Pro mockups; selected tab takes the sea-green wash.",
+      "description": "Switches between Pro mockups; selected tab takes the lime wash.",
       "html": "<div class=\"ds-tabs\"><button class=\"ds-tab\" aria-selected=\"true\">Restore points</button><button class=\"ds-tab\" aria-selected=\"false\">Request queue</button></div>",
-      "css": ".ds-tabs{display:flex;gap:6px}.ds-tab{height:36px;padding:0 14px;border:1px solid #1b1f28;border-radius:999px;background:transparent;color:#8b94a7;font-family: var(--font-sans);font-size:.875rem;cursor:pointer;transition:color 180ms cubic-bezier(.16,1,.3,1),border-color 180ms cubic-bezier(.16,1,.3,1)}.ds-tab:hover{color:#f2f4f8;border-color:#2a303d}.ds-tab[aria-selected=true]{border-color:rgba(92,200,176,.5);background:rgba(92,200,176,.12);color:#f2f4f8}.ds-tab:focus-visible{outline:2px solid #8fe3cf;outline-offset:3px}"
+      "css": ".ds-tabs{display:flex;gap:6px}.ds-tab{height:36px;padding:0 14px;border:1px solid #1b1f28;border-radius:999px;background:transparent;color:#8b94a7;font-family: var(--font-sans);font-size:.875rem;cursor:pointer;transition:color 180ms cubic-bezier(.16,1,.3,1),border-color 180ms cubic-bezier(.16,1,.3,1)}.ds-tab:hover{color:#f2f4f8;border-color:#2a303d}.ds-tab[aria-selected=true]{border-color:rgba(198,242,78,.5);background:rgba(198,242,78,.12);color:#f2f4f8}.ds-tab:focus-visible{outline:2px solid #ddf98f;outline-offset:3px}"
     },
     {
       "name": "Text Input",
       "kind": "input",
       "refersTo": "input",
-      "description": "Sign-in fields: raised night, sea-green focus border and halo.",
+      "description": "Sign-in fields: raised night, lime focus border and halo.",
       "html": "<label class=\"ds-label\">E-mail<input class=\"ds-input\" type=\"email\" placeholder=\"you@company.com\"></label>",
-      "css": ".ds-label{display:grid;gap:8px;color:#b8bfcc;font-family: var(--font-sans);font-size:.875rem;font-weight:500}.ds-input{height:46px;padding:0 14px;border:1px solid #2a303d;border-radius:10px;background:#0d1015;color:#f2f4f8;font:inherit;font-size:1rem;font-weight:400;transition:border-color 180ms cubic-bezier(.16,1,.3,1),box-shadow 180ms cubic-bezier(.16,1,.3,1)}.ds-input:hover{border-color:#3a4150}.ds-input:focus{outline:none;border-color:#5cc8b0;box-shadow:0 0 0 3px rgba(92,200,176,.18)}"
+      "css": ".ds-label{display:grid;gap:8px;color:#b8bfcc;font-family: var(--font-sans);font-size:.875rem;font-weight:500}.ds-input{height:46px;padding:0 14px;border:1px solid #2a303d;border-radius:10px;background:#0d1015;color:#f2f4f8;font:inherit;font-size:1rem;font-weight:400;transition:border-color 180ms cubic-bezier(.16,1,.3,1),box-shadow 180ms cubic-bezier(.16,1,.3,1)}.ds-input:hover{border-color:#3a4150}.ds-input:focus{outline:none;border-color:#c6f24e;box-shadow:0 0 0 3px rgba(198,242,78,.18)}"
     },
     {
       "name": "Navigation Bar",
@@ -706,15 +706,15 @@
       "refersTo": "nav-link",
       "description": "Sticky 64px bar on the night ground with centred pill links.",
       "html": "<nav class=\"ds-nav\"><strong class=\"ds-word\">Persist</strong><ul><li><a href=\"#\" aria-current=\"page\">Product</a></li><li><a href=\"#\">Pricing</a></li><li><a href=\"#\">Docs</a></li><li><a href=\"#\">Changelog</a></li></ul><a class=\"ds-nav-cta\" href=\"#\">Download</a></nav>",
-      "css": ".ds-nav{display:flex;align-items:center;gap:24px;height:64px;padding:0 24px;border-bottom:1px solid #1b1f28;background:#0a0c10;font-family: var(--font-sans);}.ds-word{color:#f2f4f8;font-size:1.0625rem;font-weight:560;font-variation-settings:'wdth' 108}.ds-nav ul{display:flex;gap:4px;margin:0 auto;padding:0;list-style:none}.ds-nav ul a{display:inline-flex;align-items:center;height:34px;padding:0 12px;border-radius:999px;color:#b8bfcc;font-size:.9375rem;text-decoration:none;transition:color 180ms,background-color 180ms}.ds-nav ul a:hover{color:#f2f4f8;background:rgba(255,255,255,.04)}.ds-nav ul a[aria-current=page]{color:#f2f4f8}.ds-nav-cta{display:inline-flex;align-items:center;height:36px;padding:0 16px;border-radius:999px;background:#eef1f5;color:#0a0c10;font-size:.875rem;font-weight:500;text-decoration:none}.ds-nav a:focus-visible{outline:2px solid #8fe3cf;outline-offset:3px}"
+      "css": ".ds-nav{display:flex;align-items:center;gap:24px;height:64px;padding:0 24px;border-bottom:1px solid #1b1f28;background:#0a0c10;font-family: var(--font-sans);}.ds-word{color:#f2f4f8;font-size:1.0625rem;font-weight:560;font-variation-settings:'wdth' 108}.ds-nav ul{display:flex;gap:4px;margin:0 auto;padding:0;list-style:none}.ds-nav ul a{display:inline-flex;align-items:center;height:34px;padding:0 12px;border-radius:999px;color:#b8bfcc;font-size:.9375rem;text-decoration:none;transition:color 180ms,background-color 180ms}.ds-nav ul a:hover{color:#f2f4f8;background:rgba(255,255,255,.04)}.ds-nav ul a[aria-current=page]{color:#f2f4f8}.ds-nav-cta{display:inline-flex;align-items:center;height:36px;padding:0 16px;border-radius:999px;background:#eef1f5;color:#0a0c10;font-size:.875rem;font-weight:500;text-decoration:none}.ds-nav a:focus-visible{outline:2px solid #ddf98f;outline-offset:3px}"
     },
     {
       "name": "Seamed Plan Panel",
       "kind": "card",
       "refersTo": "seamed-panel",
-      "description": "Grouped items share one hairline-split panel; the featured column gets a sea-green top marker.",
+      "description": "Grouped items share one hairline-split panel; the featured column gets a lime top marker.",
       "html": "<div class=\"ds-seamed\"><div class=\"ds-plan\"><b>Free</b><span class=\"ds-amount\">US$ 0</span></div><div class=\"ds-plan ds-featured\"><b>Pro</b><span class=\"ds-amount\">US$ 9.90</span></div></div>",
-      "css": ".ds-seamed{display:grid;grid-template-columns:1fr 1fr;border:1px solid #1b1f28;border-radius:14px;background:#0d1015;overflow:hidden;font-family: var(--font-sans);}.ds-plan{display:grid;gap:18px;padding:28px 24px;color:#f2f4f8}.ds-plan b{font-size:1.25rem;font-weight:500}.ds-plan+.ds-plan{border-left:1px solid #1b1f28}.ds-featured{background:#11151c;box-shadow:inset 0 2px 0 #5cc8b0}.ds-amount{font-size:2rem;font-weight:380;letter-spacing:-.02em;font-variant-numeric:tabular-nums}"
+      "css": ".ds-seamed{display:grid;grid-template-columns:1fr 1fr;border:1px solid #1b1f28;border-radius:14px;background:#0d1015;overflow:hidden;font-family: var(--font-sans);}.ds-plan{display:grid;gap:18px;padding:28px 24px;color:#f2f4f8}.ds-plan b{font-size:1.25rem;font-weight:500}.ds-plan+.ds-plan{border-left:1px solid #1b1f28}.ds-featured{background:#11151c;box-shadow:inset 0 2px 0 #c6f24e}.ds-amount{font-size:2rem;font-weight:380;letter-spacing:-.02em;font-variant-numeric:tabular-nums}"
     },
     {
       "name": "App Window",
@@ -727,11 +727,11 @@
   ],
   "narrative": {
     "northStar": "The App on the Desk",
-    "overview": "The site is the desktop app's own graphite world with the lights lowered one step. Every claim is carried by a faithful HTML rendition of the Persist window, and the page exists to set that window down as an object: a darker ground, a soft shadow under it, nothing competing with it. The page around the windows is quiet typographic structure: a centred statement, light display type, two-column section heads, hairline-divided lists.\n\nDensity lives inside the mockups, where the app's real vocabulary runs at app scale (13px text, 26px tabs, status chips). Outside them the site is spacious and calm: long section rhythm, muted body copy, one sea-green reserved for what is alive or actionable. The world refuses the category default of gradient hero, icon-card feature grid and logo wall; the build answers each with the product itself, hairline lists and honest availability badges.\n\nThe site is dark only. There is no light theme, and the root declares `color-scheme: dark`.",
+    "overview": "The site is the desktop app's own graphite world with the lights lowered one step. Every claim is carried by a faithful HTML rendition of the Persist window, and the page exists to set that window down as an object: a darker ground, a soft shadow under it, nothing competing with it. The page around the windows is quiet typographic structure: a centred statement, light display type, two-column section heads, hairline-divided lists.\n\nDensity lives inside the mockups, where the app's real vocabulary runs at app scale (13px text, 26px tabs, status chips). Outside them the site is spacious and calm: long section rhythm, muted body copy, one lime reserved for what is alive or actionable. The world refuses the category default of gradient hero, icon-card feature grid and logo wall; the build answers each with the product itself, hairline lists and honest availability badges.\n\nThe site is dark only. There is no light theme, and the root declares `color-scheme: dark`.",
     "keyCharacteristics": [
       "App tokens copied from the desktop app (dark theme); site-only tokens layered on top.",
       "Page ground one step darker than the app window, so windows read as objects.",
-      "One accent, sea-green, for alive and action; primary CTA is an off-white pill, not green.",
+      "One accent, lime, for alive and action; primary CTA is a lime pill with dark text.",
       "Mona Sans light at display sizes, widened through its `wdth` axis; JetBrains Mono only where machines speak.",
       "Structure by 1px hairlines; shadow only on things that float.",
       "Mockups sized in app pixels (`--u`) so they scale like screenshots while staying real, translatable text."

@@ -1,6 +1,6 @@
 ---
 title: Keyboard shortcuts
-description: Every Persist shortcut on macOS.
+description: Every Persisty shortcut on macOS.
 group: reference
 order: 1
 ---

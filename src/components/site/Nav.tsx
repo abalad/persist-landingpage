@@ -23,7 +23,7 @@ export function Nav() {
         {t("skip")}
       </a>
       <nav className={`container ${styles.inner}`} aria-label={t("label")}>
-        <Logo label={t("home")} />
+        <Logo label={t("home")} spin />
         <ul className={styles.links}>
           {links.map((l) => (
             <li key={l.href}>

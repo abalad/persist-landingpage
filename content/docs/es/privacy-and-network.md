@@ -1,22 +1,22 @@
 ---
 title: Privacidad y registro de red
-description: Qué se queda en tu máquina, qué sale y cómo revisar cada llamada de red de Persist.
+description: Qué se queda en tu máquina, qué sale y cómo revisar cada llamada de red de Persisty.
 group: account
 order: 2
 ---
 
-Persist es local: proyectos, sesiones, historial, notas y uso quedan en una base de datos SQLite en tu máquina. No hay telemetría.
+Persisty es local: proyectos, sesiones, historial, notas y uso quedan en una base de datos SQLite en tu máquina. No hay telemetría.
 
 ## Lo que nunca sale
 
-El código, la salida de la terminal y los prompts nunca salen de tu máquina a través de Persist. Los agentes hablan con sus proveedores como lo harían sin Persist.
+El código, la salida de la terminal y los prompts nunca salen de tu máquina a través de Persisty. Los agentes hablan con sus proveedores como lo harían sin Persisty.
 
 ## Lo que sale, y por qué
 
 La app solo habla con afuera para:
 
 - leer la cuota de Claude Code (`api.anthropic.com`), con la credencial que Claude Code ya guarda; el token no se guarda ni se registra;
-- entrar a la cuenta de Persist Cloud y renovar la licencia.
+- entrar a la cuenta de Persisty Cloud y renovar la licencia.
 
 ## Registro de red
 

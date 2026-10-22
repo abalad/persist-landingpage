@@ -1,11 +1,11 @@
 ---
 title: Projects and workspaces
-description: How Persist organises products, folders, sessions and agents in a single window.
+description: How Persisty organises products, folders, sessions and agents in a single window.
 group: start
 order: 2
 ---
 
-Persist organises work in three levels, from largest to smallest.
+Persisty organises work in three levels, from largest to smallest.
 
 | Level | What it is | Where it shows |
 | --- | --- | --- |
