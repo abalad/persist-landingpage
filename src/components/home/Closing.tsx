@@ -9,7 +9,7 @@ export function Closing() {
   const t = useTranslations("home.closing");
   return (
     <section className={`container ${styles.closing}`} aria-labelledby="closing-title">
-      <Image className={styles.studio} src="/art/studio.webp" alt="" width={1400} height={1029} sizes="(max-width: 960px) 100vw, 880px" />
+      <Image className={styles.art} src="/art/rocket.webp" alt="" width={1280} height={800} sizes="(max-width: 560px) 80vw, 440px" />
       <h2 id="closing-title" className={styles.title}>
         {t("title")}
       </h2>

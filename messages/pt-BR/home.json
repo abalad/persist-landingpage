@@ -9,8 +9,47 @@
       "other": "Baixar o Persisty"
     },
     "account": "Criar conta",
-    "note": "O núcleo é grátis e funciona sem conta. Os primeiros builds públicos saem em breve.",
-    "crashLink": "Veja o que o Persisty faz quando o computador trava"
+    "facts": [
+      {
+        "title": "Seu código não sai da sua máquina",
+        "body": "Funciona sem conta e sem internet."
+      },
+      {
+        "title": "O núcleo é grátis",
+        "body": "Os primeiros builds públicos saem em breve."
+      }
+    ],
+    "crashLink": "Veja o que o Persisty faz quando o computador trava",
+    "studio": {
+      "agentTitle": "Claude",
+      "testsTitle": "Testes",
+      "devTitle": "Servidor de dev",
+      "deployTitle": "Deploy",
+      "reading": "Lendo {file}",
+      "editing": "Editando {file}",
+      "testing": "Rodando os testes",
+      "asking": "Pediu sua aprovação",
+      "approve": "Aprovar",
+      "view": "Ver",
+      "applying": "Aplicando a mudança",
+      "done": "Pronto",
+      "passing": "{passed}/{total} passando",
+      "passed": "{total} passaram",
+      "rps": "{rps} req/s",
+      "building": "Construindo · {pct}%",
+      "launching": "Publicando",
+      "live": "No ar há {seconds}s",
+      "screen": {
+        "reading": "lendo",
+        "editing": "editando",
+        "testing": "rodando testes",
+        "asking": "esperando você",
+        "applying": "aplicando",
+        "done": "concluído",
+        "launching": "publicando",
+        "live": "no ar"
+      }
+    }
   },
   "agents": {
     "title": "Funciona com o que você já usa",

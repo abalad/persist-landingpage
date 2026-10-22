@@ -3,14 +3,12 @@
   text-align: center;
 }
 
-/* The app's 3D studio, rendered on the site's own ground, melting into it at the edges. */
-.studio {
+/* The studio's launch pad: the hero opens on the whole studio, the page closes on its rocket. */
+.art {
   display: block;
-  width: min(880px, 100%);
+  width: min(440px, 80%);
   height: auto;
-  margin: 0 auto 8px;
-  -webkit-mask-image: radial-gradient(closest-side, #000 72%, transparent 100%);
-  mask-image: radial-gradient(closest-side, #000 72%, transparent 100%);
+  margin: 0 auto 12px;
 }
 
 .title {

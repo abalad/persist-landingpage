@@ -9,8 +9,47 @@
       "other": "Download Persisty"
     },
     "account": "Create account",
-    "note": "The core is free and works without an account. The first public builds are coming soon.",
-    "crashLink": "See what Persisty does when the computer crashes"
+    "facts": [
+      {
+        "title": "Your code stays on your machine",
+        "body": "Works without an account and without internet."
+      },
+      {
+        "title": "The core is free",
+        "body": "The first public builds are coming soon."
+      }
+    ],
+    "crashLink": "See what Persisty does when the computer crashes",
+    "studio": {
+      "agentTitle": "Claude",
+      "testsTitle": "Tests",
+      "devTitle": "Dev server",
+      "deployTitle": "Deploy",
+      "reading": "Reading {file}",
+      "editing": "Editing {file}",
+      "testing": "Running the tests",
+      "asking": "Asked for your approval",
+      "approve": "Approve",
+      "view": "View",
+      "applying": "Applying the change",
+      "done": "Done",
+      "passing": "{passed}/{total} passing",
+      "passed": "{total} passed",
+      "rps": "{rps} req/s",
+      "building": "Building · {pct}%",
+      "launching": "Publishing",
+      "live": "Live for {seconds}s",
+      "screen": {
+        "reading": "reading",
+        "editing": "editing",
+        "testing": "running tests",
+        "asking": "waiting for you",
+        "applying": "applying",
+        "done": "done",
+        "launching": "publishing",
+        "live": "live"
+      }
+    }
   },
   "agents": {
     "title": "Works with what you already use",

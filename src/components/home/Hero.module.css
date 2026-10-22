@@ -1,27 +1,46 @@
 .hero {
-  padding-top: clamp(48px, 7vw, 80px);
-  text-align: center;
+  padding-top: clamp(32px, 5vw, 64px);
 }
 
-.icon {
-  margin: 0 auto 28px;
-  border-radius: 18px;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 18px 40px -14px rgba(0, 0, 0, 0.8);
+/* The statement on the left, the studio on the right, bleeding a little past the page's edge.
+   In one column the studio comes right after the actions, before the small print. */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  grid-template-areas:
+    "head stage"
+    "foot stage";
+  column-gap: clamp(16px, 2.5vw, 40px);
+}
+
+.head,
+.foot {
+  position: relative;
+  z-index: 1;
+}
+
+.head {
+  grid-area: head;
+  align-self: end;
+}
+
+.foot {
+  grid-area: foot;
+  align-self: start;
 }
 
 .title {
-  max-width: 19em;
-  margin: 0 auto;
-  font-size: clamp(2.125rem, 1.05rem + 3.4vw, 3.625rem);
+  max-width: 13em;
+  font-size: clamp(2.125rem, 1.25rem + 2.4vw, 3.5rem);
   font-weight: 330;
   font-variation-settings: "wdth" 106;
-  line-height: 1.04;
+  line-height: 1.05;
   letter-spacing: -0.03em;
 }
 
 .body {
-  max-width: 54ch;
-  margin: 24px auto 0;
+  max-width: 46ch;
+  margin-top: 22px;
   color: var(--site-muted);
   font-size: var(--lead);
   line-height: 1.55;
@@ -30,29 +49,24 @@
 .actions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 12px;
-  margin-top: 36px;
-}
-
-.note {
-  margin-top: 18px;
-  color: var(--site-muted);
-  font-size: var(--tiny);
+  margin-top: 32px;
 }
 
 .crashLink {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 14px;
+  display: inline-block;
+  margin-top: 18px;
+  text-wrap: balance;
   color: var(--color-accent);
   font-size: var(--small);
 }
 
 .crashLink svg {
+  display: inline-block;
   width: 15px;
   height: 15px;
+  margin-left: 6px;
+  vertical-align: -3px;
   transition: transform var(--duration-normal) var(--ease-out);
 }
 
@@ -60,7 +74,81 @@
   transform: translateY(2px);
 }
 
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px clamp(24px, 3vw, 40px);
+  margin: 32px 0 0;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--site-hairline);
+  list-style: none;
+}
+
+.fact {
+  display: flex;
+  flex: 1 1 13.5em;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--site-muted);
+  font-size: var(--small);
+  line-height: 1.45;
+}
+
+.fact svg {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  color: var(--site-body);
+  stroke-width: 1.6;
+}
+
+.fact strong {
+  display: block;
+  color: var(--site-heading);
+  font-weight: 500;
+}
+
+.stage {
+  grid-area: stage;
+  align-self: center;
+  margin-right: calc(-1 * clamp(0px, (100vw - var(--page)) / 2 - var(--gutter), 72px));
+}
+
 .window {
   max-width: 1200px;
-  margin: clamp(48px, 7vw, 80px) auto 0;
+  margin: clamp(40px, 6vw, 72px) auto 0;
+}
+
+/* One column: the statement first, the studio under it, edge to edge. */
+@media (max-width: 1023px) {
+  .split {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "head"
+      "stage"
+      "foot";
+  }
+
+  .foot {
+    margin-top: -8px;
+  }
+
+  .title {
+    max-width: 15em;
+  }
+
+  .stage {
+    max-width: 760px;
+    width: calc(100% + 2 * var(--gutter));
+    margin: 20px calc(-1 * var(--gutter)) 0;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .stage {
+    width: 100%;
+    margin: 20px 0 0;
+  }
 }

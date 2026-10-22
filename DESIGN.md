@@ -282,7 +282,7 @@ Cool graphite neutrals in two tiers (page and app window), one lime accent, and 
 **Character:** One variable family does everything: light and slightly widened at display sizes so headlines feel open and calm, regular and normal width in running text, medium for labels. Mono appears only where a machine is speaking.
 
 ### Hierarchy
-- **Display** (330, `wdth` 106, tracking -0.03em): the hero headline, two balanced lines, max 19em wide.
+- **Display** (330, `wdth` 106, tracking -0.03em): the hero headline, left-aligned beside the studio, about four balanced lines, max 13em wide (15em in one column).
 - **Display Closing** (same voice, one step larger): the closing statement only.
 - **Page Title** (330, `wdth` 106): headers of Pricing, Download, Docs index, Security and similar routes. Docs articles, account and sign-in use the same weight and axis at smaller clamps.
 - **Headline** (340, `wdth` 104, max 13ch): the left column of every two-column section head.
@@ -304,7 +304,7 @@ Cool graphite neutrals in two tiers (page and app window), one lime accent, and 
 
 A single centred column, 1200px of content plus a fluid gutter (16px to 40px). Sections are separated by a fluid vertical rhythm (80px to 152px); a hairline rule can open a section. The nav is sticky at 64px and anchors scroll with a 24px allowance.
 
-The home page follows one pattern repeated: a two-column section head (headline left, lead, badges and an arrow link right; 64px column gap) over a full-width app window, or a narrower 960px window for smaller mockups. The hero is centred: 72px app icon, headline, lead, two pills, a fine note, an accent link down to the crash demo, then the window starting above the fold.
+The home page follows one pattern repeated: a two-column section head (headline left, lead, badges and an arrow link right; 64px column gap) over a full-width app window, or a narrower 960px window for smaller mockups. The hero is two columns (one below 1024px): headline, lead and two pills on the left, then an accent link down to the crash demo and two facts with icons over a hairline; on the right the desktop app's clay studio in 3D (three.js, loaded after the page, asleep off screen), bleeding a little past the page edge, with four live cards pinned to its stations by dashed leaders. Phones, reduced motion and Save-Data get the still picture of the same frame with the cards. The app window follows, starting above the fold.
 
 Grouped content is a list divided by hairlines, never a grid of separate cards: the agent strip (three columns), company items (two columns, 64px gap), FAQ, plan grid (four columns), platform list. Rows pad 22px vertically.
 
@@ -314,12 +314,12 @@ Mockups respond to their container, not the viewport: each window is an inline-s
 
 ## Elevation & Depth
 
-Flat by default, structured by hairlines and the two-step ground (page, raised panel). Shadow is reserved for things that physically float above the page: the app window, the hero app icon and the locale popover. Inset lines carry state instead of elevation.
+Flat by default, structured by hairlines and the two-step ground (page, raised panel). Shadow is reserved for things that physically float above the page: the app window, the studio's pinned cards and the locale popover. Inset lines carry state instead of elevation.
 
 ### Shadow Vocabulary
 - **Window** (`box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 24px 60px -12px rgba(0,0,0,0.7), 0 8px 20px -8px rgba(0,0,0,0.5)`): every app window mockup.
 - **Popover** (`box-shadow: 0 8px 24px rgba(0,0,0,0.45), 0 1px 0 rgba(255,255,255,0.04) inset`): menus such as the locale switcher.
-- **App icon** (`box-shadow: 0 1px 0 rgba(255,255,255,0.06) inset, 0 18px 40px -14px rgba(0,0,0,0.8)`): the 72px hero icon.
+- **Studio cards** (`--shadow-popover`): the cards pinned to the hero studio.
 - **Focus halo** (`box-shadow: 0 0 0 3px rgba(198,242,78,0.18)`): text inputs on focus, with a lime border.
 - **Featured marker** (`box-shadow: inset 0 2px 0` lime): the top edge of the featured plan column.
 
@@ -328,7 +328,7 @@ Flat by default, structured by hairlines and the two-step ground (page, raised p
 
 ## Shapes
 
-Pills for everything you press on the page (buttons, nav links, tab pills, badges, the locale trigger). Containers use gentle, slightly generous corners that grow with size: 5px for inline code and `kbd`, 7px for docs nav items and the logo, 10px for inputs, notices, code blocks and popovers, 12px for the app window and account boxes, 14px for page-level grouped panels, 18px for the hero app icon. Inside mockups the app's own 4px and 6px radii apply, scaled by `--u`. Borders are always 1px; the only dashed stroke is the app's "new tab" button.
+Pills for everything you press on the page (buttons, nav links, tab pills, badges, the locale trigger). Containers use gentle, slightly generous corners that grow with size: 5px for inline code and `kbd`, 7px for docs nav items and the logo, 10px for inputs, notices, code blocks and popovers, 12px for the app window and account boxes, 14px for page-level grouped panels and the hero studio's cards. Inside mockups the app's own 4px and 6px radii apply, scaled by `--u`. Borders are always 1px; the only dashed stroke is the app's "new tab" button.
 
 ## Components
 
@@ -385,7 +385,7 @@ The desktop app redrawn in HTML at full fidelity: macOS traffic lights, top bar 
 - **Don't** add a light theme or light sections; the site is dark only.
 - **Don't** fill backgrounds or decorative shapes with lime, or put light text on it.
 - **Don't** use a gradient hero, an icon-card feature grid or a logo wall.
-- **Don't** put shadows on page panels, cards or lists; shadow is only for the window, popovers and the app icon.
+- **Don't** put shadows on page panels, cards or lists; shadow is only for the window, popovers and the studio's pinned cards.
 - **Don't** set JetBrains Mono outside terminals, code and data, or set headings heavier than 420.
 - **Don't** put small uppercase tracked labels above site headlines. Uppercase micro-labels belong to the app's own sidebar group labels inside mockups.
 - **Don't** use emoji or text glyphs as icons; use Lucide.

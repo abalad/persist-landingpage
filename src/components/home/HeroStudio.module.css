@@ -1,0 +1,288 @@
+/* The hero's studio: the picture of its first frame at once, the live WebGL
+   canvas fading in over it when ready, and live cards pinned over both
+   (positions from script). The scene melts into the page at its edges. */
+
+.stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.36;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.poster,
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: radial-gradient(closest-side, #000 74%, transparent 100%);
+  mask-image: radial-gradient(closest-side, #000 74%, transparent 100%);
+}
+
+.poster {
+  object-fit: cover;
+}
+
+/* Over the picture of the very same frame: the switch to live is not seen. */
+.canvas {
+  opacity: 0;
+  transition: opacity 280ms var(--ease-out);
+}
+
+.stage[data-mode="3d"] .canvas {
+  opacity: 1;
+}
+
+.leaders,
+.cards {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.leaders {
+  overflow: visible;
+}
+
+/* Hidden until the script has pinned them, so they never flash in a corner. */
+.stage[data-placed="true"] .leaders,
+.stage[data-placed="true"] .cards {
+  visibility: visible;
+}
+
+.leader {
+  stroke: var(--color-fg-subtle);
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+  opacity: 0.75;
+}
+
+/* A label in a product shot: what it is, which project, what it is doing now. */
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 212px;
+  padding: 10px 12px 11px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 14px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-popover);
+  color: var(--color-fg);
+  transform-origin: 50% 100%;
+  will-change: transform;
+  transition:
+    border-color 300ms var(--ease-out),
+    box-shadow 300ms var(--ease-out);
+}
+
+.stage[data-placed="true"] .card {
+  animation: cardIn 700ms var(--ease-out) 150ms backwards;
+}
+
+/* Needs you: the border warms and breathes. The line itself says so in words. */
+.stage[data-placed="true"] .card[data-attention="true"] {
+  border-color: var(--color-warn);
+  animation: attention 1.6s ease-in-out infinite;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.cardIcon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  background: var(--color-surface-3);
+}
+
+.cardTitle {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  font-size: 0.8125rem;
+  font-weight: 560;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cardChip {
+  flex-shrink: 0;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--color-surface-3);
+  color: var(--color-fg-muted);
+  font-family: var(--font-code);
+  font-size: 0.6875rem;
+}
+
+/* The live line: arrives from below each time it changes. */
+.line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  min-height: 18px;
+  overflow: hidden;
+  font-size: 0.8125rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  animation: lineIn 420ms var(--ease-out) both;
+}
+
+.line > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line > svg {
+  flex-shrink: 0;
+}
+
+.line[data-tone="info"] > svg {
+  color: var(--color-info);
+}
+
+.line[data-tone="ok"] > svg {
+  color: var(--color-ok);
+}
+
+.line[data-tone="warn"] {
+  color: var(--color-warn);
+}
+
+.log,
+.diff,
+.rps {
+  color: var(--color-fg-muted);
+  font-family: var(--font-code);
+  font-size: 0.6875rem;
+}
+
+.count {
+  font-variant-numeric: tabular-nums;
+}
+
+.bar {
+  position: relative;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--color-surface-3);
+}
+
+.bar > span {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--color-info);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+.bar > span[data-tone="ok"] {
+  background: var(--color-ok);
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.action {
+  flex-shrink: 0;
+  padding: 3px 9px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 7px;
+  color: var(--color-fg-muted);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.action[data-primary="true"] {
+  border-color: transparent;
+  background: var(--color-accent);
+  color: var(--color-accent-fg);
+}
+
+/* Requests per tick: twelve bars that rise and fall as the log scrolls. */
+.spark {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 22px;
+}
+
+.spark > span:not(.rps) {
+  flex: 1;
+  align-self: stretch;
+  border-radius: 2px 2px 0 0;
+  background: var(--color-accent);
+  opacity: 0.75;
+  transform-origin: 50% 100%;
+  transition: transform 420ms var(--ease-out);
+}
+
+.rps {
+  flex-shrink: 0;
+  align-self: center;
+  margin-left: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+  }
+}
+
+@keyframes lineIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@keyframes attention {
+  50% {
+    box-shadow:
+      var(--shadow-popover),
+      0 0 0 4px var(--color-warn-bg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stage *,
+  .stage[data-placed="true"] .card,
+  .stage[data-placed="true"] .card[data-attention="true"] {
+    animation: none !important;
+    transition: none !important;
+  }
+}
