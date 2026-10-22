@@ -46,6 +46,8 @@ SECRET=$(supabase projects api-keys --project-ref ytmpopebhdtnucdznfsz --reveal 
 
 ## Antes de divulgar
 
-- **SMTP próprio no Supabase.** O SMTP padrão só entrega para membros da equipe e no máximo 2 e-mails por hora; sem ele, visitantes não recebem o código de acesso.
+O e-mail do código de acesso sai pelo Resend ("Persisty <oi@persisty.app>", domínio verificado na região de São Paulo), configurado no Supabase pela integração do Resend em 2026-10-22. No plano gratuito do Resend o teto é de 100 e-mails por dia; o Supabase limita a 25 por hora.
+
+
 - **E-mail de contato** em `NEXT_PUBLIC_CONTACT_EMAIL`.
 - **Builds públicos** em `src/lib/releases.ts`.

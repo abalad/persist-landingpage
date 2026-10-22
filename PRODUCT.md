@@ -48,7 +48,7 @@ Not true today, must not be claimed: moving a running session to another account
 
 Prices decided by the user (2026-10-21): Free; Pro US$ 9.90 per month; Team US$ 19.90 per user per month; Enterprise by contact. No annual price decided. Stripe is not wired: "Subscribe" buttons exist and do nothing yet (user's instruction). No contact e-mail exists yet: it lives in an environment variable; while empty, "Talk to us" leads to account creation with Enterprise interest recorded in the user's metadata.
 
-Persisty Cloud: Supabase project `ytmpopebhdtnucdznfsz` (São Paulo). Sign-in by e-mail code (`signInWithOtp` with user creation, `verifyOtp` type `email`). The default SMTP only delivers to team members, 2 per hour, so public sign-up needs custom SMTP before launch.
+Persisty Cloud: Supabase project `ytmpopebhdtnucdznfsz` (São Paulo). Sign-in by e-mail code (`signInWithOtp` with user creation, `verifyOtp` type `email`). E-mail goes through Resend from "Persisty <oi@persisty.app>" (custom SMTP since 2026-10-22; Resend free plan: 100 a day; Supabase: 25 an hour).
 
 ## Brand Commitments
 
