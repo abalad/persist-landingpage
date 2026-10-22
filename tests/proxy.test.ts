@@ -1,6 +1,6 @@
 import { NextRequest } from "next/server";
 import { describe, expect, it } from "vitest";
-import proxy from "../src/proxy";
+import proxy, { config } from "../src/proxy";
 
 function visit(path: string, headers: Record<string, string> = {}) {
   return proxy(new NextRequest(new URL(path, "https://persist.example"), { headers }));
@@ -30,5 +30,19 @@ describe("locale routing", () => {
   it("falls back to Portuguese for a language the site does not have", () => {
     const res = visit("/", { "accept-language": "de-DE" });
     expect(res.headers.get("location")).toBeNull();
+  });
+});
+
+describe("proxy matcher", () => {
+  const matches = (path: string) => new RegExp(`^${config.matcher}$`).test(path);
+
+  it("leaves share images alone, so crawlers get them without a redirect", () => {
+    expect(matches("/pt-BR/opengraph-image")).toBe(false);
+    expect(matches("/en/opengraph-image")).toBe(false);
+  });
+
+  it("still handles pages", () => {
+    expect(matches("/pricing")).toBe(true);
+    expect(matches("/en/docs/agents")).toBe(true);
   });
 });
