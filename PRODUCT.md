@@ -53,7 +53,7 @@ Persisty Cloud: Supabase project `ytmpopebhdtnucdznfsz` (São Paulo). Sign-in by
 ## Brand Commitments
 
 - Name "Persisty" (decided 2026-10-22; "Persist" had no domain). Domain `persisty.app`, registered by the user. A formal trademark search (INPI, USPTO) is still pending; the site makes no trademark claims.
-- Visual system shared with the desktop app: `packages/design-tokens/tokens.css` in the app repo (graphite neutrals, sea-green accent `#5cc8b0`, status colours always paired with icon and text). Icons: Lucide.
+- Visual system shared with the desktop app: `packages/design-tokens/tokens.css` in the app repo (graphite neutrals, lime accent `#C6F24E` since the Persisty identity of 2026-10-22, status colours always paired with icon and text). Brand files and rules: `/brand` page, `brand/` folder, `docs/superpowers/specs/2026-10-22-persisty-brand-design.md`. Icons: Lucide.
 - Reference the user pinned: verne.build (dark, large light headline, product mockups built in HTML, two-column section heads), with every trace of an AI-made site removed.
 - Voice: plain, specific, honest. The app's own copy says "Parado", never "Falhou", for a stopped command; it says what it could not do.
 
