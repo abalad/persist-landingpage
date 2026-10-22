@@ -74,7 +74,7 @@ export function createWorkshop(canvas: HTMLCanvasElement, options: { light: bool
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.05;
   renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.shadowMap.type = THREE.PCFShadowMap;
 
   const scene = new THREE.Scene();
   // Cleared with the colour that comes out of the tone mapping as the page's own.
