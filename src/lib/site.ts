@@ -3,7 +3,7 @@ import type { PlanId } from "./plans";
 export const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "https://ytmpopebhdtnucdznfsz.supabase.co";
 /** Publishable by design: the desktop app ships the same key. Row-level security guards the data. */
 export const SUPABASE_PUBLISHABLE_KEY = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? "sb_publishable_O6TCB8NFNzTgx9Ma6TCnFQ_cE3-jDgR";
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://persist-landingpage.vercel.app";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://persisty.app";
 
 /**
  * Where "talk to us" leads. With no address configured yet, Enterprise

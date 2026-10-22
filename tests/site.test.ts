@@ -24,3 +24,10 @@ describe("subscribe", () => {
     expect(subscribe("pro")).toBeUndefined();
   });
 });
+
+describe("SITE_URL", () => {
+  it("is the persisty.app domain unless the environment says otherwise", async () => {
+    const { SITE_URL } = await import("../src/lib/site");
+    expect(SITE_URL).toBe(process.env.NEXT_PUBLIC_SITE_URL ?? "https://persisty.app");
+  });
+});
