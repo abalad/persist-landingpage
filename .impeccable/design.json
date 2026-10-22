@@ -1,0 +1,790 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-22T06:50:24+00:00",
+  "title": "Design System: Persist",
+  "extensions": {
+    "colorMeta": {
+      "sea-green": {
+        "role": "primary",
+        "displayName": "Sea Green",
+        "canonical": "oklch(76.3% 0.106 176.6)",
+        "tonalRamp": [
+          "#00160a",
+          "#003424",
+          "#005340",
+          "#007460",
+          "#1e9781",
+          "#4dbba3",
+          "#75e0c7",
+          "#9cffed"
+        ]
+      },
+      "sea-green-strong": {
+        "role": "primary",
+        "displayName": "Bright Sea Green",
+        "canonical": "oklch(84.0% 0.098 176.7)",
+        "tonalRamp": [
+          "#00150a",
+          "#003324",
+          "#005241",
+          "#007360",
+          "#2e9581",
+          "#57b9a3",
+          "#7ddec7",
+          "#a3ffed"
+        ]
+      },
+      "sea-green-wash": {
+        "role": "primary",
+        "displayName": "Sea Green Wash",
+        "canonical": "rgba(92, 200, 176, 0.12)",
+        "tonalRamp": [
+          "#00160a",
+          "#003424",
+          "#005340",
+          "#007460",
+          "#1e9781",
+          "#4dbba3",
+          "#75e0c7",
+          "#9cffed"
+        ]
+      },
+      "focus-mint": {
+        "role": "primary",
+        "displayName": "Focus Mint",
+        "canonical": "oklch(85.6% 0.087 177.3)",
+        "tonalRamp": [
+          "#00150b",
+          "#003124",
+          "#005041",
+          "#107161",
+          "#3e9382",
+          "#63b7a4",
+          "#88dcc8",
+          "#aeffee"
+        ]
+      },
+      "page-ground": {
+        "role": "neutral",
+        "displayName": "Night Ground",
+        "canonical": "oklch(15.4% 0.009 264.3)",
+        "tonalRamp": [
+          "#090b0f",
+          "#23252a",
+          "#3f4247",
+          "#5f6167",
+          "#7f8288",
+          "#a2a5ab",
+          "#c6c9cf",
+          "#ebeef5"
+        ]
+      },
+      "page-ground-raised": {
+        "role": "neutral",
+        "displayName": "Raised Night",
+        "canonical": "oklch(17.2% 0.012 260.6)",
+        "tonalRamp": [
+          "#080b10",
+          "#22252b",
+          "#3e4248",
+          "#5d6168",
+          "#7e8389",
+          "#a1a5ac",
+          "#c5c9d1",
+          "#eaeff6"
+        ]
+      },
+      "selected-raised": {
+        "role": "neutral",
+        "displayName": "Selected Night",
+        "canonical": "oklch(19.5% 0.016 261.6)",
+        "tonalRamp": [
+          "#080b12",
+          "#21252d",
+          "#3d424a",
+          "#5c616a",
+          "#7d838c",
+          "#a0a5af",
+          "#c4c9d4",
+          "#e9eff9"
+        ]
+      },
+      "page-hairline": {
+        "role": "neutral",
+        "displayName": "Night Hairline",
+        "canonical": "oklch(23.9% 0.018 266.2)",
+        "tonalRamp": [
+          "#080b13",
+          "#21252e",
+          "#3d424c",
+          "#5c616c",
+          "#7d828e",
+          "#a0a5b1",
+          "#c4c9d6",
+          "#e9effb"
+        ]
+      },
+      "heading-white": {
+        "role": "neutral",
+        "displayName": "Heading White",
+        "canonical": "oklch(96.7% 0.006 264.5)",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#242528",
+          "#404245",
+          "#5f6165",
+          "#808286",
+          "#a3a5a9",
+          "#c7c9cd",
+          "#eceef2"
+        ]
+      },
+      "body-grey": {
+        "role": "neutral",
+        "displayName": "Body Grey",
+        "canonical": "oklch(80.3% 0.020 263.0)",
+        "tonalRamp": [
+          "#070b14",
+          "#20252f",
+          "#3c424d",
+          "#5b616d",
+          "#7c838f",
+          "#9ea5b2",
+          "#c2c9d7",
+          "#e7effc"
+        ]
+      },
+      "muted-grey": {
+        "role": "neutral",
+        "displayName": "Muted Grey",
+        "canonical": "oklch(66.6% 0.030 265.3)",
+        "tonalRamp": [
+          "#060b18",
+          "#1e2534",
+          "#3a4252",
+          "#596173",
+          "#7a8295",
+          "#9ca5b9",
+          "#c0c9dd",
+          "#e5efff"
+        ]
+      },
+      "pill-paper": {
+        "role": "neutral",
+        "displayName": "Paper Pill",
+        "canonical": "oklch(95.7% 0.006 255.5)",
+        "tonalRamp": [
+          "#090b0e",
+          "#232528",
+          "#404245",
+          "#5f6165",
+          "#808286",
+          "#a2a5a9",
+          "#c6c9cd",
+          "#eceff3"
+        ]
+      },
+      "pill-paper-hover": {
+        "role": "neutral",
+        "displayName": "Paper Pill Hover",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "pill-graphite": {
+        "role": "neutral",
+        "displayName": "Graphite Pill",
+        "canonical": "oklch(21.8% 0.016 268.9)",
+        "tonalRamp": [
+          "#080b12",
+          "#22252d",
+          "#3e424b",
+          "#5d616b",
+          "#7e828d",
+          "#a1a5b0",
+          "#c5c9d4",
+          "#eaeefa"
+        ]
+      },
+      "pill-graphite-hover": {
+        "role": "neutral",
+        "displayName": "Graphite Pill Hover",
+        "canonical": "oklch(25.2% 0.020 267.9)",
+        "tonalRamp": [
+          "#080b14",
+          "#21252f",
+          "#3d424d",
+          "#5c616d",
+          "#7d828f",
+          "#a0a5b2",
+          "#c3c9d7",
+          "#e9eefc"
+        ]
+      },
+      "pill-graphite-border": {
+        "role": "neutral",
+        "displayName": "Graphite Pill Border",
+        "canonical": "oklch(30.9% 0.025 265.5)",
+        "tonalRamp": [
+          "#060b16",
+          "#1f2531",
+          "#3c4250",
+          "#5a6170",
+          "#7b8292",
+          "#9ea5b5",
+          "#c1c9da",
+          "#e6efff"
+        ]
+      },
+      "window-ground": {
+        "role": "neutral",
+        "displayName": "App Window Ground",
+        "canonical": "oklch(17.7% 0.009 264.3)",
+        "tonalRamp": [
+          "#090b0f",
+          "#232529",
+          "#404247",
+          "#5f6166",
+          "#808288",
+          "#a2a5ab",
+          "#c6c9cf",
+          "#ebeef5"
+        ]
+      },
+      "app-surface": {
+        "role": "neutral",
+        "displayName": "App Surface",
+        "canonical": "oklch(21.0% 0.018 270.4)",
+        "tonalRamp": [
+          "#080b13",
+          "#21252e",
+          "#3e424c",
+          "#5d616c",
+          "#7e828e",
+          "#a0a5b1",
+          "#c4c9d6",
+          "#eaeefb"
+        ]
+      },
+      "app-surface-2": {
+        "role": "neutral",
+        "displayName": "App Surface Recessed",
+        "canonical": "oklch(19.1% 0.015 266.8)",
+        "tonalRamp": [
+          "#080b12",
+          "#22252d",
+          "#3e424a",
+          "#5d616a",
+          "#7e828c",
+          "#a1a5af",
+          "#c5c9d3",
+          "#eaeef9"
+        ]
+      },
+      "app-surface-3": {
+        "role": "neutral",
+        "displayName": "App Surface Hover",
+        "canonical": "oklch(24.0% 0.022 269.1)",
+        "tonalRamp": [
+          "#080b14",
+          "#212530",
+          "#3d424e",
+          "#5c616e",
+          "#7d8290",
+          "#9fa5b3",
+          "#c3c9d8",
+          "#e8eefe"
+        ]
+      },
+      "app-border": {
+        "role": "neutral",
+        "displayName": "App Border",
+        "canonical": "oklch(28.9% 0.023 267.2)",
+        "tonalRamp": [
+          "#070b15",
+          "#202531",
+          "#3c424f",
+          "#5b616f",
+          "#7c8291",
+          "#9ea5b4",
+          "#c2c9d9",
+          "#e7eeff"
+        ]
+      },
+      "app-border-strong": {
+        "role": "neutral",
+        "displayName": "App Border Strong",
+        "canonical": "oklch(34.9% 0.027 267.9)",
+        "tonalRamp": [
+          "#070b17",
+          "#1f2533",
+          "#3c4251",
+          "#5a6171",
+          "#7b8293",
+          "#9da5b7",
+          "#c1c9dc",
+          "#e6eeff"
+        ]
+      },
+      "app-fg": {
+        "role": "neutral",
+        "displayName": "App Text",
+        "canonical": "oklch(89.6% 0.013 262.4)",
+        "tonalRamp": [
+          "#080b11",
+          "#22252c",
+          "#3e4249",
+          "#5d6169",
+          "#7e828b",
+          "#a0a5ae",
+          "#c4c9d2",
+          "#eaeff8"
+        ]
+      },
+      "app-fg-muted": {
+        "role": "neutral",
+        "displayName": "App Text Muted",
+        "canonical": "oklch(70.8% 0.028 264.4)",
+        "tonalRamp": [
+          "#060b17",
+          "#1e2533",
+          "#3a4251",
+          "#596172",
+          "#7a8394",
+          "#9ca5b7",
+          "#c0c9dc",
+          "#e5efff"
+        ]
+      },
+      "app-fg-subtle": {
+        "role": "neutral",
+        "displayName": "App Text Subtle",
+        "canonical": "oklch(61.7% 0.034 267.0)",
+        "tonalRamp": [
+          "#060a19",
+          "#1e2536",
+          "#3a4254",
+          "#596175",
+          "#798297",
+          "#9ca5bb",
+          "#bfc9e0",
+          "#e4eeff"
+        ]
+      },
+      "status-warn": {
+        "role": "status",
+        "displayName": "Amber (waiting, in development)",
+        "canonical": "oklch(78.9% 0.132 83.3)",
+        "tonalRamp": [
+          "#210000",
+          "#401a00",
+          "#603900",
+          "#825900",
+          "#a57b12",
+          "#c99e42",
+          "#efc268",
+          "#ffe88d"
+        ]
+      },
+      "status-warn-wash": {
+        "role": "status",
+        "displayName": "Amber Wash",
+        "canonical": "rgba(227, 178, 74, 0.14)",
+        "tonalRamp": [
+          "#210000",
+          "#401a00",
+          "#603900",
+          "#825900",
+          "#a57b12",
+          "#c99e42",
+          "#efc268",
+          "#ffe88d"
+        ]
+      },
+      "status-ok-wash": {
+        "role": "status",
+        "displayName": "Sea Green Status Wash",
+        "canonical": "rgba(92, 200, 176, 0.14)",
+        "tonalRamp": [
+          "#00160a",
+          "#003424",
+          "#005340",
+          "#007460",
+          "#1e9781",
+          "#4dbba3",
+          "#75e0c7",
+          "#9cffed"
+        ]
+      },
+      "status-info": {
+        "role": "status",
+        "displayName": "Blue (working)",
+        "canonical": "oklch(72.2% 0.107 257.5)",
+        "tonalRamp": [
+          "#000137",
+          "#002157",
+          "#18417a",
+          "#38619d",
+          "#5883c2",
+          "#7aa7e8",
+          "#9dcbff",
+          "#c1f1ff"
+        ]
+      },
+      "status-danger": {
+        "role": "status",
+        "displayName": "Coral (error)",
+        "canonical": "oklch(71.8% 0.140 21.2)",
+        "tonalRamp": [
+          "#2d0000",
+          "#510007",
+          "#751e24",
+          "#9a4042",
+          "#c06262",
+          "#e78584",
+          "#ffa9a7",
+          "#ffcecb"
+        ]
+      },
+      "status-danger-wash": {
+        "role": "status",
+        "displayName": "Coral Wash",
+        "canonical": "rgba(239, 125, 125, 0.14)",
+        "tonalRamp": [
+          "#2d0000",
+          "#510007",
+          "#751e24",
+          "#9a4042",
+          "#c06262",
+          "#e78584",
+          "#ffa9a7",
+          "#ffcecb"
+        ]
+      },
+      "status-neutral": {
+        "role": "status",
+        "displayName": "Slate (planned)",
+        "canonical": "oklch(67.2% 0.029 264.4)",
+        "tonalRamp": [
+          "#060b17",
+          "#1e2533",
+          "#3a4252",
+          "#596172",
+          "#7a8394",
+          "#9ca5b8",
+          "#c0c9dc",
+          "#e5efff"
+        ]
+      },
+      "status-neutral-wash": {
+        "role": "status",
+        "displayName": "Slate Wash",
+        "canonical": "rgba(141, 150, 168, 0.14)",
+        "tonalRamp": [
+          "#060b17",
+          "#1e2533",
+          "#3a4252",
+          "#596172",
+          "#7a8394",
+          "#9ca5b8",
+          "#c0c9dc",
+          "#e5efff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only, two balanced lines."
+      },
+      "display-closing": {
+        "displayName": "Display Closing",
+        "purpose": "Closing statement at the end of the home page (--display-1)."
+      },
+      "page-title": {
+        "displayName": "Page Title",
+        "purpose": "Headers of secondary routes (Pricing, Download, Security, Docs index)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Left column of two-column section heads (--display-2), max 13ch."
+      },
+      "subhead": {
+        "displayName": "Subhead",
+        "purpose": "Secondary headings on Pricing and Download (--display-3)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Item names in hairline lists, agent strip, FAQ questions."
+      },
+      "price": {
+        "displayName": "Price",
+        "purpose": "Plan amounts, tabular figures."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Muted sentence beside or under a headline."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default running text."
+      },
+      "prose": {
+        "displayName": "Prose",
+        "purpose": "Docs, changelog and legal pages, max 70ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Pill buttons, footer column heads, form labels."
+      },
+      "fine": {
+        "displayName": "Fine",
+        "purpose": "Notes under CTAs, plan footnotes, fine print."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Terminals, code, kbd, data; never marketing copy."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-window",
+        "value": "0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 24px 60px -12px rgba(0, 0, 0, 0.7), 0 8px 20px -8px rgba(0, 0, 0, 0.5)",
+        "purpose": "Every app window mockup; makes the window an object on the page."
+      },
+      {
+        "name": "shadow-popover",
+        "value": "0 8px 24px rgba(0, 0, 0, 0.45), 0 1px 0 rgba(255, 255, 255, 0.04) inset",
+        "purpose": "Menus such as the locale switcher."
+      },
+      {
+        "name": "shadow-app-icon",
+        "value": "0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 18px 40px -14px rgba(0, 0, 0, 0.8)",
+        "purpose": "The 72px hero app icon."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px rgba(92, 200, 176, 0.18)",
+        "purpose": "Text inputs on focus, with a sea-green border."
+      },
+      {
+        "name": "featured-marker",
+        "value": "inset 0 2px 0 #5cc8b0",
+        "purpose": "Top edge of the featured plan column."
+      },
+      {
+        "name": "focus-outline",
+        "value": "outline: 2px solid #8fe3cf; outline-offset: 3px",
+        "purpose": "Every focusable element."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default easing for all transitions."
+      },
+      {
+        "name": "duration-fast",
+        "value": "120ms",
+        "purpose": "Button press nudge and small state flips."
+      },
+      {
+        "name": "duration-normal",
+        "value": "180ms",
+        "purpose": "Colour, border and background transitions; arrow slides."
+      },
+      {
+        "name": "recovery-row",
+        "value": "360ms ease-out",
+        "purpose": "Sessions returning one by one in the crash demo."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation and transition durations 0.001ms",
+        "purpose": "All animated mockups switch states instantly."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mockup-narrow (container)",
+        "value": "640px"
+      },
+      {
+        "name": "plans-single",
+        "value": "640px"
+      },
+      {
+        "name": "strip-stack",
+        "value": "760px"
+      },
+      {
+        "name": "section-head-stack",
+        "value": "820px"
+      },
+      {
+        "name": "nav-menu",
+        "value": "900px"
+      },
+      {
+        "name": "plans-two",
+        "value": "1080px"
+      },
+      {
+        "name": "docs-no-toc",
+        "value": "1100px"
+      }
+    ],
+    "appPixel": {
+      "property": "--u",
+      "syntax": "<length>",
+      "value": "clamp(0.6px, calc(100cqi / var(--design-width, 1120)), 1px)",
+      "narrow": "calc(100cqi / 400) under 640px container width",
+      "purpose": "Every mockup dimension is calc(n * var(--u)) so the window scales like a screenshot while staying real text."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Pill",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action on every surface: off-white pill, never green.",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 15V3\"/><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5\"/></svg>Download for macOS</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:.5em;height:46px;padding:0 22px;border:1px solid transparent;border-radius:999px;background:var(--pill-primary-bg,#eef1f5);color:var(--pill-primary-fg,#0a0c10);font-family: var(--font-sans);font-size:.96875rem;font-weight:500;line-height:1;cursor:pointer;transition:background-color 180ms cubic-bezier(.16,1,.3,1),transform 120ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{background:var(--pill-primary-bg-hover,#fff)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2px solid #8fe3cf;outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Pill",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "The companion action beside the primary pill.",
+      "html": "<button class=\"ds-btn-secondary\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>Create account</button>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;gap:.5em;height:46px;padding:0 22px;border:1px solid #2a303d;border-radius:999px;background:#171a22;color:#f2f4f8;font-family: var(--font-sans);font-size:.96875rem;font-weight:500;line-height:1;cursor:pointer;transition:background-color 180ms cubic-bezier(.16,1,.3,1),border-color 180ms cubic-bezier(.16,1,.3,1)}.ds-btn-secondary:hover{background:#1e222c;border-color:#353c4b}.ds-btn-secondary:active{transform:translateY(1px)}.ds-btn-secondary:focus-visible{outline:2px solid #8fe3cf;outline-offset:3px}"
+    },
+    {
+      "name": "Arrow Link",
+      "kind": "custom",
+      "refersTo": "sea-green",
+      "description": "Sea-green link under a section head; the arrow slides on hover.",
+      "html": "<a class=\"ds-arrow-link\" href=\"#\">How recovery works<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>",
+      "css": ".ds-arrow-link{display:inline-flex;align-items:center;gap:6px;color:#5cc8b0;font-family: var(--font-sans);font-weight:500;text-decoration:none}.ds-arrow-link svg{transition:transform 180ms cubic-bezier(.16,1,.3,1)}.ds-arrow-link:hover svg{transform:translateX(3px)}.ds-arrow-link:focus-visible{outline:2px solid #8fe3cf;outline-offset:3px;border-radius:4px}"
+    },
+    {
+      "name": "Availability Badges",
+      "kind": "chip",
+      "refersTo": "badge-available",
+      "description": "Dot plus word for every capability: Available, In development, Planned, Pro.",
+      "html": "<span class=\"ds-badge ds-ok\"><i></i>Available</span> <span class=\"ds-badge ds-warn\"><i></i>In development</span> <span class=\"ds-badge ds-planned\"><i></i>Planned</span> <span class=\"ds-badge ds-pro\">Pro</span>",
+      "css": ".ds-badge{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:999px;font-family: var(--font-sans);font-size:.75rem;font-weight:500;line-height:1;white-space:nowrap}.ds-badge i{width:6px;height:6px;border-radius:50%;background:currentColor}.ds-ok{background:rgba(92,200,176,.14);color:#5cc8b0}.ds-warn{background:rgba(227,178,74,.14);color:#e3b24a}.ds-planned{background:rgba(141,150,168,.14);color:#a9b1c1}.ds-planned i{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}.ds-pro{color:#5cc8b0;box-shadow:inset 0 0 0 1px rgba(92,200,176,.45);letter-spacing:.02em}"
+    },
+    {
+      "name": "Tab Pills",
+      "kind": "chip",
+      "refersTo": "tab-pill",
+      "description": "Switches between Pro mockups; selected tab takes the sea-green wash.",
+      "html": "<div class=\"ds-tabs\"><button class=\"ds-tab\" aria-selected=\"true\">Restore points</button><button class=\"ds-tab\" aria-selected=\"false\">Request queue</button></div>",
+      "css": ".ds-tabs{display:flex;gap:6px}.ds-tab{height:36px;padding:0 14px;border:1px solid #1b1f28;border-radius:999px;background:transparent;color:#8b94a7;font-family: var(--font-sans);font-size:.875rem;cursor:pointer;transition:color 180ms cubic-bezier(.16,1,.3,1),border-color 180ms cubic-bezier(.16,1,.3,1)}.ds-tab:hover{color:#f2f4f8;border-color:#2a303d}.ds-tab[aria-selected=true]{border-color:rgba(92,200,176,.5);background:rgba(92,200,176,.12);color:#f2f4f8}.ds-tab:focus-visible{outline:2px solid #8fe3cf;outline-offset:3px}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Sign-in fields: raised night, sea-green focus border and halo.",
+      "html": "<label class=\"ds-label\">E-mail<input class=\"ds-input\" type=\"email\" placeholder=\"you@company.com\"></label>",
+      "css": ".ds-label{display:grid;gap:8px;color:#b8bfcc;font-family: var(--font-sans);font-size:.875rem;font-weight:500}.ds-input{height:46px;padding:0 14px;border:1px solid #2a303d;border-radius:10px;background:#0d1015;color:#f2f4f8;font:inherit;font-size:1rem;font-weight:400;transition:border-color 180ms cubic-bezier(.16,1,.3,1),box-shadow 180ms cubic-bezier(.16,1,.3,1)}.ds-input:hover{border-color:#3a4150}.ds-input:focus{outline:none;border-color:#5cc8b0;box-shadow:0 0 0 3px rgba(92,200,176,.18)}"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky 64px bar on the night ground with centred pill links.",
+      "html": "<nav class=\"ds-nav\"><strong class=\"ds-word\">Persist</strong><ul><li><a href=\"#\" aria-current=\"page\">Product</a></li><li><a href=\"#\">Pricing</a></li><li><a href=\"#\">Docs</a></li><li><a href=\"#\">Changelog</a></li></ul><a class=\"ds-nav-cta\" href=\"#\">Download</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:24px;height:64px;padding:0 24px;border-bottom:1px solid #1b1f28;background:#0a0c10;font-family: var(--font-sans);}.ds-word{color:#f2f4f8;font-size:1.0625rem;font-weight:560;font-variation-settings:'wdth' 108}.ds-nav ul{display:flex;gap:4px;margin:0 auto;padding:0;list-style:none}.ds-nav ul a{display:inline-flex;align-items:center;height:34px;padding:0 12px;border-radius:999px;color:#b8bfcc;font-size:.9375rem;text-decoration:none;transition:color 180ms,background-color 180ms}.ds-nav ul a:hover{color:#f2f4f8;background:rgba(255,255,255,.04)}.ds-nav ul a[aria-current=page]{color:#f2f4f8}.ds-nav-cta{display:inline-flex;align-items:center;height:36px;padding:0 16px;border-radius:999px;background:#eef1f5;color:#0a0c10;font-size:.875rem;font-weight:500;text-decoration:none}.ds-nav a:focus-visible{outline:2px solid #8fe3cf;outline-offset:3px}"
+    },
+    {
+      "name": "Seamed Plan Panel",
+      "kind": "card",
+      "refersTo": "seamed-panel",
+      "description": "Grouped items share one hairline-split panel; the featured column gets a sea-green top marker.",
+      "html": "<div class=\"ds-seamed\"><div class=\"ds-plan\"><b>Free</b><span class=\"ds-amount\">US$ 0</span></div><div class=\"ds-plan ds-featured\"><b>Pro</b><span class=\"ds-amount\">US$ 9.90</span></div></div>",
+      "css": ".ds-seamed{display:grid;grid-template-columns:1fr 1fr;border:1px solid #1b1f28;border-radius:14px;background:#0d1015;overflow:hidden;font-family: var(--font-sans);}.ds-plan{display:grid;gap:18px;padding:28px 24px;color:#f2f4f8}.ds-plan b{font-size:1.25rem;font-weight:500}.ds-plan+.ds-plan{border-left:1px solid #1b1f28}.ds-featured{background:#11151c;box-shadow:inset 0 2px 0 #5cc8b0}.ds-amount{font-size:2rem;font-weight:380;letter-spacing:-.02em;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "App Window",
+      "kind": "custom",
+      "refersTo": "app-window",
+      "description": "The desktop app redrawn in HTML, sized in app pixels and floated on the darker page ground.",
+      "html": "<div class=\"ds-window\"><div class=\"ds-top\"><span></span><span></span><span></span><em class=\"ds-tabx\">api <i></i></em></div><pre class=\"ds-term\">&gt; Add shipping by postcode to the API\n● Read(src/shipping/table.ts)</pre></div>",
+      "css": ".ds-window{--u:1px;overflow:hidden;border:1px solid #2a2f3b;border-radius:calc(12*var(--u));background:#0f1115;box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 24px 60px -12px rgba(0,0,0,.7),0 8px 20px -8px rgba(0,0,0,.5);color:#d8dde6;font-family: var(--font-sans);font-size:calc(13*var(--u))}.ds-top{display:flex;align-items:center;gap:calc(8*var(--u));height:calc(40*var(--u));padding-left:calc(14*var(--u));border-bottom:1px solid #262b37;background:#11141b}.ds-top>span{width:calc(12*var(--u));height:calc(12*var(--u));border-radius:50%;background:#ff5f57}.ds-top>span:nth-child(2){background:#febc2e}.ds-top>span:nth-child(3){background:#28c840}.ds-tabx{display:inline-flex;align-items:center;gap:calc(7*var(--u));height:calc(26*var(--u));margin-left:calc(40*var(--u));padding:0 calc(10*var(--u));border:1px solid #343a49;border-radius:calc(6*var(--u));background:#151821;font-style:normal}.ds-tabx i{width:calc(6*var(--u));height:calc(6*var(--u));border-radius:50%;background:#e3b24a}.ds-term{margin:0;padding:calc(14*var(--u));font-family:var(--font-code),'JetBrains Mono',ui-monospace,monospace;font-size:calc(12.5*var(--u));font-variant-ligatures:none}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The App on the Desk",
+    "overview": "The site is the desktop app's own graphite world with the lights lowered one step. Every claim is carried by a faithful HTML rendition of the Persist window, and the page exists to set that window down as an object: a darker ground, a soft shadow under it, nothing competing with it. The page around the windows is quiet typographic structure: a centred statement, light display type, two-column section heads, hairline-divided lists.\n\nDensity lives inside the mockups, where the app's real vocabulary runs at app scale (13px text, 26px tabs, status chips). Outside them the site is spacious and calm: long section rhythm, muted body copy, one sea-green reserved for what is alive or actionable. The world refuses the category default of gradient hero, icon-card feature grid and logo wall; the build answers each with the product itself, hairline lists and honest availability badges.\n\nThe site is dark only. There is no light theme, and the root declares `color-scheme: dark`.",
+    "keyCharacteristics": [
+      "App tokens copied from the desktop app (dark theme); site-only tokens layered on top.",
+      "Page ground one step darker than the app window, so windows read as objects.",
+      "One accent, sea-green, for alive and action; primary CTA is an off-white pill, not green.",
+      "Mona Sans light at display sizes, widened through its `wdth` axis; JetBrains Mono only where machines speak.",
+      "Structure by 1px hairlines; shadow only on things that float.",
+      "Mockups sized in app pixels (`--u`) so they scale like screenshots while staying real, translatable text."
+    ],
+    "rules": [
+      {
+        "name": "The Window-as-Object Rule",
+        "body": "The page ground stays one step darker than the app window ground. Never render a mockup on a ground equal to or darker than its own; the step is what makes it read as an object on a desk.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Green Rule",
+        "body": "Sea green marks what is alive or actionable and nothing else. It never fills a primary button, a section background or a decorative shape.",
+        "section": "colors"
+      },
+      {
+        "name": "The Word-and-Icon Status Rule",
+        "body": "A status hue never appears alone: every state carries its Lucide icon and its word (badges carry a dot and a label; \"Planned\" uses a hollow dot).",
+        "section": "colors"
+      },
+      {
+        "name": "The Light Display Rule",
+        "body": "Headings sit between weight 330 and 420 with `wdth` 104 to 106 and negative tracking; weight 500 and above is for labels and short titles, never for display.",
+        "section": "typography"
+      },
+      {
+        "name": "The Machines-Speak-Mono Rule",
+        "body": "JetBrains Mono appears only in terminals, code and data. Marketing copy, headings and buttons are always Mona Sans.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairline-Not-Shadow Rule",
+        "body": "On the page, separation is a 1px hairline or a one-step ground change. A shadow means the thing floats; panels, cards and lists never get one.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do set every app mockup on the page ground (#0a0c10 family), one step darker than the window it shows.",
+      "Do carry product claims with the app window itself, using the app's real vocabulary and Lucide icons.",
+      "Do keep the primary action an off-white pill and the secondary a graphite pill, side by side, 12px apart.",
+      "Do pair every status colour with its icon and word, and label every capability Available, In development or Planned.",
+      "Do size anything inside a mockup in app pixels (`calc(n * var(--u))`) and give it a narrow layout under 640px of container width.",
+      "Do use 120ms for small state changes and 180ms with the `cubic-bezier(0.16, 1, 0.3, 1)` ease-out for colour and border transitions, and respect reduced motion everywhere.",
+      "Do separate grouped items with 1px hairlines inside one shared panel."
+    ],
+    "donts": [
+      "Don't add a light theme or light sections; the site is dark only.",
+      "Don't fill buttons, backgrounds or decorative shapes with sea green.",
+      "Don't use a gradient hero, an icon-card feature grid or a logo wall.",
+      "Don't put shadows on page panels, cards or lists; shadow is only for the window, popovers and the app icon.",
+      "Don't set JetBrains Mono outside terminals, code and data, or set headings heavier than 420.",
+      "Don't put small uppercase tracked labels above site headlines. Uppercase micro-labels belong to the app's own sidebar group labels inside mockups.",
+      "Don't use emoji or text glyphs as icons; use Lucide."
+    ]
+  }
+}

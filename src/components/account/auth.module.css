@@ -62,7 +62,7 @@
 }
 
 .input::placeholder {
-  color: #5d6578;
+  color: var(--color-fg-subtle);
 }
 
 .input:hover {
