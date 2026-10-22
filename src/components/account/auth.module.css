@@ -1,0 +1,142 @@
+.shell {
+  display: grid;
+  justify-items: center;
+  padding-top: clamp(56px, 9vw, 112px);
+}
+
+.card {
+  display: grid;
+  gap: 22px;
+  width: min(100%, 420px);
+}
+
+.icon {
+  border-radius: 12px;
+}
+
+.title {
+  font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.25rem);
+  font-weight: 340;
+  font-variation-settings: "wdth" 106;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.body {
+  margin-top: 10px;
+  color: var(--site-muted);
+}
+
+.intent {
+  padding: 12px 14px;
+  border: 1px solid rgba(92, 200, 176, 0.3);
+  border-radius: 10px;
+  background: var(--color-accent-bg);
+  color: var(--site-body);
+  font-size: var(--small);
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+}
+
+.label {
+  display: grid;
+  gap: 8px;
+  color: var(--site-body);
+  font-size: var(--small);
+  font-weight: 500;
+}
+
+.input {
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid var(--pill-secondary-border);
+  border-radius: 10px;
+  background: var(--site-ground-raised);
+  color: var(--site-heading);
+  font: inherit;
+  font-size: 1rem;
+  transition: border-color var(--duration-normal) var(--ease-out), box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.input::placeholder {
+  color: #5d6578;
+}
+
+.input:hover {
+  border-color: #3a4150;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(92, 200, 176, 0.18);
+}
+
+.input[aria-invalid="true"] {
+  border-color: var(--color-danger);
+}
+
+.code {
+  font-family: var(--font-code);
+  font-size: 1.375rem;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+.submit {
+  width: 100%;
+}
+
+.error {
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--color-danger-bg);
+  color: #ffc9c9;
+  font-size: var(--small);
+}
+
+.error svg {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+
+.textButton {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--color-accent);
+  font-size: var(--small);
+  cursor: pointer;
+}
+
+.textButton:disabled {
+  color: var(--site-muted);
+  cursor: default;
+}
+
+.fine {
+  color: var(--site-muted);
+  font-size: var(--tiny);
+  line-height: 1.6;
+}
+
+.fine a {
+  color: var(--site-body);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--pill-secondary-border);
+}
