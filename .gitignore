@@ -1,0 +1,14 @@
+.superpowers/
+node_modules/
+.next/
+out/
+.vercel/
+.env*.local
+.env
+*.tsbuildinfo
+next-env.d.ts
+coverage/
+.DS_Store
+.impeccable/review/
+.impeccable/build/
+.impeccable/config.local.json
