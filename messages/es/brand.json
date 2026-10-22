@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Marca",
+    "description": "El símbolo, los colores y los archivos de Persisty, listos para descargar."
+  },
+  "title": "Marca de Persisty",
+  "body": "El símbolo, los colores y los archivos para quien vaya a escribir, presentar o armar una integración con Persisty.",
+  "symbol": {
+    "title": "El símbolo",
+    "body": "Una \"p\" cuyo ojo es una órbita abierta, con un punto que la recorre: el agente que sigue trabajando mientras no estás. En el sitio, el punto da una vuelta cada 14 segundos."
+  },
+  "files": {
+    "title": "Archivos",
+    "dark": "Para fondo oscuro",
+    "light": "Para fondo claro",
+    "white": "Blanco",
+    "black": "Negro",
+    "icon": "Ícono de la app",
+    "logo": "Logo",
+    "mark": "Símbolo",
+    "svg": "SVG",
+    "png": "PNG"
+  },
+  "colors": {
+    "title": "Colores",
+    "lime": "Lima",
+    "limeHint": "El color de la marca: el punto, los botones y los enlaces. El texto sobre lima siempre es oscuro.",
+    "limeLight": "Lima en fondo claro",
+    "limeLightHint": "Solo en fondo claro, donde el lima desaparece.",
+    "paper": "Papel",
+    "paperHint": "La \"p\" y el nombre sobre fondo oscuro.",
+    "ink": "Tinta",
+    "inkHint": "Fondo de las páginas y la \"p\" sobre fondo claro.",
+    "graphite": "Grafito",
+    "graphiteHint": "El fondo del ícono y de las ventanas de la app."
+  },
+  "rules": {
+    "title": "Cómo usarla",
+    "items": [
+      "Escribe Persisty con P mayúscula en el texto; el logo siempre va en minúsculas.",
+      "Deja alrededor del logo un margen de al menos la mitad de la altura del símbolo.",
+      "Tamaño mínimo: símbolo de 16 px, logo de 96 px de ancho."
+    ]
+  },
+  "donts": {
+    "title": "Qué no hacer",
+    "items": [
+      "Cambiar el color del punto o de la \"p\".",
+      "Usar el lima sobre fondo claro.",
+      "Rotar, estirar o contornear el símbolo.",
+      "Cerrar la órbita: la abertura alrededor del punto es parte del dibujo."
+    ]
+  }
+}

@@ -33,6 +33,7 @@ export function Footer() {
       links: [
         ...(contact ? [{ href: contact, label: t("contact") }] : []),
         { href: "/account", label: t("account") },
+        { href: "/brand", label: t("brand") },
         { href: "/terms", label: t("terms") },
       ],
     },

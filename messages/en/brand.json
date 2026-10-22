@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Brand",
+    "description": "Persisty's symbol, colours and files, ready to download."
+  },
+  "title": "Persisty brand",
+  "body": "The symbol, the colours and the files for anyone writing about, presenting or building an integration with Persisty.",
+  "symbol": {
+    "title": "The symbol",
+    "body": "A \"p\" whose bowl is an open orbit, with a dot travelling it: the agent that keeps working while you are away. On the site, the dot goes round once every 14 seconds."
+  },
+  "files": {
+    "title": "Files",
+    "dark": "For dark backgrounds",
+    "light": "For light backgrounds",
+    "white": "White",
+    "black": "Black",
+    "icon": "App icon",
+    "logo": "Logo",
+    "mark": "Symbol",
+    "svg": "SVG",
+    "png": "PNG"
+  },
+  "colors": {
+    "title": "Colours",
+    "lime": "Lime",
+    "limeHint": "The brand colour: the dot, buttons and links. Text on lime is always dark.",
+    "limeLight": "Lime on light",
+    "limeLightHint": "Only on light backgrounds, where lime disappears.",
+    "paper": "Paper",
+    "paperHint": "The \"p\" and the name on dark backgrounds.",
+    "ink": "Ink",
+    "inkHint": "Page background and the \"p\" on light backgrounds.",
+    "graphite": "Graphite",
+    "graphiteHint": "The app icon and the app's windows."
+  },
+  "rules": {
+    "title": "How to use it",
+    "items": [
+      "Write Persisty with a capital P in text; the logo is always lowercase.",
+      "Leave clear space around the logo of at least half the symbol's height.",
+      "Minimum size: symbol 16 px, logo 96 px wide."
+    ]
+  },
+  "donts": {
+    "title": "Don't",
+    "items": [
+      "Change the colour of the dot or the \"p\".",
+      "Use lime on a light background.",
+      "Rotate, stretch or outline the symbol.",
+      "Close the orbit: the opening around the dot is part of the drawing."
+    ]
+  }
+}
