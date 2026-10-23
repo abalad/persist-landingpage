@@ -2,7 +2,7 @@ import { useLocale, useTranslations } from "next-intl";
 import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
-import { AgentList } from "@/components/home/AgentList";
+import { AgentsStrip } from "@/components/home/AgentsStrip";
 import { Closing } from "@/components/home/Closing";
 import { Companies } from "@/components/home/Companies";
 import { FaqSection } from "@/components/home/FaqSection";
@@ -12,7 +12,6 @@ import { Studio } from "@/components/home/Studio";
 import { AccountsMock } from "@/components/mockups/AccountsMock";
 import { CrashDemo } from "@/components/mockups/CrashDemo";
 import { EditorMock } from "@/components/mockups/EditorMock";
-import { HeroApp } from "@/components/mockups/HeroApp";
 import { NetworkMock } from "@/components/mockups/NetworkMock";
 import { ProjectsMock, StatesMock } from "@/components/mockups/ProjectsMock";
 import { ProTabs } from "@/components/mockups/ProTabs";
@@ -45,9 +44,7 @@ function HomeContent() {
   return (
     <>
       <Hero />
-      <Feature id="agents" title={t("agents.title")} aside={<AgentList />}>
-        <HeroApp />
-      </Feature>
+      <AgentsStrip />
       <Studio />
       <div id="product" />
       <Feature id="recovery" title={t("recovery.title")} body={t("recovery.body")} link={{ href: "/docs/sessions-and-recovery", label: t("recovery.link") }}>
