@@ -1,50 +1,63 @@
+/* Right under the app window, as its caption: one column per agent, divided by hairlines. */
 .strip {
-  padding-top: clamp(48px, 6vw, 80px);
-}
-
-.title {
-  color: var(--site-muted);
-  font-size: var(--small);
-  text-align: center;
+  padding-top: clamp(28px, 3.5vw, 44px);
 }
 
 .list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 20px 0 0;
+  margin: 0;
   padding: 0;
-  border-block: 1px solid var(--site-hairline);
   list-style: none;
 }
 
 .item {
   display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
   align-content: start;
-  gap: 6px;
-  padding: 22px 24px;
+  align-items: center;
+  gap: 6px 14px;
+  padding: 4px clamp(20px, 3vw, 40px);
+}
+
+.item:first-child {
+  padding-left: 0;
+}
+
+.item:last-child {
+  padding-right: 0;
 }
 
 .item + .item {
   border-left: 1px solid var(--site-hairline);
 }
 
+.icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--site-hairline);
+  border-radius: 10px;
+  background: var(--site-ground-raised);
+}
+
+.icon svg {
+  width: 18px;
+  height: 18px;
+}
+
 .name {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   color: var(--site-heading);
   font-size: 1.0625rem;
   font-weight: 500;
 }
 
-.name svg {
-  width: 18px;
-  height: 18px;
-}
-
 .detail {
+  grid-column: 2;
   color: var(--site-muted);
   font-size: var(--small);
+  line-height: 1.5;
 }
 
 @media (max-width: 760px) {
@@ -52,12 +65,18 @@
     grid-template-columns: 1fr;
   }
 
+  .item,
+  .item:first-child,
+  .item:last-child {
+    padding: 18px 0;
+  }
+
+  .item:first-child {
+    padding-top: 4px;
+  }
+
   .item + .item {
     border-left: 0;
     border-top: 1px solid var(--site-hairline);
-  }
-
-  .item {
-    padding-inline: 0;
   }
 }
