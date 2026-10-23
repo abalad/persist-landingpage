@@ -74,19 +74,18 @@
   transform: translateY(2px);
 }
 
+/* One fact per line, so neither wraps mid-thought beside the other. */
 .facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px clamp(24px, 3vw, 40px);
-  margin: 32px 0 0;
-  padding: 24px 0 0;
+  display: grid;
+  gap: 14px;
+  margin: 28px 0 0;
+  padding: 22px 0 0;
   border-top: 1px solid var(--site-hairline);
   list-style: none;
 }
 
 .fact {
   display: flex;
-  flex: 1 1 13.5em;
   align-items: flex-start;
   gap: 12px;
   color: var(--site-muted);
@@ -117,7 +116,7 @@
 
 .window {
   max-width: 1200px;
-  margin: clamp(40px, 6vw, 72px) auto 0;
+  margin: clamp(32px, 4vw, 56px) auto 0;
 }
 
 /* One column: the statement first, the studio under it, edge to edge. */
