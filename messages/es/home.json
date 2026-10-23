@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Persisty mantiene tus agentes de IA en marcha, organizados por proyecto.",
-    "body": "Sesiones de Claude Code y Codex que vuelven después de un cuelgue, un lugar para cada proyecto y varias cuentas que se turnan sin que cambies de login.",
+    "body": "Sesiones que vuelven tras un cuelgue, un lugar por proyecto y varias cuentas sin cambiar de login.",
     "download": {
       "mac": "Descargar para macOS",
       "windows": "Descargar para Windows",
@@ -11,15 +11,15 @@
     "account": "Crear cuenta",
     "facts": [
       {
-        "title": "Tu código no sale de tu máquina",
-        "body": "Funciona sin cuenta y sin internet."
+        "title": "Código solo en tu máquina",
+        "body": "Sin cuenta y sin internet."
       },
       {
         "title": "El núcleo es gratis",
-        "body": "Los primeros builds públicos salen pronto."
+        "body": "Builds públicos muy pronto."
       }
     ],
-    "crashLink": "Mira lo que hace Persisty cuando la computadora se cuelga",
+    "crashLink": "Mira qué pasa cuando la computadora se cuelga",
     "studio": {
       "agentTitle": "Claude",
       "testsTitle": "Pruebas",

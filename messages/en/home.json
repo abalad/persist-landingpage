@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Persisty keeps your AI agents running, organised by project.",
-    "body": "Claude Code and Codex sessions that come back after a crash, a place for every project, and several accounts that take turns without you switching logins.",
+    "body": "Sessions that come back after a crash, a place per project, and several accounts without switching logins.",
     "download": {
       "mac": "Download for macOS",
       "windows": "Download for Windows",
@@ -11,15 +11,15 @@
     "account": "Create account",
     "facts": [
       {
-        "title": "Your code stays on your machine",
-        "body": "Works without an account and without internet."
+        "title": "Code stays on your machine",
+        "body": "No account or internet needed."
       },
       {
         "title": "The core is free",
-        "body": "The first public builds are coming soon."
+        "body": "Public builds coming soon."
       }
     ],
-    "crashLink": "See what Persisty does when the computer crashes",
+    "crashLink": "See what happens when the computer crashes",
     "studio": {
       "agentTitle": "Claude",
       "testsTitle": "Tests",

@@ -29,9 +29,10 @@
   align-self: start;
 }
 
+/* Capped so the headline holds three lines beside the studio instead of four. */
 .title {
   max-width: 13em;
-  font-size: clamp(2.125rem, 1.25rem + 2.4vw, 3.5rem);
+  font-size: clamp(2.125rem, 1.25rem + 2.4vw, 3.125rem);
   font-weight: 330;
   font-variation-settings: "wdth" 106;
   line-height: 1.05;
@@ -40,7 +41,8 @@
 
 .body {
   max-width: 46ch;
-  margin-top: 22px;
+  margin-top: 20px;
+  text-wrap: balance;
   color: var(--site-muted);
   font-size: var(--lead);
   line-height: 1.55;
@@ -50,15 +52,21 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
+/* Quieter than the pills above it: muted words, the accent only on the arrow. */
 .crashLink {
   display: inline-block;
   margin-top: 18px;
   text-wrap: balance;
-  color: var(--color-accent);
+  color: var(--site-muted);
   font-size: var(--small);
+  transition: color var(--duration-normal) var(--ease-out);
+}
+
+.crashLink:hover {
+  color: var(--site-heading);
 }
 
 .crashLink svg {
@@ -67,6 +75,7 @@
   height: 15px;
   margin-left: 6px;
   vertical-align: -3px;
+  color: var(--color-accent);
   transition: transform var(--duration-normal) var(--ease-out);
 }
 
@@ -74,12 +83,13 @@
   transform: translateY(2px);
 }
 
-/* One fact per line, so neither wraps mid-thought beside the other. */
+/* Side by side while each still fits on its own two short lines; stacked when not. */
 .facts {
   display: grid;
-  gap: 14px;
-  margin: 28px 0 0;
-  padding: 22px 0 0;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15em), 1fr));
+  gap: 14px 24px;
+  margin: 24px 0 0;
+  padding: 20px 0 0;
   border-top: 1px solid var(--site-hairline);
   list-style: none;
 }
