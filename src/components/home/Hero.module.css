@@ -2,31 +2,23 @@
   padding-top: clamp(32px, 5vw, 64px);
 }
 
-/* The statement on the left, the studio on the right, bleeding a little past the page's edge.
-   In one column the studio comes right after the actions, before the small print. */
+/* The statement on the left, the studio on the right, bleeding a little past the page's edge;
+   the two facts close the hero on a hairline under both, on the columns every section head below uses.
+   In one column the studio comes right after the actions, the facts last. */
 .split {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
   grid-template-areas:
     "head stage"
-    "foot stage";
+    "facts facts";
   column-gap: clamp(16px, 2.5vw, 40px);
 }
 
-.head,
-.foot {
+.head {
   position: relative;
   z-index: 1;
-}
-
-.head {
   grid-area: head;
-  align-self: end;
-}
-
-.foot {
-  grid-area: foot;
-  align-self: start;
+  align-self: center;
 }
 
 .title {
@@ -75,10 +67,11 @@
 }
 
 .facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px clamp(24px, 3vw, 40px);
-  margin: 32px 0 0;
+  display: grid;
+  grid-area: facts;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 64px;
+  margin: clamp(24px, 3vw, 40px) 0 0;
   padding: 24px 0 0;
   border-top: 1px solid var(--site-hairline);
   list-style: none;
@@ -86,7 +79,6 @@
 
 .fact {
   display: flex;
-  flex: 1 1 13.5em;
   align-items: flex-start;
   gap: 12px;
   color: var(--site-muted);
@@ -115,23 +107,20 @@
   margin-right: calc(-1 * clamp(0px, (100vw - var(--page)) / 2 - var(--gutter), 72px));
 }
 
-.window {
-  max-width: 1200px;
-  margin: clamp(40px, 6vw, 72px) auto 0;
-}
-
-/* One column: the statement first, the studio under it, edge to edge. */
+/* One column: the statement first, the studio under it, edge to edge, then the facts. */
 @media (max-width: 1023px) {
   .split {
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
       "head"
       "stage"
-      "foot";
+      "facts";
   }
 
-  .foot {
-    margin-top: -8px;
+  .facts {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15em), 1fr));
+    column-gap: clamp(24px, 3vw, 40px);
+    margin-top: 8px;
   }
 
   .title {

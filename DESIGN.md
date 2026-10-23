@@ -287,7 +287,7 @@ Cool graphite neutrals in two tiers (page and app window), one lime accent, and 
 - **Page Title** (330, `wdth` 106): headers of Pricing, Download, Docs index, Security and similar routes. Docs articles, account and sign-in use the same weight and axis at smaller clamps.
 - **Headline** (340, `wdth` 104, max 13ch): the left column of every two-column section head.
 - **Subhead** (400): secondary headings on Pricing and Download.
-- **Title** (500): item names in hairline lists, agent strip, FAQ questions (450), plan names (1.25rem, `wdth` 106).
+- **Title** (500): item names in hairline lists, the agent list, FAQ questions (450), plan names (1.25rem, `wdth` 106).
 - **Price** (380, tabular figures, `wdth` 104): plan amounts.
 - **Lead** (400, muted, 46 to 58ch): the sentence beside or under a headline.
 - **Body** (400): default text. **Prose** (1.0625rem / 1.7, max 70ch): docs, changelog, legal; prose h2 at 1.625rem weight 420.
@@ -304,11 +304,11 @@ Cool graphite neutrals in two tiers (page and app window), one lime accent, and 
 
 A single centred column, 1200px of content plus a fluid gutter (16px to 40px). Sections are separated by a fluid vertical rhythm (80px to 152px); a hairline rule can open a section. The nav is sticky at 64px and anchors scroll with a 24px allowance.
 
-The home page follows one pattern repeated: a two-column section head (headline left, lead, badges and an arrow link right; 64px column gap) over a full-width app window, or a narrower 960px window for smaller mockups. The hero is two columns (one below 1024px): headline, lead and two pills on the left, then an accent link down to the crash demo and two facts with icons over a hairline; on the right the desktop app's clay studio in 3D (three.js, loaded after the page, asleep off screen), bleeding a little past the page edge, with four live cards pinned to its stations by dashed leaders. Phones, reduced motion and Save-Data get the still picture of the same frame with the cards. The app window follows, starting above the fold.
+The home page follows one pattern repeated: a two-column section head (headline left, lead, badges and an arrow link right; 64px column gap) over a full-width app window, or a narrower 960px window for smaller mockups. The hero is two columns (one below 1024px): headline, lead, two pills and an accent link down to the crash demo on the left, centred against the studio; on the right the desktop app's clay studio in 3D (three.js, loaded after the page, asleep off screen), bleeding a little past the page edge, with four live cards pinned to its stations by dashed leaders. Phones, reduced motion and Save-Data get the still picture of the same frame with the cards. Two facts with icons close the hero on a full-width hairline, set on the section heads' two columns so the second lines up with every right column below. The live app window is the next section's proof: "Works with what you already use" on the left, Claude Code, Codex and any CLI as a hairline list on the right, the window under both.
 
-Grouped content is a list divided by hairlines, never a grid of separate cards: the agent strip (three columns), company items (two columns, 64px gap), FAQ, plan grid (four columns), platform list. Rows pad 22px vertically.
+Grouped content is a list divided by hairlines, never a grid of separate cards: the agent list (one column, where a section lead would go), company items (two columns, 64px gap), FAQ, plan grid (four columns), platform list. Rows pad 22px vertically.
 
-Responsive steps: section heads stack under 820px; the nav collapses to a menu under 900px; plans go to two columns under 1080px and one under 640px; the agent strip stacks under 760px; docs drops its table of contents under 1100px and its sidebar under 820px.
+Responsive steps: section heads stack under 820px; the nav collapses to a menu under 900px; plans go to two columns under 1080px and one under 640px; docs drops its table of contents under 1100px and its sidebar under 820px.
 
 Mockups respond to their container, not the viewport: each window is an inline-size container, every dimension is `calc(n * var(--u))` against a design width (1120 by default, 860 for narrow windows), clamped between 0.6px and 1px per app pixel. Under 640px of container width the window switches to a 400-unit narrow layout that hides the rail and side panels.
 

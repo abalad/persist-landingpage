@@ -1,0 +1,47 @@
+/* Beside the section title, where a lead would go: one row per agent, divided by hairlines. */
+.list {
+  display: grid;
+  width: 100%;
+  max-width: 36rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  align-items: center;
+  gap: 4px 12px;
+  padding-block: 16px;
+}
+
+.item:first-child {
+  padding-top: 0;
+}
+
+.item:last-child {
+  padding-bottom: 0;
+}
+
+.item + .item {
+  border-top: 1px solid var(--site-hairline);
+}
+
+.item > svg {
+  width: 18px;
+  height: 18px;
+}
+
+.name {
+  color: var(--site-heading);
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+.detail {
+  grid-column: 2;
+  color: var(--site-muted);
+  font-size: var(--small);
+  line-height: 1.5;
+}
